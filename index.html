@@ -1,0 +1,1088 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Abdullah Haroon</title>
+  <meta name="description"
+    content="Final-year Computer Science student at FAST-NUCES, Lahore. Investigating empirical model robustness, designing resilient data pipelines, and deploying production software.">
+  <meta property="og:title" content="Muahmmad Abdullah Haroon">
+  <meta property="og:description"
+    content="Bridging empirical AI research and robust production engineering—from training models on messy data to shipping reliable software at scale.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="color-scheme" content="light">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Nastaliq+Urdu:wght@400;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/site.css">
+</head>
+
+<body>
+  <a class="skip" href="#top">Skip to content</a>
+
+  <!-- ============ NAVIGATION ============ -->
+  <header class="nav" id="site-nav">
+    <div class="nav__inner">
+      <a class="brand" href="#top">Abdullah Haroon</a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="nav-desktop" aria-label="Primary Navigation">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#process">Process</a>
+        <a href="#education">Education</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <!-- Nav Actions Cluster -->
+      <div class="nav-actions">
+        <a class="nav-icon-link" href="https://linkedin.com/in/abdullah-haroon-98b460217/" target="_blank"
+          rel="noopener" aria-label="LinkedIn Profile" title="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path
+              d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.64 1.64 0 0 0 1.64-1.64c0-.91-.73-1.64-1.64-1.64a1.64 1.64 0 0 0-1.64 1.64c0 .91.73 1.64 1.64 1.64m1.39 9.74v-8.37H5.07v8.37h2.78Z" />
+          </svg>
+        </a>
+        <a class="nav-icon-link" href="https://github.com/AbdullahPatti" target="_blank" rel="noopener"
+          aria-label="GitHub Profile" title="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path
+              d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z" />
+          </svg>
+        </a>
+        <a class="cv-pill" href="CV.pdf" target="_blank" rel="noopener">CV</a>
+
+        <!-- Mobile Hamburger Toggle -->
+        <button type="button" class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu"
+          aria-expanded="false">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Overlay Menu Drawer -->
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <nav class="mobile-menu-links" aria-label="Mobile Navigation">
+      <a href="#about">About</a>
+      <a href="#research">Research Interests</a>
+      <a href="#publications">Publications</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#process">Process</a>
+      <a href="#education">Education</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="mobile-menu-footer">
+      <div style="display: flex; gap: 10px;">
+        <a class="btn btn-solid" href="mailto:abdullaharoon.work@gmail.com" style="flex: 1;">Email me</a>
+        <a class="btn btn-ghost" href="CV.pdf" target="_blank" rel="noopener" style="flex: 1;">Download CV</a>
+      </div>
+      <div class="mobile-socials">
+        <a href="https://linkedin.com/in/abdullah-haroon-98b460217/" target="_blank" rel="noopener">LinkedIn ↗</a>
+        <a href="https://github.com/AbdullahPatti" target="_blank" rel="noopener">GitHub ↗</a>
+      </div>
+    </div>
+  </div>
+
+  <main id="top">
+
+    <!-- ============ HERO — Apple Centered Clean Landing ============ -->
+    <section class="hero">
+      <div class="hero__headline-box">
+        <h1 class="hero__hi reveal">Hi. I'm Abdullah Haroon.</h1>
+        <span class="hero__tagline gradient-text reveal">Eager to work on data, pipelines, and developing end-to-end
+          systems.</span>
+        <p class="lede reveal">Final-year Computer Science student at FAST-NUCES, Lahore. I investigate empirical model
+          robustness, design resilient data pipelines, and deploy production software that performs when the domain
+          shifts.</p>
+        <div class="hero-actions reveal">
+          <a class="btn btn-solid" id="hero-email-btn" href="mailto:abdullaharoon.work@gmail.com">Email me</a>
+          <a class="btn btn-ghost" href="CV.pdf" target="_blank" rel="noopener">Download CV</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ IMPACT & SNAPSHOT METRICS ============ -->
+    <section class="impact-showcase" aria-label="Key Achievements">
+      <div class="wrap">
+        <div class="stats-strip reveal" id="stat-strip">
+          <div class="stat-card">
+            <strong data-count="30" data-suffix="+">0</strong>
+            <span>Open-source models &amp; datasets</span>
+          </div>
+          <div class="stat-card">
+            <strong data-count="5" data-suffix="+">0</strong>
+            <span>Research works, sole &amp; collaborative</span>
+          </div>
+          <div class="stat-card">
+            <strong data-count="3">0</strong>
+            <span>Work Experiences across AI, Research &amp; Software Development</span>
+          </div>
+          <div class="stat-card">
+            <strong data-count="10" data-suffix="+">0</strong>
+            <span>Credentials from Google, IBM, Microsoft</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section tone-white" id="about" data-nav="About">
+      <div class="wrap">
+        <span class="eyebrow reveal">About</span>
+        <h2 class="reveal">It started with a recommendation, not an equation.</h2>
+        <div class="about-content">
+          <p class="reveal">As a kid I was fascinated by something everyone else took for granted: YouTube seemed to
+            know what I wanted to watch next. I did not know how it worked, but the question stuck. It pulled me into
+            computer science, then into machine learning and AI.</p>
+          <p class="reveal">I work wherever the problem needs me: software engineer, forward-deployed engineer, AI/ML
+            engineer, data scientist, or full-stack builder. I shape data, evaluate models, design APIs, ship
+            interfaces, and deploy systems end to end.</p>
+        </div>
+        <blockquote class="pull reveal">
+          <p>&ldquo;Make the complex feel inevitable: a model that earns trust, a product that reaches people, a system
+            that keeps working.&rdquo;</p>
+        </blockquote>
+        <dl class="edu-row reveal">
+          <div class="edu-item">
+            <dt>Education</dt>
+            <dd>BS Computer Science, FAST-NUCES, expected 2027</dd>
+          </div>
+          <div class="edu-item">
+            <dt>Focus</dt>
+            <dd>Software, data, AI systems, and research</dd>
+          </div>
+          <div class="edu-item">
+            <dt>Strength</dt>
+            <dd>From data and models to deployed products</dd>
+          </div>
+          <div class="edu-item">
+            <dt>Currently</dt>
+            <dd>Open to labs, software, AI, data, and forward-deployed roles</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ============ RESEARCH INTERESTS (Balanced 3x3 Grid) ============ -->
+    <section class="section tone-mist" id="research" data-nav="Research">
+      <div class="wrap">
+        <span class="eyebrow reveal">Research Interests</span>
+        <h2 class="reveal">Focus Areas &amp; Core Problems.</h2>
+        <p class="section-lead reveal">My research agenda focuses on making language and predictive models robust under
+          real-world distribution shifts, uncovering benchmark failure modes, and building reliable transfer mechanisms.
+        </p>
+
+        <div class="interests-grid">
+          <!-- 1. Multilingual and Low-Resource NLP -->
+          <article class="interest-card reveal">
+            <div class="interest-icon">🌐</div>
+            <h3>Multilingual &amp; Low-Resource NLP</h3>
+            <p>Investigating cross-lingual transfer, subword tokenization pathologies, and bi-script dynamics across
+              Arabic-script and Roman Urdu. Building representative datasets where high-resource assumptions break down.
+            </p>
+            <div class="interest-tags">
+              <span>Urdu &amp; Roman Urdu</span>
+              <span>Bi-Script Modeling</span>
+              <span>Tokenization Pathology</span>
+            </div>
+          </article>
+
+          <!-- 2. LLM Evaluation -->
+          <article class="interest-card reveal">
+            <div class="interest-icon">⚖️</div>
+            <h3>LLM Evaluation</h3>
+            <p>Developing rigorous evaluation protocols beyond static leaderboards. Isolating benchmark artifacts,
+              testing sensitivity to prompt variations, and establishing reproducible evaluation frameworks.</p>
+            <div class="interest-tags">
+              <span>Benchmark Integrity</span>
+              <span>RAGAS Scoring</span>
+              <span>Distribution Shift</span>
+            </div>
+          </article>
+
+          <!-- 3. LLM Fine-Tuning -->
+          <article class="interest-card reveal">
+            <div class="interest-icon">⚙️</div>
+            <h3>LLM Fine-Tuning</h3>
+            <p>Parameter-efficient adaptation (LoRA/QLoRA), domain-targeted instruction tuning, and alignment techniques
+              to produce specialized, low-latency models for domain-specific production pipelines.</p>
+            <div class="interest-tags">
+              <span>PEFT / QLoRA</span>
+              <span>Instruction Tuning</span>
+              <span>Domain Adaptation</span>
+            </div>
+          </article>
+
+          <!-- 4. Domain Robustness -->
+          <article class="interest-card reveal">
+            <div class="interest-icon">🛡️</div>
+            <h3>Domain Robustness</h3>
+            <p>Quantifying model performance decay when deployed on out-of-distribution data. Establishing guarded
+              baseline protocols that measure true invariance versus superficial memorization.</p>
+            <div class="interest-tags">
+              <span>OOD Generalization</span>
+              <span>Guarded Baselines</span>
+              <span>Performance Floors</span>
+            </div>
+          </article>
+
+          <!-- 5. Neural Networks -->
+          <article class="interest-card reveal">
+            <div class="interest-icon">🧠</div>
+            <h3>Neural Networks &amp; Architectures</h3>
+            <p>Designing dynamic conditioning mechanisms, learnable gating layers, and hybrid recurrent-transformer
+              architectures that adaptively fuse heterogeneous data streams.</p>
+            <div class="interest-tags">
+              <span>Dynamic Gating</span>
+              <span>Multimodal Fusion</span>
+              <span>BiLSTM &amp; Attention</span>
+            </div>
+          </article>
+
+          <!-- 6. Cross-Dataset Generalization -->
+          <article class="interest-card reveal">
+            <div class="interest-icon">🔄</div>
+            <h3>Cross-Dataset Generalization</h3>
+            <p>Evaluating zero-shot transfer capabilities across distinct corpora for identical NLP tasks, exposing when
+              state-of-the-art models fail to transfer across dataset creators.</p>
+            <div class="interest-tags">
+              <span>Zero-Shot Transfer</span>
+              <span>Creator Bias</span>
+              <span>Cross-Corpus Transfer</span>
+            </div>
+          </article>
+
+          <!-- 7. Transfer Learning -->
+          <article class="interest-card reveal">
+            <div class="interest-icon">⚡</div>
+            <h3>Transfer Learning</h3>
+            <p>Investigating representation reuse and transfer efficiency from massively multilingual foundation models
+              into low-resource dialects and specialized downstream tasks.</p>
+            <div class="interest-tags">
+              <span>Foundation Models</span>
+              <span>Representation Reuse</span>
+              <span>Cross-Lingual Encoders</span>
+            </div>
+          </article>
+
+          <!-- 8. Shortcut Learning -->
+          <article class="interest-card reveal">
+            <div class="interest-icon">🔍</div>
+            <h3>Shortcut Learning</h3>
+            <p>Diagnosing spurious correlations in benchmark datasets—such as token length, punctuation frequency, or
+              syntactic artifacts—where models exploit superficial cues rather than genuine semantics.</p>
+            <div class="interest-tags">
+              <span>Spurious Correlations</span>
+              <span>Length Confounds</span>
+              <span>Causal Attribution</span>
+            </div>
+          </article>
+
+          <!-- 9. Time Series Analysis (Row 3, Col 3 - Perfectly Fills Grid) -->
+          <article class="interest-card reveal">
+            <div class="interest-icon">📈</div>
+            <h3>Time Series Analysis</h3>
+            <p>Regime-aware forecasting and multimodal signal integration, conditioning temporal neural models on
+              macroeconomic and market volatility shifts to avoid catastrophic recall collapse.</p>
+            <div class="interest-tags">
+              <span>Regime Switching</span>
+              <span>Volatility Condition</span>
+              <span>Multimodal Signals</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PUBLICATIONS ============ -->
+    <section class="section tone-white" id="publications" data-nav="Publications">
+      <div class="wrap">
+        <span class="eyebrow reveal">Research &amp; Preprints</span>
+        <h2 class="reveal">Publications.</h2>
+        <p class="section-lead reveal">Peer-reviewed preprints and research contributions covering domain robustness,
+          benchmark shortcut learning, and dynamic regime-aware multimodal fusion.</p>
+
+        <div class="pub-list">
+          <!-- Paper 1 -->
+          <article class="pub-card reveal">
+            <div>
+              <p class="pub-meta">2026 · Target: Springer Language Resources &amp; Evaluation</p>
+              <h3 class="pub-title">Domain robustness across Urdu and Roman Urdu</h3>
+              <p class="pub-byline">M. A. Haroon, M. Bashir</p>
+              <p class="pub-desc">Released 33 Urdu and Roman Urdu text-classification datasets across sentiment,
+                reviews, abuse, fake news, and QA-validation. After removing 4,196 exact-match train-test leaks, I
+                defined a domain-robustness protocol: same-source, target-domain, cross-domain, and baseline-guarded
+                percent robustness.</p>
+              <div class="metric-row">
+                <div><strong>33</strong><span>datasets curated</span></div>
+                <div><strong>288,899</strong><span>verified examples</span></div>
+                <div><strong>84.5% → 48.1%</strong><span>robustness spread</span></div>
+              </div>
+              <a class="btn-link" href="https://doi.org/10.5281/zenodo.22195610" target="_blank" rel="noopener">Access
+                Data on Zenodo</a>
+            </div>
+            <div class="pub-visual">
+              <img src="assets/visuals/research-robustness.svg"
+                alt="Multilingual Domain Robustness Architecture Diagram" width="840" height="340" loading="lazy">
+            </div>
+          </article>
+
+          <!-- Paper 2 -->
+          <article class="pub-card reverse reveal">
+            <div>
+              <p class="pub-meta">2026 · arXiv:2607.14131 [cs.CL]</p>
+              <h3 class="pub-title">When benchmarks mislead: Reversed transfer and shortcut learning</h3>
+              <p class="pub-byline">M. A. Haroon</p>
+              <p class="pub-desc">A unified zero-shot cross-dataset transfer study across Urdu fake news, English fake
+                news, and sarcasm detection. Fake articles in one Urdu dataset run 3.4x longer than real ones. Train one
+                way and macro-F1 is 0.771; reverse the split and it collapses to 0.005, exposing that models learn token
+                length rather than semantic deception indicators.</p>
+              <div class="metric-row">
+                <div><strong>0.771 → 0.005</strong><span>reversed collapse</span></div>
+                <div><strong>3.4×</strong><span>length confound</span></div>
+                <div><strong>3</strong><span>domains tested</span></div>
+              </div>
+              <a class="btn btn-solid" href="https://arxiv.org/abs/2607.14131" target="_blank" rel="noopener">Read Paper
+                on arXiv</a>
+            </div>
+            <div class="pub-visual">
+              <img src="assets/visuals/research-shortcut.svg" alt="Shortcut Learning and Confound Visualization"
+                width="840" height="340" loading="lazy">
+            </div>
+          </article>
+
+          <!-- Paper 3 -->
+          <article class="pub-card reveal">
+            <div>
+              <p class="pub-meta">2026 · arXiv:2607.23370 [cs.LG]</p>
+              <h3 class="pub-title">Regime-aware fusion for Bitcoin direction (RAML)</h3>
+              <p class="pub-byline">M. A. Haroon</p>
+              <p class="pub-desc">RAML introduces a learnable sigmoid gate that conditions the fusion of FinBERT-scored
+                Reddit sentiment and BiLSTM-encoded OHLCV features on rolling 24-hour market volatility. While static
+                concatenation causes 6-hour recall to collapse to 0.14 under volatility spikes, the RAML gate preserves
+                robust predictive power.</p>
+              <div class="metric-row">
+                <div><strong>0.5474 / 0.5513</strong><span>macro-F1 (3h / 6h)</span></div>
+                <div><strong>0.14</strong><span>recall without gate</span></div>
+                <div><strong>3,491</strong><span>hourly observations</span></div>
+              </div>
+              <a class="btn btn-solid" href="https://arxiv.org/abs/2607.23370" target="_blank" rel="noopener">Read Paper
+                on arXiv</a>
+            </div>
+            <div class="pub-visual">
+              <img src="assets/visuals/research-bitcoin.svg"
+                alt="RAML Regime-Aware Multimodal Signal Fusion Architecture" width="840" height="340" loading="lazy">
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WORK / EXPERIENCE ============ -->
+    <section class="section tone-mist" id="experience" data-nav="Experience">
+      <div class="wrap">
+        <span class="eyebrow reveal">Experience</span>
+        <h2 class="reveal">Where I have worked.</h2>
+        <p class="section-lead reveal">Hands-on engineering across research labs, production software teams, and
+          automated AI systems.</p>
+
+        <div class="experience-timeline">
+          <!-- Role 1: Research Intern -->
+          <article class="experience-item reveal">
+            <div class="exp-date">
+              <strong>Jul to Oct 2026</strong>
+              <span>4 months · On-site</span>
+            </div>
+            <div class="exp-content">
+              <h3 class="exp-title">Research Intern</h3>
+              <p class="exp-company">FAST School of Computing <span class="exp-loc">· Lahore, Pakistan · Supervised by
+                  Dr. Maryam Bashir</span></p>
+              <ul class="exp-points">
+                <li>Led two independent Urdu NLP empirical studies, written up as research papers on cross-dataset
+                  generalization and multilingual domain robustness.</li>
+                <li>Discovered a severe length confound in fake news benchmarks causing asymmetric transfer collapse
+                  (macro-F1 from 0.771 to 0.005) and extended analysis across English and sarcasm detection.</li>
+                <li>Curated a benchmark suite of 33 datasets comprising 288,899 examples, programmatically identifying
+                  and purging 4,196 exact-match train-test leaks before public release.</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Role 2: IT Intern -->
+          <article class="experience-item reveal">
+            <div class="exp-date">
+              <strong>Jun to Jul 2026</strong>
+            </div>
+            <div class="exp-content">
+              <h3 class="exp-title">IT Intern</h3>
+              <p class="exp-company">QuickFuel <span class="exp-loc">· Lahore, Pakistan</span></p>
+              <ul class="exp-points">
+                <li>First engineer in company history to introduce AI and ML capabilities into a traditionally
+                  enterprise .NET codebase.</li>
+                <li>Audited the central corporate portal, identifying 9 high-impact AI automation opportunities and 6
+                  usability bottlenecks, formally presented to executive leadership.</li>
+                <li>Engineered a semantic customer sentiment prototype and ChromaDB vector retrieval layer while
+                  contributing production C# and .NET backend code.</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Role 3: AI Automation Intern -->
+          <article class="experience-item reveal">
+            <div class="exp-date">
+              <strong>Jun to Jul 2026</strong>
+            </div>
+            <div class="exp-content">
+              <h3 class="exp-title">AI Automation Intern</h3>
+              <p class="exp-company">Optimus Automate <span class="exp-loc">· Remote</span></p>
+              <ul class="exp-points">
+                <li>Architected an autonomous LLM email triage agent integrated with the Gmail API, automatically
+                  categorizing inbound correspondence and generating grounded context drafts.</li>
+                <li>Developed a production RAG document Q&amp;A tool that strictly verifies and grounds every response
+                  against retrieved enterprise source documentation.</li>
+                <li>Optimized context window token usage and latency through prompt engineering and vector retrieval
+                  caching.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="section tone-white" id="projects" data-nav="Projects">
+      <div class="wrap">
+        <span class="eyebrow reveal">Featured Work</span>
+        <h2 class="reveal">An idea does not count until something is running.</h2>
+        <p class="section-lead reveal">Selected production builds, RAG pipelines, autonomous systems, and evaluation
+          benchmarks.</p>
+
+        <div class="projects-stack">
+          <!-- Project 1: TaxChronos -->
+          <article class="project-card reveal">
+            <div>
+              <p class="project-num">01 / TaxChronos · 2026</p>
+              <h3 class="project-title">Stop digging through tax documents</h3>
+              <p class="project-desc">Pakistani tax queries mix English and Urdu in the same sentence, and manual
+                document search took 2 to 3 minutes per question. A RAG pipeline on Qdrant and Gemini answers in under
+                20 seconds, scored with RAGAS against a naive-retrieval baseline.</p>
+              <div class="tech-tags">
+                <span>Python</span>
+                <span>LangChain</span>
+                <span>Qdrant</span>
+                <span>Gemini</span>
+                <span>RAGAS</span>
+              </div>
+              <div class="metric-row">
+                <div><strong>2-3m → &lt;20s</strong><span>response latency</span></div>
+                <div><strong>RAGAS</strong><span>scored faithfulness</span></div>
+                <div><strong>Solo Build</strong><span>AI &amp; backend</span></div>
+              </div>
+              <a class="btn btn-ghost" href="https://github.com/AbdullahPatti/TaxChronos" target="_blank"
+                rel="noopener">View Repository</a>
+            </div>
+            <div class="demo-window">
+              <div class="window-header">
+                <div class="window-dots"><span></span><span></span><span></span></div>
+                <span class="window-title">TaxChronos · Bilingual RAG Preview</span>
+              </div>
+              <div class="window-body">
+                <div class="chat-stream">
+                  <div class="bubble user urdu-text" lang="ur">ٹیکس کی شرح 2024 کیا ہے؟</div>
+                  <div class="bubble agent">
+                    <p style="margin-bottom: 6px;">Based on the Federal Board of Revenue (FBR) Circular 2024-25, the
+                      applicable slab for your income bracket is 15% with a basic exemption up to PKR 600,000.</p>
+                    <p style="font-size: 12px; color: var(--ink-3);">Sources: FBR Circular No. 01/2024-25 §4(b), Income
+                      Tax Ordinance 2001 §149</p>
+                  </div>
+                  <div class="chat-meta">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                      stroke-width="2.5">
+                      <polyline points="20 6 9 17 4 12" />
+                    </svg>
+                    <span>Qdrant Vector DB · 0.94 Cosine Sim · Answered in 14s</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Daily Digest -->
+          <article class="project-card reverse reveal">
+            <div>
+              <p class="project-num">02 / Daily Digest · 2026</p>
+              <h3 class="project-title">News that filters itself</h3>
+              <p class="project-desc">An unattended fetch, rank, summarize, and email pipeline with a Pakistan-relevance
+                ranking function, live on free-tier infrastructure with per-user delivery scheduling.</p>
+              <div class="tech-tags">
+                <span>FastAPI</span>
+                <span>PostgreSQL</span>
+                <span>Gemini</span>
+                <span>Docker</span>
+                <span>JWT</span>
+              </div>
+              <div class="metric-row">
+                <div><strong>15+</strong><span>active users</span></div>
+                <div><strong>5</strong><span>delivery windows</span></div>
+                <div><strong>$0</strong><span>monthly infra cost</span></div>
+              </div>
+              <a class="btn btn-ghost" href="https://github.com/AbdullahPatti/News-Reporter" target="_blank"
+                rel="noopener">View Repository</a>
+            </div>
+            <div class="demo-window">
+              <div class="window-header">
+                <div class="window-dots"><span></span><span></span><span></span></div>
+                <span class="window-title">Daily Digest · Pipeline Dispatch</span>
+              </div>
+              <div class="window-body">
+                <div class="digest-box">
+                  <div class="digest-header">
+                    <span style="color: var(--ok); font-weight: 700;">● Dispatched 07:00 PKT</span>
+                    <span>94% Pakistan Relevance Score</span>
+                  </div>
+                  <div class="digest-item">
+                    <strong>Pakistan's AI economy is accelerating</strong>
+                    <small>Technology · Ranked #1 for your profile · 3 min read</small>
+                  </div>
+                  <div class="digest-item">
+                    <strong>What changed in today's local markets</strong>
+                    <small>Economy · State Bank monetary update · 2 min read</small>
+                  </div>
+                  <div class="digest-item">
+                    <strong>National AI Policy framework finalized</strong>
+                    <small>Policy · Automated executive brief</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: Urdu Robustness Benchmark -->
+          <article class="project-card reveal">
+            <div>
+              <p class="project-num">03 / Urdu Robustness Benchmark · 2026</p>
+              <h3 class="project-title">Where multilingual models quietly break</h3>
+              <p class="project-desc">An open 33-dataset, 288,899-example suite across eight tasks. Five foundation
+                models evaluated, a baseline-guarded robustness protocol, and 4,196 leaks removed before release.</p>
+              <div class="tech-tags">
+                <span>XLM-RoBERTa</span>
+                <span>BERT</span>
+                <span>Qwen 2.5</span>
+                <span>Mistral</span>
+                <span>Llama 3</span>
+              </div>
+              <div class="metric-row">
+                <div><strong>33</strong><span>datasets</span></div>
+                <div><strong>288k</strong><span>examples</span></div>
+                <div><strong>84.5% → 48.1%</strong><span>stability spread</span></div>
+              </div>
+              <a class="btn btn-ghost" href="https://github.com/AbdullahPatti/Urdu-Multi-Domain-Script-Research"
+                target="_blank" rel="noopener">View Repository</a>
+            </div>
+            <div class="demo-window">
+              <div class="window-header">
+                <div class="window-dots"><span></span><span></span><span></span></div>
+                <span class="window-title">Urdu Robustness Benchmark Suite</span>
+              </div>
+              <div class="window-body">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+                  <span style="font-size: 12px; font-weight: 600; color: var(--ink);">Script Evaluation</span>
+                  <span
+                    style="font-size: 11px; background: #e8f5e9; color: var(--ok); padding: 2px 8px; border-radius: 980px; font-weight: 600;">4,196
+                    Leaks Purged</span>
+                </div>
+                <div class="benchmark-rows">
+                  <div class="bm-row">
+                    <span>Sentiment</span>
+                    <div class="bm-track">
+                      <div class="bm-fill ok" style="width: 97%;"></div>
+                    </div>
+                    <strong>97%</strong>
+                  </div>
+                  <div class="bm-row">
+                    <span>Abuse</span>
+                    <div class="bm-track">
+                      <div class="bm-fill" style="width: 84%;"></div>
+                    </div>
+                    <strong>84%</strong>
+                  </div>
+                  <div class="bm-row">
+                    <span>QA Val</span>
+                    <div class="bm-track">
+                      <div class="bm-fill" style="width: 71%;"></div>
+                    </div>
+                    <strong>71%</strong>
+                  </div>
+                  <div class="bm-row">
+                    <span>Fake News</span>
+                    <div class="bm-track">
+                      <div class="bm-fill warn" style="width: 48%;"></div>
+                    </div>
+                    <strong>48%</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: WhisperBench -->
+          <article class="project-card reverse reveal">
+            <div>
+              <p class="project-num">04 / WhisperBench · 2026</p>
+              <h3 class="project-title">Where speech models mishear code-switching</h3>
+              <p class="project-desc">Whisper Tiny, Base, and Small evaluated zero-shot on 327 code-mixed Urdu-English
+                recordings from 11 speakers. Switch Point Error Rate isolates mistakes precisely at language-switch
+                boundaries.</p>
+              <div class="tech-tags">
+                <span>Whisper</span>
+                <span>FastAPI</span>
+                <span>SQLAlchemy</span>
+                <span>Audio DSP</span>
+              </div>
+              <div class="metric-row">
+                <div><strong>0.899</strong><span>zero-shot WER</span></div>
+                <div><strong>327</strong><span>recordings</span></div>
+                <div><strong>11</strong><span>speakers tested</span></div>
+              </div>
+              <a class="btn btn-ghost" href="https://github.com/AbdullahPatti/Bilingual-Whisper-Bench" target="_blank"
+                rel="noopener">View Repository</a>
+            </div>
+            <div class="demo-window">
+              <div class="window-header">
+                <div class="window-dots"><span></span><span></span><span></span></div>
+                <span class="window-title">WhisperBench · Code-Switch Alignment</span>
+              </div>
+              <div class="window-body">
+                <p style="font-size: 11px; color: var(--ink-3); margin-bottom: 8px;">Acoustic Audio Stream · 00:03.42
+                </p>
+                <svg viewBox="0 0 320 36" style="margin-bottom: 12px;">
+                  <path
+                    d="M0,18 Q10,4 20,18 T40,18 T60,6 T80,18 T100,2 T120,18 T140,30 T160,18 T180,4 T200,18 T220,10 T240,18 T260,26 T280,18 T300,8 T320,18"
+                    fill="none" stroke="#0071e3" stroke-width="2" />
+                </svg>
+                <div style="background: var(--mist); padding: 12px; border-radius: 8px; font-size: 13px;">
+                  <span style="font-weight: 600; color: var(--ink);">&ldquo;Kal <mark
+                      style="background: #e1edff; color: #0071e3; padding: 2px 4px; border-radius: 4px;">meeting</mark>
+                    <mark
+                      style="background: #e1edff; color: #0071e3; padding: 2px 4px; border-radius: 4px;">reschedule</mark>
+                    kar dein?&rdquo;</span>
+                  <p style="font-size: 11px; color: var(--ok); margin-top: 6px;">✓ Switch point boundary localized at
+                    00:01.18 · 0.899 WER</p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 5: FinSight -->
+          <article class="project-card reveal">
+            <div>
+              <p class="project-num">05 / FinSight · 2025</p>
+              <h3 class="project-title">See financial risk before it is a problem</h3>
+              <p class="project-desc">A weighted multi-factor risk engine: isolation forest, HMM behavioral states, and
+                an NLP transaction analyzer. CSV in; dashboard and PDF, CSV, Excel out.</p>
+              <div class="tech-tags">
+                <span>React</span>
+                <span>FastAPI</span>
+                <span>scikit-learn</span>
+                <span>PostgreSQL</span>
+              </div>
+              <div class="metric-row">
+                <div><strong>4</strong><span>risk bands</span></div>
+                <div><strong>5</strong><span>weighted factors</span></div>
+                <div><strong>3</strong><span>export formats</span></div>
+              </div>
+              <a class="btn btn-ghost" href="https://github.com/AbdullahPatti/FinSight-Financial-Analysis"
+                target="_blank" rel="noopener">View Repository</a>
+            </div>
+            <div class="demo-window">
+              <div class="window-header">
+                <div class="window-dots"><span></span><span></span><span></span></div>
+                <span class="window-title">FinSight Risk Dashboard</span>
+              </div>
+              <div class="window-body">
+                <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 12px;">
+                  <div>
+                    <span style="font-size: 11px; color: var(--ink-3);">Analyzed Volume</span>
+                    <h4 style="font-size: 24px; font-weight: 800; color: var(--ink);">$84,230</h4>
+                  </div>
+                  <span
+                    style="font-size: 11px; font-weight: 700; color: var(--warn); background: #ffebee; padding: 4px 8px; border-radius: 6px;">High
+                    Risk Flagged</span>
+                </div>
+                <svg viewBox="0 0 320 50" style="margin-bottom: 10px;">
+                  <path
+                    d="M0,42 L30,36 L60,40 L90,26 L120,32 L150,16 L180,22 L210,10 L240,16 L270,6 L300,14 L320,4 L320,50 L0,50 Z"
+                    fill="rgba(0,113,227,0.08)" />
+                  <path d="M0,42 L30,36 L60,40 L90,26 L120,32 L150,16 L180,22 L210,10 L240,16 L270,6 L300,14 L320,4"
+                    fill="none" stroke="#0071e3" stroke-width="2" />
+                </svg>
+                <div style="font-size: 12px; color: var(--ink-2); display: flex; justify-content: space-between;">
+                  <span>Outlier transfer detected 02:14</span>
+                  <strong style="color: var(--warn);">Isolation Forest 0.89</strong>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROCESS — Vertical Timeline with Glowing Scroll Rail ============ -->
+    <section class="section tone-mist" id="process" data-nav="Process">
+      <div class="wrap">
+        <span class="eyebrow reveal">Process</span>
+        <h2 class="reveal">From first conversation to production.</h2>
+        <p class="section-lead reveal">One disciplined thread: frame the constraint, architect data and models in
+          unison, then deploy reliable systems designed to run unattended.</p>
+
+        <div class="process-timeline" id="process-timeline">
+          <div class="process-rail" aria-hidden="true">
+            <div class="process-rail-fill" id="process-rail-fill"></div>
+          </div>
+
+          <article class="process-step-item reveal" data-step="0">
+            <div class="step-marker">01</div>
+            <div class="step-card">
+              <span class="step-phase">Phase 01 · Day 1</span>
+              <h3>Discovery</h3>
+              <p>Understand the real user bottleneck, data schemas, and non-functional constraints. Inquisitive
+                listening, not premature pitching.</p>
+            </div>
+          </article>
+
+          <article class="process-step-item reveal" data-step="1">
+            <div class="step-marker">02</div>
+            <div class="step-card">
+              <span class="step-phase">Phase 02 · Week 1</span>
+              <h3>Scope</h3>
+              <p>Written architecture document: API contracts, data pipelines, model benchmarks, and definitive
+                definitions of done.</p>
+            </div>
+          </article>
+
+          <article class="process-step-item reveal" data-step="2">
+            <div class="step-marker">03</div>
+            <div class="step-card">
+              <span class="step-phase">Phase 03 · Weeks 2 to 4</span>
+              <h3>Build</h3>
+              <p>Clean modular code, vector stores, models, and interfaces. Rapid iterations with continuous checkpoint
+                reviews.</p>
+            </div>
+          </article>
+
+          <article class="process-step-item reveal" data-step="3">
+            <div class="step-marker">04</div>
+            <div class="step-card">
+              <span class="step-phase">Phase 04 · Week 5</span>
+              <h3>Harden</h3>
+              <p>Stress testing on live distribution shifts, edge-cases, and confound audits. If it can break quietly, I
+                catch it first.</p>
+            </div>
+          </article>
+
+          <article class="process-step-item reveal" data-step="4">
+            <div class="step-marker">05</div>
+            <div class="step-card">
+              <span class="step-phase">Phase 05 · Week 6</span>
+              <h3>Ship</h3>
+              <p>Containerized, documented, and deployed with full telemetry, CI/CD pipelines, and seamless handover.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TOOLS & TECH STACK ============ -->
+    <section class="section tone-white" id="stack" data-nav="Stack">
+      <div class="wrap">
+        <span class="eyebrow reveal">Tools &amp; Technologies</span>
+        <h2 class="reveal">What I build with.</h2>
+        <p class="section-lead reveal">Production-proven technologies across machine learning, backend pipelines, and
+          modern web interfaces.</p>
+
+        <div class="stack-groups">
+          <!-- Frontend -->
+          <div class="stack-group reveal">
+            <h3>Frontend</h3>
+            <div class="tool-grid">
+              <div class="tool"><img src="https://cdn.simpleicons.org/react/61DAFB" alt="React" width="20"
+                  height="20"><span>React</span></div>
+              <div class="tool"><img src="https://cdn.simpleicons.org/typescript/3178C6" alt="TypeScript" width="20"
+                  height="20"><span>TypeScript</span></div>
+              <div class="tool"><img src="https://cdn.simpleicons.org/javascript/F7DF1E" alt="JavaScript" width="20"
+                  height="20"><span>JavaScript</span></div>
+              <div class="tool"><img src="https://cdn.simpleicons.org/tailwindcss/06B6D4" alt="Tailwind CSS" width="20"
+                  height="20"><span>Tailwind CSS</span></div>
+              <div class="tool"><img src="https://cdn.simpleicons.org/html5/E34F26" alt="HTML5" width="20"
+                  height="20"><span>HTML5</span></div>
+              <div class="tool"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                  alt="CSS3" width="20" height="20"><span>CSS3</span></div>
+            </div>
+          </div>
+
+          <!-- Backend -->
+          <div class="stack-group reveal">
+            <h3>Backend &amp; APIs</h3>
+            <div class="tool-grid">
+              <div class="tool"><img src="https://cdn.simpleicons.org/python/3776AB" alt="Python" width="20"
+                  height="20"><span>Python</span></div>
+              <div class="tool"><img src="https://cdn.simpleicons.org/fastapi/009688" alt="FastAPI" width="20"
+                  height="20"><span>FastAPI</span></div>
+              <div class="tool"><img src="https://cdn.simpleicons.org/nodedotjs/339933" alt="Node.js" width="20"
+                  height="20"><span>Node.js</span></div>
+              <div class="tool"><img src="https://cdn.simpleicons.org/express/000000" alt="Express" width="20"
+                  height="20"><span>Express</span></div>
+              <div class="tool"><img src="https://cdn.simpleicons.org/dotnet/512BD4" alt=".NET" width="20"
+                  height="20"><span>.NET Core</span></div>
+              <div class="tool"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg"
+                  alt="C#" width="20" height="20"><span>C#</span></div>
+            </div>
+          </div>
+
+          <!-- AI & ML -->
+          <div class="stack-group reveal">
+            <h3>AI &amp; Machine Learning</h3>
+            <div class="tool-grid">
+              <div class="tool"><img src="https://cdn.simpleicons.org/pytorch/EE4C2C" alt="PyTorch" width="20"
+                  height="20"><span>PyTorch</span></div>
+              <div class="tool"><img src="https://cdn.simpleicons.org/huggingface/FFD21E" alt="Transformers" width="20"
+                  height="20"><span>Transformers</span></div>
+              <div class="tool"><img src="https://cdn.simpleicons.org/tensorflow/FF6F00" alt="TensorFlow" width="20"
+                  height="20"><span>TensorFlow</span></div>
+              <div class="tool"><img src="https://cdn.simpleicons.org/scikitlearn/F7931E" alt="scikit-learn" width="20"
+                  height="20"><span>scikit-learn</span></div>
+              <div class="tool"><img src="https://cdn.simpleicons.org/langchain/1C3C3C" alt="LangChain" width="20"
+                  height="20"><span>LangChain</span></div>
+              <!-- Whisper with OpenAI logo icon, cleanly labeled "Whisper" -->
+              <div class="tool"><img src="assets/openai.svg" alt="OpenAI Logo" width="20"
+                  height="20"><span>Whisper</span></div>
+            </div>
+          </div>
+
+          <!-- Data & Infra -->
+          <div class="stack-group reveal">
+            <h3>Data &amp; Infrastructure</h3>
+            <div class="tool-grid">
+              <div class="tool"><img src="https://cdn.simpleicons.org/postgresql/4169E1" alt="PostgreSQL" width="20"
+                  height="20"><span>PostgreSQL</span></div>
+              <div class="tool"><img src="https://cdn.simpleicons.org/qdrant/DC244C" alt="Qdrant" width="20"
+                  height="20"><span>Qdrant</span></div>
+              <div class="tool"><img src="https://cdn.simpleicons.org/mongodb/47A248" alt="MongoDB" width="20"
+                  height="20"><span>MongoDB</span></div>
+              <div class="tool"><img src="https://cdn.simpleicons.org/docker/2496ED" alt="Docker" width="20"
+                  height="20"><span>Docker</span></div>
+              <div class="tool"><img src="https://cdn.simpleicons.org/git/F05032" alt="Git" width="20"
+                  height="20"><span>Git</span></div>
+              <div class="tool"><img src="https://cdn.simpleicons.org/github/181717" alt="GitHub" width="20"
+                  height="20"><span>GitHub Actions</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EDUCATION (SEPARATED) ============ -->
+    <section class="section tone-mist" id="education" data-nav="Education">
+      <div class="wrap">
+        <span class="eyebrow reveal">Academic Background</span>
+        <h2 class="reveal">Education.</h2>
+        <p class="section-lead reveal">Rigorous computer science fundamentals and engineering leadership at Pakistan's
+          premier computing university.</p>
+
+        <article class="education-card-full reveal">
+          <div class="uni-header">
+            <div class="uni-crest">
+              <img src="Fast-University-Logo.png" alt="FAST-NUCES University Crest" width="52" height="52"
+                onerror="this.onerror=null; this.src='assets/fast-nuces.svg';">
+            </div>
+            <div class="uni-title">
+              <h3>FAST-NUCES</h3>
+              <p>National University of Computer &amp; Emerging Sciences, Lahore</p>
+            </div>
+          </div>
+          <div class="degree-box">
+            <strong>Bachelor of Science in Computer Science (BSCS)</strong>
+            <span>August 2023 &ndash; Expected June 2027 · Final-Year Undergraduate</span>
+          </div>
+          <p style="font-size: 15px; font-weight: 700; color: var(--ink); margin-bottom: 14px;">Key Highlights &amp;
+            Leadership:</p>
+          <ul class="honors-list">
+            <li><strong>Final Year Project (FYP):</strong> Multi-domain, bi-script fake news detection and deepfake
+              audio verification system for low-resource languages.</li>
+            <li><strong>Team Lead &amp; Scrum Master:</strong> Directing cross-functional semester sprint teams across
+              data pipelines and full-stack deployments.</li>
+            <li><strong>Leadership:</strong> Deputy Head of PR, FAST Business Club; Executive Media Officer, SOFTEC
+              (Pakistan's largest student IT Olympiad).</li>
+            <li><strong>Competitive Honors:</strong> SQL Query Master champion, ACM Speed Programming competitor, and
+              technical cinematography recognitions.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ CERTIFICATIONS (SEPARATED) ============ -->
+    <section class="section tone-white" id="certifications" data-nav="Certifications">
+      <div class="wrap">
+        <span class="eyebrow reveal">Continuous Learning</span>
+        <h2 class="reveal">Certifications.</h2>
+        <p class="section-lead reveal">Verified professional credentials in machine learning, generative AI, LLM
+          engineering, and data analysis.</p>
+
+        <div class="cert-grid">
+          <!-- Udemy AI Engineer -->
+          <a class="cert-card-link reveal" href="https://www.udemy.com/" target="_blank" rel="noopener">
+            <div class="cert-top">
+              <span class="cert-issuer-badge">Udemy</span>
+              <span class="cert-verify-link">Verify Credential ↗</span>
+            </div>
+            <h3>AI Engineer Core Track: LLM Engineering, RAG &amp; Agents</h3>
+            <p>Comprehensive LLM engineering, fine-tuning with QLoRA, advanced RAG architectures, and autonomous
+              multi-agent systems.</p>
+            <div class="cert-skills">
+              <span>LLMs</span>
+              <span>RAG</span>
+              <span>QLoRA</span>
+              <span>Agents</span>
+            </div>
+          </a>
+
+          <!-- IBM ML -->
+          <a class="cert-card-link reveal" href="https://www.coursera.org/learn/machine-learning-with-python"
+            target="_blank" rel="noopener">
+            <div class="cert-top">
+              <span class="cert-issuer-badge">IBM</span>
+              <span class="cert-verify-link">Verify Credential ↗</span>
+            </div>
+            <h3>Machine Learning with Python</h3>
+            <p>Supervised and unsupervised algorithms, regression, classification, clustering, and scikit-learn
+              statistical pipelines.</p>
+            <div class="cert-skills">
+              <span>scikit-learn</span>
+              <span>Regression</span>
+              <span>Classification</span>
+            </div>
+          </a>
+
+          <!-- Microsoft Data Analysis -->
+          <a class="cert-card-link reveal" href="https://learn.microsoft.com/training/" target="_blank" rel="noopener">
+            <div class="cert-top">
+              <span class="cert-issuer-badge">Microsoft</span>
+              <span class="cert-verify-link">Verify Credential ↗</span>
+            </div>
+            <h3>Data Analysis and Visualization with Python</h3>
+            <p>Advanced data wrangling, exploratory data analysis, statistical modeling, and visualization libraries.
+            </p>
+            <div class="cert-skills">
+              <span>Pandas</span>
+              <span>NumPy</span>
+              <span>Data Visualization</span>
+            </div>
+          </a>
+
+          <!-- Google Gen AI -->
+          <a class="cert-card-link reveal" href="https://www.cloudskillsboost.google/" target="_blank" rel="noopener">
+            <div class="cert-top">
+              <span class="cert-issuer-badge">Google Cloud</span>
+              <span class="cert-verify-link">Verify Credential ↗</span>
+            </div>
+            <h3>Introduction to Generative AI</h3>
+            <p>Foundation models, attention mechanisms, large language model architectures, and ethical AI deployment.
+            </p>
+            <div class="cert-skills">
+              <span>Generative AI</span>
+              <span>Transformers</span>
+              <span>Ethics</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT & CLICK-TO-COPY ============ -->
+    <section class="section tone-mist" id="contact" data-nav="Contact">
+      <div class="wrap">
+        <div class="contact-box">
+          <span class="eyebrow reveal">Get in Touch</span>
+          <h2 class="reveal">Let's build something exceptional.</h2>
+          <p class="section-lead reveal" style="margin-inline: auto;">Open to research collaborations, AI/ML
+            engineering, forward-deployed positions, and ambitious software builds.</p>
+
+          <!-- Formspree Contact Form -->
+          <form class="contact-form reveal" id="contact-form" action="https://formspree.io/f/mvkgzpqr" method="POST">
+            <input type="text" name="_gotcha" class="hp" tabindex="-1" autocomplete="off">
+            <div class="form-row">
+              <div>
+                <label for="form-name">Your Name</label>
+                <input type="text" id="form-name" name="name" placeholder="Name" required>
+              </div>
+              <div>
+                <label for="form-email">Your Email</label>
+                <input type="email" id="form-email" name="email" placeholder="name@domain.com" required>
+              </div>
+            </div>
+            <div>
+              <label for="form-message">Message</label>
+              <textarea id="form-message" name="message" rows="4" placeholder="Tell me about your project or role..."
+                required></textarea>
+            </div>
+            <div
+              style="margin-top: 18px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px;">
+              <button type="submit" class="btn btn-solid">Send message</button>
+              <span class="form-status" id="form-status" role="status"
+                style="font-size: 14px; font-weight: 500; color: var(--blue);"></span>
+            </div>
+          </form>
+
+          <!-- Direct Contact & Click-to-Copy Button -->
+          <div class="contact-direct reveal">
+            <button type="button" class="copy-email-btn" id="copy-email-btn" title="Click to copy email address">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" aria-hidden="true">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+              </svg>
+              <span id="copy-email-text">abdullaharoon.work@gmail.com</span>
+            </button>
+            <span class="copy-hint">Click email address to copy to clipboard</span>
+            <a class="phone-link" href="tel:+923060590604">+92 306 0590604</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ TOAST NOTIFICATION ============ -->
+  <div class="toast" id="copy-toast" role="alert" aria-live="polite">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#34c759" stroke-width="3" stroke-linecap="round"
+      stroke-linejoin="round">
+      <polyline points="20 6 9 17 4 12" />
+    </svg>
+    <span id="toast-message">Email copied to clipboard!</span>
+  </div>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="wrap">
+      <span id="footer-year">&copy; 2026 Muhammad Abdullah Haroon</span>
+      <span>FAST-NUCES · Lahore, Pakistan</span>
+    </div>
+  </footer>
+
+  <script src="js/site.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+:root {
+  --bg: #11110f; --bg-card: #1a1a17; --bg-elevated: #24241f;
+  --text: #f4f7ef; --text-muted: #c4cddd; --text-faint: #90a0b8;
+  --accent: #d8ff68; --accent-soft: rgba(216, 255, 104, .14);
+  --signal: #62d7bd; --danger: #ff7b68; --border: #35352e; --border-strong: #5b5c50;
+  --font-display: "Fraunces", Georgia, serif;
+  --font-ui: "Gotham", Arial, sans-serif; --font-mono: "Gotham", monospace;
+  --font-voice: "Gazpacho", Georgia, serif;
+  --font-editorial: "Gazpacho", Georgia, serif;
+  --font-sans: "Gotham", Arial, sans-serif;
+  --radius: 12px; --radius-lg: 20px;
+  --ease: cubic-bezier(.22, .61, .36, 1);
+}
+@font-face { font-family: "Gazpacho"; src: url("../fonts/Gazpacho/Gazpacho Heavy.otf") format("opentype"); font-weight: 700 900; font-display: swap; }
+@font-face { font-family: "Gazpacho"; src: url("../fonts/Gazpacho/Gazpacho.otf") format("opentype"); font-weight: 400 600; font-display: swap; }
+@font-face { font-family: "Gazpacho"; src: url("../fonts/Gazpacho/Gazpacho Italic Regular Italic.otf") format("opentype"); font-weight: 400; font-style: italic; font-display: swap; }
+@font-face { font-family: "Provicali"; src: url("../untitled folder/Provicali.otf") format("opentype"); font-weight: 400; font-display: swap; }
+@font-face { font-family: "Gotham"; src: url("../fonts/Gotham/GothamBook.ttf") format("truetype"); font-weight: 400; font-display: swap; }
+@font-face { font-family: "Gotham"; src: url("../fonts/Gotham/GothamMedium.ttf") format("truetype"); font-weight: 500 700; font-display: swap; }
