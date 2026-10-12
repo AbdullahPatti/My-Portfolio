@@ -20,7 +20,7 @@ Open `index.html` in a browser, or serve the folder with any static server.
 The hero uses **`Abdullah.jpg`** from the project root. Keep this filename (a portrait-oriented image works best, roughly 4:5). If the image cannot load, the site falls back to a clean monogram.
 
 ### 2. Your résumé
-Keep your résumé PDF as `CV.pdf` in the project root. Every résumé link in the site points to it.
+Keep your résumé PDF as `Abdullah_Haroon_CV.pdf` in the project root. Every résumé link in the site points to it.
 
 ### 3. Turn on the contact form
 The Contact section now has a real form that emails you directly, not just a mailto link. It's wired to Formspree (formspree.io), free for personal use:

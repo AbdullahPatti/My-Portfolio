@@ -1,1 +1,39 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 260" role="img" aria-labelledby="title desc"><title id="title">Daily Digest automation pipeline</title><desc id="desc">News sources are ranked and summarized into a personalized briefing.</desc><rect width="720" height="260" rx="18" fill="#fff8f1"/><g fill="#fff" stroke="#e4d8cc"><rect x="25" y="52" width="125" height="45" rx="10"/><rect x="25" y="108" width="125" height="45" rx="10"/><rect x="25" y="164" width="125" height="45" rx="10"/></g><g stroke="#c2b5aa" stroke-width="5"><path d="M45 72h76M45 128h57M45 184h84"/></g><text x="30" y="35" font-family="Arial,sans-serif" font-size="11" fill="#111113">MANY SOURCES</text><path d="M150 130h85" stroke="#ef684f" stroke-width="4" stroke-dasharray="4 7"/><rect x="235" y="74" width="140" height="112" rx="18" fill="#111113"/><text x="263" y="112" fill="#fff" font-family="Arial,sans-serif" font-size="12">RANK</text><path d="M263 133h82M263 150h60" stroke="#a9a9b5" stroke-width="5" stroke-linecap="round"/><circle cx="351" cy="160" r="8" fill="#ef684f"/><path d="M375 130h65" stroke="#ef684f" stroke-width="4"/><rect x="440" y="48" width="245" height="164" rx="18" fill="#fff" stroke="#e4d8cc"/><text x="466" y="78" font-family="Arial,sans-serif" font-size="12" fill="#111113">DAILY BRIEF</text><path d="M466 104h175M466 122h140M466 140h185M466 158h122M466 176h165" stroke="#cfc2b6" stroke-width="6" stroke-linecap="round"/><circle cx="650" cy="78" r="9" fill="#13a878"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 500" role="img" aria-labelledby="t d">
+<title id="t">Daily Digest automated news briefing</title>
+<desc id="d">A colourful news pipeline (fetch, rank, summarize, email) feeding a 07:00 brief with technology, economy and policy stories, a 94 percent Pakistan-relevance ring, 15 plus active users and zero monthly infrastructure cost.</desc>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#f2f2f5"/></linearGradient>
+  <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#0071e3"/><stop offset="1" stop-color="#5856d6"/></linearGradient>
+  <linearGradient id="accentV" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#0071e3"/><stop offset="1" stop-color="#5856d6"/></linearGradient>
+  <linearGradient id="sun" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ff9500"/><stop offset="1" stop-color="#ff2d55"/></linearGradient>
+  <linearGradient id="fresh" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#34c759"/><stop offset="1" stop-color="#30b0c7"/></linearGradient>
+  <filter id="sh" x="-10%" y="-10%" width="120%" height="130%"><feDropShadow dx="0" dy="6" stdDeviation="9" flood-color="#000" flood-opacity="0.07"/></filter>
+  <marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 1 L9 5 L0 9 z" fill="#a1a1a6"/></marker>
+</defs>
+<style>
+  text { font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Inter, Helvetica, Arial, sans-serif; fill: #1d1d1f; }
+  .k { font-size: 14px; font-weight: 600; letter-spacing: .08em; fill: #6e6e73; }
+  .h { font-size: 27px; font-weight: 700; letter-spacing: -.02em; }
+  .s { font-size: 15px; fill: #6e6e73; }
+  .b { font-weight: 700; }
+  .ur { font-family: 'Noto Nastaliq Urdu', 'Jameel Noori Nastaleeq', 'Segoe UI', Tahoma, serif; }
+</style>
+<rect width="600" height="500" fill="url(#bg)"/>
+<text x="36" y="50" class="k">DAILY DIGEST · AUTOMATED BRIEFING</text>
+<text x="36" y="86" class="h">Your news, already filtered</text>
+
+<rect x="36" y="104" width="120" height="40" rx="20" fill="#0071e3"/><text x="96" y="129" font-size="15" font-weight="700" text-anchor="middle" style="fill:#ffffff">Fetch</text><line x1="158" x2="170" y1="124" y2="124" stroke="#a1a1a6" stroke-width="1.6" marker-end="url(#arr)"/><rect x="172" y="104" width="120" height="40" rx="20" fill="#5856d6"/><text x="232" y="129" font-size="15" font-weight="700" text-anchor="middle" style="fill:#ffffff">Rank</text><line x1="294" x2="306" y1="124" y2="124" stroke="#a1a1a6" stroke-width="1.6" marker-end="url(#arr)"/><rect x="308" y="104" width="120" height="40" rx="20" fill="#ff9500"/><text x="368" y="129" font-size="15" font-weight="700" text-anchor="middle" style="fill:#ffffff">Summarize</text><line x1="430" x2="442" y1="124" y2="124" stroke="#a1a1a6" stroke-width="1.6" marker-end="url(#arr)"/><rect x="444" y="104" width="120" height="40" rx="20" fill="#34c759"/><text x="504" y="129" font-size="15" font-weight="700" text-anchor="middle" style="fill:#ffffff">Email</text>
+<rect x="36" y="160" width="350" height="304" rx="18" fill="#ffffff" stroke="#e5e5ea" filter="url(#sh)"/>
+<circle cx="60" cy="190" r="10" fill="url(#sun)"/>
+<text x="78" y="196" font-size="16" font-weight="700" text-anchor="start" style="fill:#1d1d1f">Today's brief</text>
+<circle cx="292" cy="190" r="5" fill="#34c759"/><text x="302" y="195" font-size="14" font-weight="700" text-anchor="start" style="fill:#248a3d">07:00</text>
+<rect x="54" y="214" width="4" height="64" rx="2" fill="#0071e3"/><rect x="70" y="214" width="90" height="24" rx="12" fill="#e8f1fd"/><text x="115.0" y="231" font-size="12" font-weight="700" text-anchor="middle" style="fill:#0071e3">Technology</text><text x="70" y="260" font-size="15" font-weight="700" text-anchor="start" style="fill:#1d1d1f">Pakistan's AI economy accelerates</text><text x="70" y="278" font-size="13" font-weight="400" text-anchor="start" style="fill:#6e6e73">3 min read</text><rect x="54" y="296" width="4" height="64" rx="2" fill="#248a3d"/><rect x="70" y="296" width="67" height="24" rx="12" fill="#e6f6ea"/><text x="103.6" y="313" font-size="12" font-weight="700" text-anchor="middle" style="fill:#248a3d">Economy</text><text x="70" y="342" font-size="15" font-weight="700" text-anchor="start" style="fill:#1d1d1f">What changed in local markets</text><text x="70" y="360" font-size="13" font-weight="400" text-anchor="start" style="fill:#6e6e73">2 min read</text><rect x="54" y="378" width="4" height="64" rx="2" fill="#5856d6"/><rect x="70" y="378" width="60" height="24" rx="12" fill="#efeefe"/><text x="99.8" y="395" font-size="12" font-weight="700" text-anchor="middle" style="fill:#5856d6">Policy</text><text x="70" y="424" font-size="15" font-weight="700" text-anchor="start" style="fill:#1d1d1f">National AI policy finalized</text><text x="70" y="442" font-size="13" font-weight="400" text-anchor="start" style="fill:#6e6e73">Executive brief</text>
+<rect x="400" y="160" width="164" height="150" rx="18" fill="#ffffff" stroke="#e5e5ea" filter="url(#sh)"/>
+<circle cx="482" cy="226" r="40" fill="none" stroke="#ececf0" stroke-width="12"/>
+<path d="M482.0 186.0 A40 40 0 1 1 467.3 188.8" stroke="url(#fresh)" stroke-width="12" stroke-linecap="round" fill="none"/>
+<text x="482" y="233" font-size="20" font-weight="700" text-anchor="middle" style="fill:#1d1d1f">94%</text>
+<text x="482" y="292" font-size="13" font-weight="400" text-anchor="middle" style="fill:#6e6e73">Pakistan relevance</text>
+<rect x="400" y="324" width="164" height="140" rx="18" fill="#ffffff" stroke="#e5e5ea" filter="url(#sh)"/>
+<text x="420" y="362" font-size="24" font-weight="700" text-anchor="start" style="fill:#0071e3">15+</text><text x="420" y="382" font-size="13" font-weight="400" text-anchor="start" style="fill:#6e6e73">active users</text>
+<text x="420" y="422" font-size="24" font-weight="700" text-anchor="start" style="fill:#248a3d">$0</text><text x="420" y="442" font-size="13" font-weight="400" text-anchor="start" style="fill:#6e6e73">monthly infra</text>
+</svg>

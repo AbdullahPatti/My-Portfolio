@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 500" role="img" aria-labelledby="t d">
+<title id="t">Sachai Check: Urdu fake-news and deepfake-audio verification</title>
+<desc id="d">Two pipelines: Urdu news is transliterated by an LLM and checked by a cross-domain fake-news classifier; voice clips go to a deepfake-audio detector. An LLM judge returns a verdict with a confidence score and cited evidence.</desc>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#f2f2f5"/></linearGradient>
+  <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#0071e3"/><stop offset="1" stop-color="#5856d6"/></linearGradient>
+  <linearGradient id="accentV" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#0071e3"/><stop offset="1" stop-color="#5856d6"/></linearGradient>
+  <linearGradient id="sun" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ff9500"/><stop offset="1" stop-color="#ff2d55"/></linearGradient>
+  <linearGradient id="fresh" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#34c759"/><stop offset="1" stop-color="#30b0c7"/></linearGradient>
+  <filter id="sh" x="-10%" y="-10%" width="120%" height="130%"><feDropShadow dx="0" dy="6" stdDeviation="9" flood-color="#000" flood-opacity="0.07"/></filter>
+  <marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 1 L9 5 L0 9 z" fill="#a1a1a6"/></marker>
+</defs>
+<style>
+  text { font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Inter, Helvetica, Arial, sans-serif; fill: #1d1d1f; }
+  .k { font-size: 14px; font-weight: 600; letter-spacing: .08em; fill: #6e6e73; }
+  .h { font-size: 27px; font-weight: 700; letter-spacing: -.02em; }
+  .s { font-size: 15px; fill: #6e6e73; }
+  .b { font-weight: 700; }
+  .ur { font-family: 'Noto Nastaliq Urdu', 'Jameel Noori Nastaleeq', 'Segoe UI', Tahoma, serif; }
+</style>
+<rect width="600" height="500" fill="url(#bg)"/>
+<text x="36" y="50" class="k">FINAL YEAR PROJECT · ONGOING</text>
+<text x="36" y="86" class="h">Sachai Check</text>
+<text x="564" y="86" text-anchor="end" font-size="32" class="ur" style="fill:#0071e3">سچائی</text>
+<rect x="36" y="104" width="364" height="150" rx="18" fill="#ffffff" stroke="#e5e5ea" filter="url(#sh)"/>
+<text x="54" y="132" font-size="13" font-weight="700" text-anchor="start" style="fill:#6e6e73">TEXT</text>
+<rect x="52" y="150" width="100" height="62" rx="12" fill="#f5f5f7" stroke="#e5e5ea"/><text x="102.0" y="177" font-size="14" font-weight="700" text-anchor="middle" style="fill:#1d1d1f">Urdu news</text><text x="102.0" y="197" font-size="13" font-weight="400" text-anchor="middle" style="fill:#6e6e73">2 scripts</text>
+<line x1="152" x2="168" y1="181" y2="181" stroke="#a1a1a6" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="172" y="150" width="100" height="62" rx="12" fill="#f5f5f7" stroke="#e5e5ea"/><text x="222.0" y="177" font-size="14" font-weight="700" text-anchor="middle" style="fill:#1d1d1f">LLM</text><text x="222.0" y="197" font-size="13" font-weight="400" text-anchor="middle" style="fill:#6e6e73">transliterate</text>
+<line x1="272" x2="288" y1="181" y2="181" stroke="#a1a1a6" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="292" y="150" width="100" height="62" rx="12" fill="#eef4fd" stroke="#cfe2fb"/><text x="342.0" y="177" font-size="14" font-weight="700" text-anchor="middle" style="fill:#1d1d1f">Fake-news</text><text x="342.0" y="197" font-size="13" font-weight="400" text-anchor="middle" style="fill:#6e6e73">classifier</text>
+<rect x="36" y="270" width="364" height="150" rx="18" fill="#ffffff" stroke="#e5e5ea" filter="url(#sh)"/>
+<text x="54" y="298" font-size="13" font-weight="700" text-anchor="start" style="fill:#6e6e73">AUDIO</text>
+<rect x="52" y="312" width="220" height="62" rx="12" fill="#f5f5f7" stroke="#e5e5ea"/>
+<rect x="64" y="341.0" width="3.5" height="4.0" rx="1.75" fill="#0071e3"/><rect x="71" y="327.2" width="3.5" height="31.5" rx="1.75" fill="#0071e3"/><rect x="78" y="322.0" width="3.5" height="41.9" rx="1.75" fill="#0071e3"/><rect x="85" y="328.7" width="3.5" height="28.7" rx="1.75" fill="#0071e3"/><rect x="92" y="339.1" width="3.5" height="7.9" rx="1.75" fill="#0071e3"/><rect x="99" y="326.0" width="3.5" height="33.9" rx="1.75" fill="#0071e3"/><rect x="106" y="322.3" width="3.5" height="41.3" rx="1.75" fill="#0071e3"/><rect x="113" y="330.3" width="3.5" height="25.5" rx="1.75" fill="#0071e3"/><rect x="120" y="337.2" width="3.5" height="11.6" rx="1.75" fill="#0071e3"/><rect x="127" y="325.1" width="3.5" height="35.8" rx="1.75" fill="#0071e3"/><rect x="134" y="322.9" width="3.5" height="40.2" rx="1.75" fill="#0071e3"/><rect x="141" y="332.0" width="3.5" height="22.0" rx="1.75" fill="#0071e3"/><rect x="148" y="335.4" width="3.5" height="15.1" rx="1.75" fill="#0071e3"/><rect x="155" y="324.4" width="3.5" height="37.2" rx="1.75" fill="#0071e3"/><rect x="162" y="323.8" width="3.5" height="38.5" rx="1.75" fill="#5856d6"/><rect x="169" y="333.2" width="3.5" height="19.6" rx="1.75" fill="#5856d6"/><rect x="176" y="333.8" width="3.5" height="18.3" rx="1.75" fill="#5856d6"/><rect x="183" y="324.0" width="3.5" height="37.9" rx="1.75" fill="#5856d6"/><rect x="190" y="324.8" width="3.5" height="36.3" rx="1.75" fill="#5856d6"/><rect x="197" y="332.8" width="3.5" height="20.4" rx="1.75" fill="#5856d6"/><rect x="204" y="332.5" width="3.5" height="21.1" rx="1.75" fill="#5856d6"/><rect x="211" y="324.0" width="3.5" height="38.1" rx="1.75" fill="#5856d6"/><rect x="218" y="326.1" width="3.5" height="33.9" rx="1.75" fill="#5856d6"/><rect x="225" y="332.5" width="3.5" height="21.0" rx="1.75" fill="#5856d6"/><rect x="232" y="331.3" width="3.5" height="23.4" rx="1.75" fill="#5856d6"/><rect x="239" y="324.1" width="3.5" height="37.7" rx="1.75" fill="#5856d6"/><rect x="246" y="327.4" width="3.5" height="31.1" rx="1.75" fill="#5856d6"/>
+<line x1="272" x2="288" y1="343" y2="343" stroke="#a1a1a6" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="292" y="312" width="100" height="62" rx="12" fill="#eef4fd" stroke="#cfe2fb"/><text x="342.0" y="339" font-size="14" font-weight="700" text-anchor="middle" style="fill:#1d1d1f">Deepfake</text><text x="342.0" y="359" font-size="13" font-weight="400" text-anchor="middle" style="fill:#6e6e73">detector</text>
+<path d="M400 181 C410 181 410 220 418 226" stroke="#a1a1a6" stroke-width="1.6" fill="none" marker-end="url(#arr)"/>
+<path d="M400 343 C410 343 410 300 418 294" stroke="#a1a1a6" stroke-width="1.6" fill="none" marker-end="url(#arr)"/>
+<rect x="420" y="104" width="144" height="316" rx="18" fill="#ffffff" stroke="#e5e5ea" filter="url(#sh)"/>
+<text x="436" y="132" font-size="13" font-weight="700" text-anchor="start" style="fill:#6e6e73">LLM JUDGE</text>
+<text x="436" y="166" font-size="14" font-weight="400" text-anchor="start" style="fill:#6e6e73">Verdict</text>
+<rect x="436" y="176" width="112" height="30" rx="15" fill="#ffe5e3"/>
+<text x="492" y="196" font-size="14" font-weight="700" text-anchor="middle" style="fill:#d70015">Likely fake</text>
+<text x="436" y="244" font-size="14" font-weight="400" text-anchor="start" style="fill:#6e6e73">Confidence</text>
+<rect x="436" y="254" width="112" height="9" rx="4.5" fill="#ececf0"/>
+<rect x="436" y="254" width="90" height="9" rx="4.5" fill="url(#accent)"/>
+<text x="436" y="304" font-size="14" font-weight="400" text-anchor="start" style="fill:#6e6e73">Evidence</text>
+<rect x="436" y="316" width="3" height="58" rx="1.5" fill="#0071e3"/>
+<rect x="448" y="318" width="96" height="7" rx="3.5" fill="#e5e5ea"/><rect x="448" y="334" width="100" height="7" rx="3.5" fill="#e5e5ea"/><rect x="448" y="350" width="80" height="7" rx="3.5" fill="#e5e5ea"/><rect x="448" y="366" width="92" height="7" rx="3.5" fill="#e5e5ea"/>
+<rect x="36" y="446" width="74" height="30" rx="15" fill="#fff" stroke="#d2d2d7"/><text x="73.0" y="466" font-size="13" font-weight="600" text-anchor="middle" style="fill:#1d1d1f">Python</text><rect x="118" y="446" width="80" height="30" rx="15" fill="#fff" stroke="#d2d2d7"/><text x="158.0" y="466" font-size="13" font-weight="600" text-anchor="middle" style="fill:#1d1d1f">FastAPI</text><rect x="206" y="446" width="68" height="30" rx="15" fill="#fff" stroke="#d2d2d7"/><text x="240.0" y="466" font-size="13" font-weight="600" text-anchor="middle" style="fill:#1d1d1f">React</text><rect x="282" y="446" width="116" height="30" rx="15" fill="#fff" stroke="#d2d2d7"/><text x="340.0" y="466" font-size="13" font-weight="600" text-anchor="middle" style="fill:#1d1d1f">Hugging Face</text><rect x="406" y="446" width="104" height="30" rx="15" fill="#fff" stroke="#d2d2d7"/><text x="458.0" y="466" font-size="13" font-weight="600" text-anchor="middle" style="fill:#1d1d1f">PostgreSQL</text>
+</svg>

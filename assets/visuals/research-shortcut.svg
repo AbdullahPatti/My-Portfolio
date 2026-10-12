@@ -1,183 +1,40 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 340" role="img" aria-labelledby="sc-title sc-desc">
-  <title id="sc-title">Benchmark Shortcut Learning &amp; Reversed Transfer Collapse</title>
-  <desc id="sc-desc">Visualization of reversed transfer failure from 0.771 down to 0.005 macro-F1 caused by a 3.4x token length confound shortcut in NLP benchmarks.</desc>
-  <defs>
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap');
-      text {
-        font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Inter", "Helvetica Neue", sans-serif;
-        -webkit-font-smoothing: antialiased;
-      }
-    </style>
-    <linearGradient id="sc-bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#ffffff"/>
-      <stop offset="100%" stop-color="#f5f5f7"/>
-    </linearGradient>
-    <linearGradient id="sc-header-grad" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#5856d6"/>
-      <stop offset="100%" stop-color="#ff3b30"/>
-    </linearGradient>
-    <linearGradient id="sc-bar-red" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#ff3b30"/>
-      <stop offset="100%" stop-color="#ff6961"/>
-    </linearGradient>
-    <linearGradient id="sc-bar-blue" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#0071e3"/>
-      <stop offset="100%" stop-color="#409cff"/>
-    </linearGradient>
-    <linearGradient id="sc-bar-green" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#34c759"/>
-      <stop offset="100%" stop-color="#30d158"/>
-    </linearGradient>
-    <filter id="sc-card-shadow" x="-5%" y="-5%" width="112%" height="118%" filterUnits="userSpaceOnUse">
-      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000000" flood-opacity="0.04"/>
-    </filter>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 500" role="img" aria-labelledby="t d">
+<title id="t">When benchmarks mislead: reversed transfer and shortcut learning</title>
+<desc id="d">Fake Urdu articles run 3.4 times longer than real ones. Zero-shot transfer reaches 0.771 macro-F1 one way and collapses to 0.005 reversed; the same shortcut appears in Urdu fake news, English fake news and sarcasm detection.</desc>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#f2f2f5"/></linearGradient>
+  <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#0071e3"/><stop offset="1" stop-color="#5856d6"/></linearGradient>
+  <linearGradient id="accentV" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#0071e3"/><stop offset="1" stop-color="#5856d6"/></linearGradient>
+  <linearGradient id="sun" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ff9500"/><stop offset="1" stop-color="#ff2d55"/></linearGradient>
+  <linearGradient id="fresh" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#34c759"/><stop offset="1" stop-color="#30b0c7"/></linearGradient>
+  <filter id="sh" x="-10%" y="-10%" width="120%" height="130%"><feDropShadow dx="0" dy="6" stdDeviation="9" flood-color="#000" flood-opacity="0.07"/></filter>
+  <marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 1 L9 5 L0 9 z" fill="#a1a1a6"/></marker>
+</defs>
+<style>
+  text { font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Inter, Helvetica, Arial, sans-serif; fill: #1d1d1f; }
+  .k { font-size: 14px; font-weight: 600; letter-spacing: .08em; fill: #6e6e73; }
+  .h { font-size: 27px; font-weight: 700; letter-spacing: -.02em; }
+  .s { font-size: 15px; fill: #6e6e73; }
+  .b { font-weight: 700; }
+  .ur { font-family: 'Noto Nastaliq Urdu', 'Jameel Noori Nastaleeq', 'Segoe UI', Tahoma, serif; }
+</style>
+<rect width="600" height="500" fill="url(#bg)"/>
+<text x="36" y="50" class="k">CROSS-DATASET TRANSFER</text>
+<text x="36" y="86" class="h">It learned length, not deception</text>
 
-  <!-- Canvas Surface -->
-  <rect width="880" height="340" rx="22" fill="url(#sc-bg)" stroke="#d2d2d7" stroke-width="1"/>
-
-  <!-- Left Column: Confound Analysis (Width: 240, x: 28) -->
-  <g transform="translate(28, 26)">
-    <text x="0" y="0" font-size="11" font-weight="700" letter-spacing="0.08em" fill="#86868b" text-transform="uppercase">Confound Analysis</text>
-
-    <!-- Card 1: Token Length Ratio -->
-    <g transform="translate(0, 14)" filter="url(#sc-card-shadow)">
-      <rect width="240" height="118" rx="14" fill="#ffffff" stroke="#e5e5ea" stroke-width="1"/>
-      <text x="16" y="24" font-size="12" font-weight="700" fill="#1d1d1f">Token Length Ratio Disparity</text>
-      
-      <!-- Fake News length bar -->
-      <g transform="translate(16, 38)">
-        <text x="0" y="0" font-size="10.5" font-weight="600" fill="#ff3b30">Fake News: 342 tokens (avg)</text>
-        <rect x="0" y="6" width="208" height="8" rx="4" fill="#f0f0f2"/>
-        <rect x="0" y="6" width="202" height="8" rx="4" fill="url(#sc-bar-red)"/>
-      </g>
-
-      <!-- Real News length bar -->
-      <g transform="translate(16, 68)">
-        <text x="0" y="0" font-size="10.5" font-weight="600" fill="#0071e3">Real News: 101 tokens (avg)</text>
-        <rect x="0" y="6" width="208" height="8" rx="4" fill="#f0f0f2"/>
-        <rect x="0" y="6" width="60" height="8" rx="4" fill="url(#sc-bar-blue)"/>
-      </g>
-
-      <!-- Disparity Callout Pill -->
-      <g transform="translate(16, 94)">
-        <rect width="208" height="16" rx="8" fill="#ffebee"/>
-        <text x="104" y="11.5" font-size="9.5" font-weight="700" fill="#ff3b30" text-anchor="middle">3.4× Disparity: Exploited as Shortcut Cue</text>
-      </g>
-    </g>
-
-    <!-- Card 2: Tested Domains -->
-    <g transform="translate(0, 144)" filter="url(#sc-card-shadow)">
-      <rect width="240" height="120" rx="14" fill="#ffffff" stroke="#e5e5ea" stroke-width="1"/>
-      <text x="16" y="24" font-size="12" font-weight="700" fill="#1d1d1f">Tested Benchmark Domains</text>
-      
-      <g transform="translate(16, 38)">
-        <circle cx="6" cy="5" r="3.5" fill="#0071e3"/>
-        <text x="16" y="9" font-size="11" font-weight="500" fill="#1d1d1f">Urdu Fake News <tspan fill="#86868b">(PK News Corpus)</tspan></text>
-      </g>
-      
-      <g transform="translate(16, 60)">
-        <circle cx="6" cy="5" r="3.5" fill="#5856d6"/>
-        <text x="16" y="9" font-size="11" font-weight="500" fill="#1d1d1f">English Fake News <tspan fill="#86868b">(ISOT Dataset)</tspan></text>
-      </g>
-      
-      <g transform="translate(16, 82)">
-        <circle cx="6" cy="5" r="3.5" fill="#ff9500"/>
-        <text x="16" y="9" font-size="11" font-weight="500" fill="#1d1d1f">Sarcasm &amp; Irony <tspan fill="#86868b">(SemEval 2018)</tspan></text>
-      </g>
-      
-      <text x="16" y="110" font-size="9.5" font-weight="600" fill="#0071e3">Cross-corpus zero-shot evaluation</text>
-    </g>
-  </g>
-
-  <!-- Flow Lines (Col 1 to Col 2) -->
-  <path d="M268 99 C296 99, 298 73, 326 73" fill="none" stroke="#34c759" stroke-width="2" stroke-dasharray="4 4"/>
-  <path d="M268 204 C296 204, 298 203, 326 203" fill="none" stroke="#ff3b30" stroke-width="2" stroke-dasharray="4 4"/>
-
-  <!-- Center Column: Transfer Direction Test (Width: 232, x: 326) -->
-  <g transform="translate(326, 26)">
-    <text x="0" y="0" font-size="11" font-weight="700" letter-spacing="0.08em" fill="#86868b" text-transform="uppercase">Transfer Direction Test</text>
-
-    <!-- Card 1: Forward Direction -->
-    <g transform="translate(0, 14)" filter="url(#sc-card-shadow)">
-      <rect width="232" height="118" rx="14" fill="#ffffff" stroke="#e5e5ea" stroke-width="1"/>
-      <circle cx="26" cy="25" r="11" fill="#e8f5e9"/>
-      <path d="M21 25l3.5 3.5 7-7" fill="none" stroke="#34c759" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-      <text x="45" y="23" font-size="12" font-weight="700" fill="#1d1d1f">Train → Test (Forward)</text>
-      <text x="45" y="36" font-size="10" fill="#6e6e73">Exploits length cue</text>
-      
-      <text x="18" y="74" font-size="28" font-weight="800" fill="#34c759" letter-spacing="-0.03em">0.771</text>
-      <text x="96" y="68" font-size="11" font-weight="600" fill="#86868b">macro-F1</text>
-      
-      <rect x="156" y="52" width="62" height="22" rx="11" fill="#e8f5e9"/>
-      <text x="187" y="67" font-size="11" font-weight="700" fill="#34c759" text-anchor="middle">Passes</text>
-
-      <line x1="16" y1="88" x2="216" y2="88" stroke="#f0f0f2" stroke-width="1"/>
-      <text x="16" y="104" font-size="10" fill="#86868b">Spurious feature aligns with test set</text>
-    </g>
-
-    <!-- Card 2: Reversed Direction -->
-    <g transform="translate(0, 144)" filter="url(#sc-card-shadow)">
-      <rect width="232" height="120" rx="14" fill="#ffffff" stroke="#e5e5ea" stroke-width="1"/>
-      <circle cx="26" cy="25" r="11" fill="#ffebee"/>
-      <path d="M21 20l10 10m0-10l-10 10" fill="none" stroke="#ff3b30" stroke-width="2.2" stroke-linecap="round"/>
-      <text x="45" y="23" font-size="12" font-weight="700" fill="#1d1d1f">Test → Train (Reversed)</text>
-      <text x="45" y="36" font-size="10" fill="#ff3b30">Length cue misleads</text>
-      
-      <text x="18" y="76" font-size="28" font-weight="800" fill="#ff3b30" letter-spacing="-0.03em">0.005</text>
-      <text x="96" y="70" font-size="11" font-weight="600" fill="#86868b">macro-F1</text>
-      
-      <rect x="146" y="54" width="72" height="22" rx="11" fill="#ffebee"/>
-      <text x="182" y="69" font-size="11" font-weight="700" fill="#ff3b30" text-anchor="middle">Collapses</text>
-
-      <line x1="16" y1="90" x2="216" y2="90" stroke="#f0f0f2" stroke-width="1"/>
-      <text x="16" y="106" font-size="10" font-weight="600" fill="#ff3b30">Catastrophic generalization breakdown</text>
-    </g>
-  </g>
-
-  <!-- Flow Lines (Col 2 to Col 3) -->
-  <path d="M558 73 H588" fill="none" stroke="#34c759" stroke-width="2" stroke-linecap="round"/>
-  <path d="M558 204 H588" fill="none" stroke="#ff3b30" stroke-width="2" stroke-linecap="round"/>
-
-  <!-- Right Column: Empirical Finding (Width: 264, x: 588) -->
-  <g transform="translate(588, 26)">
-    <text x="0" y="0" font-size="11" font-weight="700" letter-spacing="0.08em" fill="#86868b" text-transform="uppercase">Empirical Diagnostic Matrix</text>
-
-    <g transform="translate(0, 14)" filter="url(#sc-card-shadow)">
-      <rect width="264" height="250" rx="16" fill="#ffffff" stroke="#d2d2d7" stroke-width="1.2"/>
-      
-      <!-- Core Brand Pill Header -->
-      <rect x="14" y="14" width="236" height="42" rx="10" fill="url(#sc-header-grad)"/>
-      <text x="132" y="32" font-size="12.5" font-weight="800" fill="#ffffff" text-anchor="middle" letter-spacing="0.04em">SHORTCUT DIAGNOSTIC</text>
-      <text x="132" y="46" font-size="9.5" font-weight="500" fill="rgba(255,255,255,0.92)" text-anchor="middle">Reverse-Split Evaluation Protocol</text>
-
-      <!-- Inner Content -->
-      <g transform="translate(18, 68)">
-        <!-- Forward Macro-F1 Bar -->
-        <text x="0" y="12" font-size="11" font-weight="600" fill="#1d1d1f">Forward Transfer (Spurious)</text>
-        <text x="228" y="12" font-size="13" font-weight="800" fill="#34c759" text-anchor="end">0.771</text>
-        <rect x="0" y="18" width="228" height="6.5" rx="3.25" fill="#f0f0f2"/>
-        <rect x="0" y="18" width="176" height="6.5" rx="3.25" fill="url(#sc-bar-green)"/>
-
-        <!-- Reversed Macro-F1 Bar -->
-        <text x="0" y="44" font-size="11" font-weight="600" fill="#1d1d1f">Reversed Transfer (Semantics)</text>
-        <text x="228" y="44" font-size="13" font-weight="800" fill="#ff3b30" text-anchor="end">0.005</text>
-        <rect x="0" y="50" width="228" height="6.5" rx="3.25" fill="#f0f0f2"/>
-        <rect x="0" y="50" width="8" height="6.5" rx="3.25" fill="url(#sc-bar-red)"/>
-
-        <line x1="0" y1="68" x2="228" y2="68" stroke="#f0f0f2" stroke-width="1"/>
-
-        <!-- Key Takeaway Text -->
-        <text x="0" y="86" font-size="11" font-weight="700" fill="#1d1d1f">Causal Takeaway:</text>
-        <text x="0" y="103" font-size="10.5" fill="#6e6e73">Models latch onto sentence length cues</text>
-        <text x="0" y="119" font-size="10.5" fill="#6e6e73">rather than learning true semantic</text>
-        <text x="0" y="135" font-size="10.5" fill="#6e6e73">indicators of deception.</text>
-
-        <!-- Bottom Protocol Badge -->
-        <rect x="0" y="148" width="228" height="24" rx="8" fill="#ffebee"/>
-        <text x="114" y="164" font-size="10" font-weight="700" fill="#ff3b30" text-anchor="middle">Reverse-Split Protocol is Critical</text>
-      </g>
-    </g>
-  </g>
+<rect x="36" y="108" width="528" height="360" rx="18" fill="#ffffff" stroke="#e5e5ea" filter="url(#sh)"/>
+<rect x="60" y="132" width="100" height="210" rx="12" fill="#fff" stroke="#e5e5ea"/><rect x="74" y="146" width="58" height="22" rx="11" fill="#ffe5e3"/><text x="103" y="162" font-size="12" font-weight="700" text-anchor="middle" style="fill:#d70015">FAKE</text><rect x="74" y="178" width="72" height="6" rx="3" fill="#e5e5ea"/><rect x="74" y="191" width="72" height="6" rx="3" fill="#e5e5ea"/><rect x="74" y="204" width="56" height="6" rx="3" fill="#e5e5ea"/><rect x="74" y="217" width="72" height="6" rx="3" fill="#e5e5ea"/><rect x="74" y="230" width="72" height="6" rx="3" fill="#e5e5ea"/><rect x="74" y="243" width="72" height="6" rx="3" fill="#e5e5ea"/><rect x="74" y="256" width="56" height="6" rx="3" fill="#e5e5ea"/><rect x="74" y="269" width="72" height="6" rx="3" fill="#e5e5ea"/><rect x="74" y="282" width="72" height="6" rx="3" fill="#e5e5ea"/><rect x="74" y="295" width="72" height="6" rx="3" fill="#e5e5ea"/><rect x="74" y="308" width="56" height="6" rx="3" fill="#e5e5ea"/><rect x="74" y="321" width="72" height="6" rx="3" fill="#e5e5ea"/>
+<rect x="176" y="278" width="100" height="64" rx="12" fill="#fff" stroke="#e5e5ea"/><rect x="190" y="292" width="58" height="22" rx="11" fill="#e3f7e8"/><text x="219" y="308" font-size="12" font-weight="700" text-anchor="middle" style="fill:#248a3d">REAL</text><rect x="190" y="324" width="72" height="6" rx="3" fill="#e5e5ea"/>
+<text x="176" y="208" font-size="40" font-weight="700" text-anchor="start" style="fill:#c93400">3.4×</text>
+<text x="178" y="234" font-size="15" font-weight="400" text-anchor="start" style="fill:#6e6e73">longer</text>
+<line x1="300" x2="300" y1="132" y2="350" stroke="#ececf0"/>
+<text x="322" y="140" font-size="15" font-weight="700" text-anchor="start" style="fill:#1d1d1f">Zero-shot macro-F1</text>
+<line x1="322" x2="544" y1="342" y2="342" stroke="#d2d2d7"/>
+<rect x="334" y="187.79999999999998" width="90" height="154.20000000000002" rx="10" fill="url(#accentV)"/>
+<text x="379" y="175.79999999999998" font-size="28" font-weight="700" text-anchor="middle" style="fill:#0071e3">0.771</text>
+<rect x="444" y="337" width="90" height="5" rx="2.5" fill="#ff3b30"/>
+<text x="489" y="324" font-size="28" font-weight="700" text-anchor="middle" style="fill:#d70015">0.005</text>
+<text x="379" y="366" font-size="14" font-weight="400" text-anchor="middle" style="fill:#6e6e73">train A → B</text>
+<text x="489" y="366" font-size="14" font-weight="400" text-anchor="middle" style="fill:#6e6e73">reversed</text>
+<line x1="60" x2="540" y1="402" y2="402" stroke="#ececf0"/><text x="60.0" y="436" font-size="24" font-weight="700" text-anchor="start" style="fill:#1d1d1f">Urdu</text><text x="60.0" y="458" font-size="14" font-weight="400" text-anchor="start" style="fill:#6e6e73">fake news</text><text x="220.0" y="436" font-size="24" font-weight="700" text-anchor="start" style="fill:#1d1d1f">English</text><text x="220.0" y="458" font-size="14" font-weight="400" text-anchor="start" style="fill:#6e6e73">fake news</text><text x="380.0" y="436" font-size="24" font-weight="700" text-anchor="start" style="fill:#1d1d1f">Sarcasm</text><text x="380.0" y="458" font-size="14" font-weight="400" text-anchor="start" style="fill:#6e6e73">detection</text>
 </svg>

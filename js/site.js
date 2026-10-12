@@ -123,6 +123,56 @@
     reveals.forEach(revealElement);
   }
 
+  /* ============ STACKING CARDS (publications & projects) ============ */
+  // Each card sticks just under the nav, a few px lower than the one before.
+  // Cards taller than the viewport stick by their bottom edge so they are
+  // read in full before the next card slides over them.
+  var stacks = document.querySelectorAll('.pub-list, .projects-stack');
+  var stackTicking = false;
+
+  function layoutStacks() {
+    var navH = nav ? nav.offsetHeight : 52;
+    stacks.forEach(function (stack) {
+      var cards = stack.querySelectorAll('.stack-card');
+      cards.forEach(function (card, i) {
+        var top = Math.min(navH + 16 + i * 10, window.innerHeight - card.offsetHeight - 16);
+        card.style.top = top + 'px';
+      });
+    });
+    updateStacks();
+  }
+
+  function updateStacks() {
+    stackTicking = false;
+    if (reduce) return;
+    stacks.forEach(function (stack) {
+      var cards = stack.querySelectorAll('.stack-card');
+      for (var i = 0; i < cards.length; i++) {
+        var next = cards[i + 1];
+        var p = 0;
+        if (next) {
+          var top = cards[i].getBoundingClientRect().top;
+          var h = cards[i].offsetHeight;
+          p = (top + h - next.getBoundingClientRect().top) / h;
+          p = Math.max(0, Math.min(1, p));
+        }
+        cards[i].style.setProperty('--stack-p', p.toFixed(3));
+      }
+    });
+  }
+
+  if (stacks.length) {
+    window.addEventListener('scroll', function () {
+      if (!stackTicking) {
+        stackTicking = true;
+        requestAnimationFrame(updateStacks);
+      }
+    }, { passive: true });
+    window.addEventListener('resize', layoutStacks, { passive: true });
+    window.addEventListener('load', layoutStacks);
+    layoutStacks();
+  }
+
   /* ============ STATS COUNTER ANIMATION ============ */
   var strip = document.getElementById('stat-strip');
   function animateCounters() {
