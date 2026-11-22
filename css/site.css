@@ -1983,3 +1983,39 @@ h2 {
 .projects-stack {
   padding-bottom: 8px;
 }
+
+/* ============================================================
+   COMPACT LAYOUT — 2-col work grid, skill rows, edu + certs
+   ============================================================ */
+.work-grid { margin-top: 40px; display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
+.work-grid .project-card { grid-template-columns: 1fr; align-items: start; gap: 20px; padding: 18px 18px 24px; }
+.work-grid .project-card > div { padding: 0 8px; }
+.work-grid .project-card.featured { grid-column: 1 / -1; grid-template-columns: 1.15fr 1fr; align-items: center; }
+.work-grid .project-visual { margin: 0; border: 0; }
+.work-grid .project-desc { margin-bottom: 14px; }
+.work-grid .metric-row { margin-bottom: 16px; }
+.work-grid .pub-title { font-size: clamp(18px, 1.8vw, 21px); }
+.work-grid .pub-actions { align-items: center; }
+.work-grid .status-pill { margin: 0; }
+
+.skill-rows { margin-top: 36px; border-top: 1px solid var(--hair); }
+.skill-row { display: grid; grid-template-columns: 220px 1fr; gap: 20px; align-items: center;
+  padding: 18px 0; border-bottom: 1px solid var(--hair); }
+.skill-row h3 { font-size: 16px; font-weight: 700; color: var(--ink); }
+.skill-chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.skill-chips span { display: inline-flex; align-items: center; gap: 7px; padding: 7px 13px; border-radius: 980px;
+  background: var(--white); border: 1px solid var(--hair); font-size: 14px; font-weight: 500; color: var(--ink); }
+.skill-chips img { width: 16px; height: 16px; }
+
+.edu-grid { margin-top: 36px; display: grid; grid-template-columns: 1fr 1fr; gap: 24px; align-items: start; }
+.edu-grid .education-card-full { margin: 0; }
+.cert-list { display: grid; gap: 12px; }
+.cert-list .cert-card-link { flex-direction: row; align-items: center; gap: 14px; padding: 16px 20px; }
+.cert-list .cert-card-link h3 { flex: 1; margin: 0; font-size: 15.5px; }
+.cert-list .cert-issuer-badge { min-width: 78px; text-align: center; }
+
+@media (max-width: 860px) {
+  .work-grid, .edu-grid { grid-template-columns: 1fr; }
+  .work-grid .project-card.featured { grid-template-columns: 1fr; }
+  .skill-row { grid-template-columns: 1fr; gap: 10px; }
+}

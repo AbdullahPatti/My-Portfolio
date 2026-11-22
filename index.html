@@ -35,14 +35,11 @@
 
       <!-- Desktop Navigation Links -->
       <nav class="nav-desktop" aria-label="Primary Navigation">
-        <a href="#about">About</a>
-        <a href="#research">Research</a>
-        <a href="#publications">Publications</a>
-        <a href="#experience">Experience</a>
         <a href="#projects">Projects</a>
-        <a href="#process">Process</a>
+        <a href="#publications">Research</a>
+        <a href="#experience">Experience</a>
+        <a href="#stack">Skills</a>
         <a href="#education">Education</a>
-        <a href="#certifications">Certifications</a>
         <a href="#contact">Contact</a>
       </nav>
 
@@ -83,14 +80,11 @@
   <!-- Mobile Overlay Menu Drawer -->
   <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
     <nav class="mobile-menu-links" aria-label="Mobile Navigation">
-      <a href="#about">About</a>
-      <a href="#research">Research Interests</a>
-      <a href="#publications">Publications</a>
-      <a href="#experience">Experience</a>
       <a href="#projects">Projects</a>
-      <a href="#process">Process</a>
+      <a href="#publications">Research</a>
+      <a href="#experience">Experience</a>
+      <a href="#stack">Skills</a>
       <a href="#education">Education</a>
-      <a href="#certifications">Certifications</a>
       <a href="#contact">Contact</a>
     </nav>
     <div class="mobile-menu-footer">
@@ -108,396 +102,28 @@
 
   <main id="top">
 
-    <!-- ============ HERO — Apple Centered Clean Landing ============ -->
+    <!-- ============ HERO ============ -->
     <section class="hero">
       <div class="hero__headline-box">
         <h1 class="hero__hi reveal">Hi. I'm Abdullah Haroon.</h1>
-        <span class="hero__tagline gradient-text reveal">Eager to work on data, pipelines, and developing end-to-end
-          systems.</span>
-        <p class="lede reveal">Final-year Computer Science student at FAST-NUCES, Lahore. I investigate empirical model
-          robustness, design resilient data pipelines, and deploy production software that performs when the domain
-          shifts.</p>
+        <span class="hero__tagline gradient-text reveal">AI research and end-to-end systems that hold up in the real
+          world.</span>
+        <p class="lede reveal">Final-year CS student at FAST-NUCES, Lahore. I study why models break under real-world
+          shift, and I ship the products that have to survive it.</p>
         <div class="hero-actions reveal">
-          <a class="btn btn-solid" id="hero-email-btn" href="mailto:abdullaharoon.work@gmail.com">Email me</a>
+          <a class="btn btn-solid" href="#projects">See my work</a>
           <a class="btn btn-ghost" href="Abdullah_Haroon_CV.pdf" target="_blank" rel="noopener">Download CV</a>
         </div>
       </div>
     </section>
 
-    <!-- ============ IMPACT & SNAPSHOT METRICS ============ -->
     <section class="impact-showcase" aria-label="Key Achievements">
       <div class="wrap">
         <div class="stats-strip reveal" id="stat-strip">
-          <div class="stat-card">
-            <strong data-count="5" data-suffix="+">0</strong>
-            <span>Papers &amp; manuscripts, 2 sole-authored on arXiv</span>
-          </div>
-          <div class="stat-card">
-            <strong data-count="25" data-suffix="+">0</strong>
-            <span>Open-source models &amp; datasets</span>
-          </div>
-          <div class="stat-card">
-            <strong data-count="4">0</strong>
-            <span>Research &amp; work roles across AI and software</span>
-          </div>
-          <div class="stat-card">
-            <strong data-count="10" data-suffix="+">0</strong>
-            <span>Certifications from Google, IBM, Microsoft, Udemy</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ ABOUT ============ -->
-    <section class="section tone-white" id="about" data-nav="About">
-      <div class="wrap">
-        <span class="eyebrow reveal">About</span>
-        <h2 class="about-statement reveal">It started with a recommendation, not an equation. YouTube seemed to know
-          what I wanted to watch next, and I wanted to know <span class="gradient-text">how.</span></h2>
-
-        <div class="about-grid">
-          <div class="about-body">
-            <p class="reveal">That question pulled me into computer science, then into machine learning. Today I study
-              why models fail when the data shifts, across scripts, domains, compression and markets, and I build the
-              systems that have to survive it.</p>
-            <p class="reveal">I work wherever the problem needs me: researcher, data scientist, AI/ML engineer,
-              forward-deployed engineer, or full-stack builder. I shape data, evaluate models, design APIs, ship
-              interfaces, and deploy systems end to end.</p>
-          </div>
-          <blockquote class="pull reveal">
-            <p>&ldquo;Make the complex feel inevitable: a model that earns trust, a product that reaches people, a
-              system that keeps working.&rdquo;</p>
-          </blockquote>
-        </div>
-
-        <dl class="now-grid">
-          <div class="now-card reveal">
-            <dt>Now</dt>
-            <dd><strong>Research Assistant</strong>AI in Healthcare Management, FAST School of Management</dd>
-          </div>
-          <div class="now-card reveal">
-            <dt>Researching</dt>
-            <dd><strong>Adversarial patches vs. model compression</strong>Submitted to TMLR</dd>
-          </div>
-          <div class="now-card reveal">
-            <dt>Building</dt>
-            <dd><strong>Sachai Check</strong>My final year project on Urdu fake news and deepfake audio</dd>
-          </div>
-          <div class="now-card reveal">
-            <dt>Open to</dt>
-            <dd><strong>Research labs &amp; AI roles</strong>Software, AI/ML, data and forward-deployed work</dd>
-          </div>
-        </dl>
-      </div>
-    </section>
-
-    <!-- ============ RESEARCH INTERESTS (Dark bento) ============ -->
-    <section class="section tone-ink" id="research" data-nav="Research">
-      <div class="wrap">
-        <span class="eyebrow reveal">Research Interests</span>
-        <h2 class="reveal">Models that hold up when the world shifts.</h2>
-        <p class="section-lead reveal">New scripts, new domains, smaller models, volatile markets. I study where models
-          break under real-world shift, what shortcuts they take instead of learning the task, and how to make them
-          transfer reliably.</p>
-
-        <div class="interests-grid">
-          <article class="interest-card wide reveal">
-            <span class="interest-deco ur" aria-hidden="true" lang="ur">اردو</span>
-            <div class="interest-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m5 8 6 6"/><path d="m4 14 6-6 2-3"/><path d="M2 5h12"/><path d="M7 2h1"/><path d="m22 22-5-10-5 10"/><path d="M14 18h6"/></svg></div>
-            <h3>Multilingual &amp; Low-Resource NLP</h3>
-            <p>Cross-lingual transfer, tokenization pathologies and bi-script dynamics across Nastaliq and Roman Urdu.
-              Building representative datasets where high-resource assumptions break down.</p>
-            <div class="interest-tags"><span>Urdu &amp; Roman Urdu</span><span>Bi-Script Modeling</span><span>Tokenization</span></div>
-          </article>
-
-          <article class="interest-card reveal">
-            <div class="interest-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m12 14 4-4"/><path d="M3.34 19a10 10 0 1 1 17.32 0"/></svg></div>
-            <h3>LLM Evaluation</h3>
-            <p>Evaluation beyond static leaderboards: isolating benchmark artifacts, prompt sensitivity, and
-              reproducible protocols.</p>
-            <div class="interest-tags"><span>Benchmark Integrity</span><span>RAGAS</span></div>
-          </article>
-
-          <article class="interest-card reveal">
-            <div class="interest-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><line x1="21" x2="14" y1="4" y2="4"/><line x1="10" x2="3" y1="4" y2="4"/><line x1="21" x2="12" y1="12" y2="12"/><line x1="8" x2="3" y1="12" y2="12"/><line x1="21" x2="16" y1="20" y2="20"/><line x1="12" x2="3" y1="20" y2="20"/><line x1="14" x2="14" y1="2" y2="6"/><line x1="8" x2="8" y1="10" y2="14"/><line x1="16" x2="16" y1="18" y2="22"/></svg></div>
-            <h3>LLM Fine-Tuning</h3>
-            <p>Parameter-efficient adaptation (LoRA/QLoRA) and domain-targeted instruction tuning for specialized,
-              low-latency models.</p>
-            <div class="interest-tags"><span>PEFT / QLoRA</span><span>Instruction Tuning</span></div>
-          </article>
-
-          <article class="interest-card reveal">
-            <div class="interest-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/></svg></div>
-            <h3>Domain Robustness</h3>
-            <p>Measuring how performance decays out of distribution, with guarded baselines that separate real
-              invariance from memorization.</p>
-            <div class="interest-tags"><span>OOD Generalization</span><span>Guarded Baselines</span></div>
-          </article>
-
-          <article class="interest-card reveal">
-            <div class="interest-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 7V5a2 2 0 0 1 2-2h2"/><path d="M17 3h2a2 2 0 0 1 2 2v2"/><path d="M21 17v2a2 2 0 0 1-2 2h-2"/><path d="M7 21H5a2 2 0 0 1-2-2v-2"/><circle cx="12" cy="12" r="3"/><path d="m16 16-1.9-1.9"/></svg></div>
-            <h3>Shortcut Learning</h3>
-            <p>Diagnosing spurious cues such as article length or punctuation that models exploit instead of the
-              actual task.</p>
-            <div class="interest-tags"><span>Spurious Correlations</span><span>Length Confounds</span></div>
-          </article>
-
-          <article class="interest-card reveal">
-            <div class="interest-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3 4 7l4 4"/><path d="M4 7h16"/><path d="m16 21 4-4-4-4"/><path d="M20 17H4"/></svg></div>
-            <h3>Cross-Dataset Generalization</h3>
-            <p>Zero-shot transfer across corpora built for the same task, exposing when models fail to move between
-              dataset creators.</p>
-            <div class="interest-tags"><span>Zero-Shot Transfer</span><span>Creator Bias</span></div>
-          </article>
-
-          <article class="interest-card wide reveal">
-            <span class="interest-deco" aria-hidden="true">2× 4× 8×</span>
-            <div class="interest-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><polyline points="4 14 10 14 10 20"/><polyline points="20 10 14 10 14 4"/><line x1="14" x2="21" y1="10" y2="3"/><line x1="3" x2="10" y1="21" y2="14"/></svg></div>
-            <h3>Adversarial Robustness &amp; Model Compression</h3>
-            <p>What pruning, quantization and distillation do to a model's vulnerability to adversarial patches, and
-              how much certified robustness survives compression. Small models get deployed; their attack surface
-              should be measured, not assumed.</p>
-            <div class="interest-tags"><span>Adversarial Patches</span><span>Certified Defenses</span><span>QAT &amp; Distillation</span></div>
-          </article>
-
-          <article class="interest-card reveal">
-            <div class="interest-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z"/><path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65"/><path d="m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65"/></svg></div>
-            <h3>Transfer Learning</h3>
-            <p>Representation reuse from multilingual foundation models into low-resource dialects and specialized
-              downstream tasks.</p>
-            <div class="interest-tags"><span>Foundation Models</span><span>Cross-Lingual Encoders</span></div>
-          </article>
-
-          <article class="interest-card reveal">
-            <div class="interest-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="16" y="16" width="6" height="6" rx="1"/><rect x="2" y="16" width="6" height="6" rx="1"/><rect x="9" y="2" width="6" height="6" rx="1"/><path d="M5 16v-3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3"/><path d="M12 12V8"/></svg></div>
-            <h3>Neural Architectures</h3>
-            <p>Learnable gating and hybrid recurrent-transformer designs that adaptively fuse heterogeneous data
-              streams.</p>
-            <div class="interest-tags"><span>Dynamic Gating</span><span>Multimodal Fusion</span></div>
-          </article>
-
-          <article class="interest-card reveal">
-            <div class="interest-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg></div>
-            <h3>Time Series Analysis</h3>
-            <p>Regime-aware forecasting that conditions temporal models on market volatility to avoid recall
-              collapse.</p>
-            <div class="interest-tags"><span>Regime Switching</span><span>Multimodal Signals</span></div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ PUBLICATIONS ============ -->
-    <section class="section tone-white" id="publications" data-nav="Publications">
-      <div class="wrap">
-        <span class="eyebrow reveal">Research &amp; Preprints</span>
-        <h2 class="reveal">Publications.</h2>
-        <p class="section-lead reveal">Preprints and manuscripts on domain robustness, adversarial robustness
-          of compressed models, benchmark shortcut learning, and regime-aware multi-modal fusion.</p>
-
-        <div class="pub-list">
-          <!-- Paper 1: Domain robustness -->
-          <article class="stack-card pub-card">
-            <div>
-              <p class="pub-meta">2026 · Submitted · ACM TALLIP</p>
-              <h3 class="pub-title">Domain Robustness of Multilingual NLP Models Across Urdu and Roman Urdu Scripts</h3>
-              <p class="pub-byline">M. A. Haroon, M. Bashir</p>
-              <p class="pub-desc">First author. Released a benchmark of 26 datasets (188,309 examples) and 7 transfer
-                matrices across four task types, with documented provenance, licensing, and leakage-aware splits. Adapts
-                SS/ST evaluation to Urdu, testing script shift, code-mixing, cross-lingual transfer, and demonstration
-                language.</p>
-              <div class="metric-row">
-                <div><strong>26</strong><span>datasets released</span></div>
-                <div><strong>188,309</strong><span>examples</span></div>
-                <div><strong>30 / 42</strong><span>LLM wins across shifts</span></div>
-              </div>
-              <div class="pub-actions">
-                <a class="btn btn-solid" href="https://doi.org/10.5281/zenodo.22195610" target="_blank"
-                  rel="noopener">Data on Zenodo</a>
-                <a class="btn btn-ghost btn-code" href="https://github.com/AbdullahPatti/Urdu-Multi-Domain-Script-Research"
-                  target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-github"/></svg>Code</a>
-              </div>
-            </div>
-            <div class="pub-visual">
-              <img src="assets/visuals/research-robustness.svg"
-                alt="Train-versus-test domain transfer matrix with summary statistics: 26 datasets, 188,309 examples, 13.5 to 47.6 macro-F1 lost off-domain, 30 of 42 comparisons won by few-shot LLMs"
-                width="600" height="500" loading="lazy">
-            </div>
-          </article>
-
-          <!-- Paper 2: Compressed CNNs vs adversarial patches -->
-          <article class="stack-card pub-card reverse">
-            <div>
-              <p class="pub-meta">2026 · Submitted · TMLR</p>
-              <h3 class="pub-title">Does Compression Preserve Adversarial Patch Robustness?</h3>
-              <p class="pub-byline">M. A. Haroon, A. R. Antall, A. Hadi</p>
-              <p class="pub-desc">A 13-model CIFAR-10 ResNet-18 zoo compressed 2×, 4× and 8× through pruning,
-                quantization and knowledge distillation, under universal and per-image patch attacks. Patch vulnerability
-                follows lost capacity rather than sparsity: pruned models held baseline robustness, while equally sized
-                dense models fell from 61.2% to 52.9% patched accuracy. Certified with PatchCleanser under adaptive
-                attacks that rule out gradient masking.</p>
-              <div class="metric-row">
-                <div><strong>13</strong><span>ResNet-18 models</span></div>
-                <div><strong>61.2% → 52.9%</strong><span>dense patched accuracy</span></div>
-                <div><strong>3 seeds</strong><span>per experiment</span></div>
-              </div>
-              <div class="pub-actions">
-                <a class="btn btn-solid btn-code" href="https://github.com/AbdullahPatti/CNN-Adversarial-Patch"
-                  target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-github"/></svg>View code on GitHub</a>
-              </div>
-            </div>
-            <div class="pub-visual">
-              <img src="assets/visuals/research-compression.svg"
-                alt="A CIFAR-10 image with an adversarial patch; patches made on the FP32 model fool the INT8 model 55 percent of the time versus 6 to 8 percent for random noise, across 13 ResNet-18 variants"
-                width="600" height="500" loading="lazy">
-            </div>
-          </article>
-
-          <!-- Paper 3: Shortcut learning / transfer -->
-          <article class="stack-card pub-card">
-            <div>
-              <p class="pub-meta">Jul 2026 · arXiv:2607.14131 · Sole author</p>
-              <h3 class="pub-title">When Benchmarks Mislead: Shortcut Learning and Cross-Dataset Generalization in Multilingual Fake News and Sarcasm Detection</h3>
-              <p class="pub-byline">M. A. Haroon</p>
-              <p class="pub-desc">A zero-shot cross-dataset transfer study across Urdu fake news, English fake news,
-                and sarcasm detection. Fake articles in one Urdu dataset run 3.4x longer than real ones: train one way
-                and macro-F1 is 0.771; reverse the split and it collapses to 0.005. Models learn length, not
-                deception.</p>
-              <div class="metric-row">
-                <div><strong>0.771 → 0.005</strong><span>reversed collapse</span></div>
-                <div><strong>3.4×</strong><span>length confound</span></div>
-                <div><strong>3</strong><span>domains tested</span></div>
-              </div>
-              <div class="pub-actions">
-                <a class="btn btn-solid" href="https://arxiv.org/abs/2607.14131" target="_blank" rel="noopener">Read on
-                  arXiv</a>
-                <a class="btn btn-ghost btn-code" href="https://github.com/AbdullahPatti/Cross-Data-Transfer-Learning"
-                  target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-github"/></svg>Code</a>
-              </div>
-            </div>
-            <div class="pub-visual">
-              <img src="assets/visuals/research-shortcut.svg"
-                alt="A fake article 3.4 times longer than a real one, and a bar chart where transfer reaches 0.771 macro-F1 one way and 0.005 when reversed"
-                width="600" height="500" loading="lazy">
-            </div>
-          </article>
-
-          <!-- Paper 4: Bitcoin RAML -->
-          <article class="stack-card pub-card reverse">
-            <div>
-              <p class="pub-meta">Jul 2026 · arXiv:2607.23370 · Sole author</p>
-              <h3 class="pub-title">Bitcoin Price Direction Prediction via Regime-Aware Multi-Modal Fusion</h3>
-              <p class="pub-byline">M. A. Haroon</p>
-              <p class="pub-desc">RAML introduces a learnable sigmoid gate that conditions the fusion of FinBERT-scored
-                Reddit sentiment and BiLSTM-encoded OHLCV features on rolling 24-hour market volatility. While static
-                concatenation causes 6-hour recall to collapse to 0.14 under volatility spikes, the RAML gate preserves
-                robust predictive power.</p>
-              <div class="metric-row">
-                <div><strong>0.547 / 0.551</strong><span>macro-F1 (3h / 6h)</span></div>
-                <div><strong>0.14</strong><span>recall without gate</span></div>
-                <div><strong>3,491</strong><span>hourly observations</span></div>
-              </div>
-              <div class="pub-actions">
-                <a class="btn btn-solid" href="https://arxiv.org/abs/2607.23370" target="_blank" rel="noopener">Read on
-                  arXiv</a>
-                <a class="btn btn-ghost btn-code" href="https://github.com/AbdullahPatti/StreetSmart-BitCoin-Price"
-                  target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-github"/></svg>Code</a>
-              </div>
-            </div>
-            <div class="pub-visual">
-              <img src="assets/visuals/research-bitcoin.svg"
-                alt="Bitcoin hourly candlesticks with a high-volatility regime; Reddit sentiment and price features flow through a volatility-conditioned gate to an up or down prediction"
-                width="600" height="500" loading="lazy">
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ WORK / EXPERIENCE ============ -->
-    <section class="section tone-mist" id="experience" data-nav="Experience">
-      <div class="wrap">
-        <span class="eyebrow reveal">Experience</span>
-        <h2 class="reveal">Where I have worked.</h2>
-        <p class="section-lead reveal">Hands-on work across research labs, healthcare AI, production software teams, and
-          automated AI systems.</p>
-
-        <div class="experience-timeline">
-          <!-- Role 1: Research Assistant -->
-          <article class="experience-item reveal">
-            <div class="exp-date">
-              <strong>Sep 2026 – Present</strong>
-              <span class="exp-badge">Current</span>
-            </div>
-            <div class="exp-content">
-              <h3 class="exp-title">Research Assistant</h3>
-              <p class="exp-domain">AI in Healthcare Management</p>
-              <p class="exp-company">FAST School of Management <span class="exp-loc">· Lahore, Pakistan · Supervised by
-                  Dr. Beenish Arshad</span></p>
-              <ul class="exp-points">
-                <li>Collected survey data from 35+ doctors and 45+ patients across Lahore hospitals and built Python
-                  dashboards measuring how likely each group is to adopt AI.</li>
-                <li>Designed an AI hospital system built around an Urdu/English voice receptionist (Whisper, RAG) that
-                  books and reschedules appointments, with AI scheduling, resource allocation, OPD inventory, and
-                  patient–doctor assignment. It is under HEC NRPU review, with development starting on approval.</li>
-              </ul>
-            </div>
-          </article>
-
-          <!-- Role 2: Deep Learning Intern -->
-          <article class="experience-item reveal">
-            <div class="exp-date">
-              <strong>Jul – Nov 2026</strong>
-            </div>
-            <div class="exp-content">
-              <h3 class="exp-title">Deep Learning Intern</h3>
-              <p class="exp-domain">Urdu NLP</p>
-              <p class="exp-company">FAST School of Computing <span class="exp-loc">· Lahore, Pakistan · Supervised by
-                  Dr. Maryam Bashir</span></p>
-              <ul class="exp-points">
-                <li>Fine-tuned XLM-RoBERTa and mBERT and prompted Llama 3.1-8B, Mistral-7B, and Qwen2.5-7B few-shot to
-                  measure how models degrade under domain and script shift.</li>
-                <li>Across 80 domain shifts, fine-tuned encoders lost 13.5–47.6 macro-F1 points, while few-shot LLMs won
-                  30 of 42 paired comparisons under Holm-corrected bootstrap tests over 3 seeds.</li>
-                <li>Traced XLM-RoBERTa's macro-F1 collapse (0.771 to 0.005) on unseen Urdu fake-news data to a length
-                  shortcut.</li>
-              </ul>
-            </div>
-          </article>
-
-          <!-- Role 3: IT Intern -->
-          <article class="experience-item reveal">
-            <div class="exp-date">
-              <strong>Jun – Jul 2026</strong>
-            </div>
-            <div class="exp-content">
-              <h3 class="exp-title">IT Intern</h3>
-              <p class="exp-domain">Enterprise .NET &amp; AI</p>
-              <p class="exp-company">QuickFuel <span class="exp-loc">· Lahore, Pakistan · Supervised by Mr.
-                  Asadullah</span></p>
-              <ul class="exp-points">
-                <li>Started the company's first AI/ML initiative, proposing 9 AI use cases and flagging 6 flaws in its
-                  .NET portal.</li>
-                <li>Prototyped LLM sentiment analysis with FastAPI and PostgreSQL, and semantic product search with
-                  ChromaDB.</li>
-              </ul>
-            </div>
-          </article>
-
-          <!-- Role 4: AI Automation Intern -->
-          <article class="experience-item reveal">
-            <div class="exp-date">
-              <strong>Jun – Jul 2026</strong>
-            </div>
-            <div class="exp-content">
-              <h3 class="exp-title">AI Automation Intern</h3>
-              <p class="exp-domain">LLM Agents &amp; RAG</p>
-              <p class="exp-company">Optimus Automate <span class="exp-loc">· Remote</span></p>
-              <ul class="exp-points">
-                <li>Built a Gmail API agent that classifies intent and drafts replies, and a RAG PDF assistant.</li>
-              </ul>
-            </div>
-          </article>
+          <div class="stat-card"><strong data-count="5" data-suffix="+">0</strong><span>Papers &amp; manuscripts, 2 sole-authored on arXiv</span></div>
+          <div class="stat-card"><strong data-count="25" data-suffix="+">0</strong><span>Open-source models &amp; datasets</span></div>
+          <div class="stat-card"><strong data-count="4">0</strong><span>Research &amp; industry roles</span></div>
+          <div class="stat-card"><strong data-count="10" data-suffix="+">0</strong><span>Certifications from Google, IBM, Microsoft, Udemy</span></div>
         </div>
       </div>
     </section>
@@ -505,349 +131,150 @@
     <!-- ============ PROJECTS ============ -->
     <section class="section tone-white" id="projects" data-nav="Projects">
       <div class="wrap">
-        <span class="eyebrow reveal">Featured Work</span>
-        <h2 class="reveal">An idea does not count until something is running.</h2>
-        <p class="section-lead reveal">Selected production builds, RAG pipelines, autonomous systems, and evaluation
-          benchmarks.</p>
+        <span class="eyebrow reveal">Selected Work</span>
+        <h2 class="reveal">Things I have built.</h2>
 
-        <div class="projects-stack">
-          <!-- Project 1: Sachai Check (FYP) -->
-          <article class="stack-card project-card">
+        <div class="work-grid">
+          <article class="project-card featured reveal">
+            <figure class="project-visual"><img src="assets/visuals/project-sachai-check.svg"
+                alt="An Urdu news screenshot scanned and stamped likely fake at 87 percent, and a voice note flagged as synthetic"
+                width="600" height="375" loading="lazy"></figure>
             <div>
-              <p class="project-num">01 / Sachai Check · Final Year Project</p>
-              <h3 class="project-title">Truth checks for Urdu news and voices</h3>
-              <p class="project-desc"><em lang="ur-Latn">Sachai</em> means truth. Sachai Check detects Urdu fake news
-                across domains and deepfake audio in two separate pipelines, with an LLM transliterating Roman Urdu first.
-                A Gemini judge backs each verdict with evidence and a confidence score, and Gemini OCR pulls claims out of
-                screenshots. A fine-tuned XLS-R 300M catches voice deepfakes on unseen speakers.</p>
-              <div class="tech-tags">
-                <span>PyTorch</span>
-                <span>XLS-R</span>
-                <span>XLM-R</span>
-                <span>Gemini</span>
-                <span>FastAPI</span>
-                <span>React</span>
-              </div>
+              <p class="project-num">Sachai Check · Final Year Project</p>
+              <h3 class="project-title">Fact-checks Urdu news and catches deepfake voices</h3>
+              <p class="project-desc">Detects fake Urdu news (text, Roman Urdu and screenshots via Gemini OCR) and
+                voice deepfakes, with a Gemini judge that shows its evidence.</p>
               <div class="metric-row">
                 <div><strong>8.6%</strong><span>EER, unseen speakers</span></div>
                 <div><strong>0.981</strong><span>AUC</span></div>
                 <div><strong>49.5%</strong><span>baseline EER</span></div>
               </div>
-              <a class="btn btn-ghost" href="https://github.com/AbdullahPatti/Sachai-Check" target="_blank"
-                rel="noopener">View Repository</a>
-              <span class="status-pill"><span class="status-dot" aria-hidden="true"></span>In development</span>
+              <div class="tech-tags"><span>PyTorch</span><span>XLS-R</span><span>Gemini</span><span>React</span></div>
+              <div class="pub-actions">
+                <a class="btn btn-ghost btn-code" href="https://github.com/AbdullahPatti/Sachai-Check" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-github"/></svg>Code</a>
+                <span class="status-pill"><span class="status-dot" aria-hidden="true"></span>In development</span>
+              </div>
             </div>
-            <figure class="project-visual">
-              <img src="assets/visuals/project-sachai-check.svg"
-                alt="Sachai Check architecture: a text pipeline with LLM transliteration and a cross-domain fake-news model, an audio pipeline with a deepfake detector, and an Gemini judge returning a verdict, confidence and evidence"
-                width="600" height="500" loading="lazy">
-            </figure>
           </article>
 
-          <!-- Project 2: Nabz Scribe -->
-          <article class="stack-card project-card reverse">
+          <article class="project-card reveal">
+            <figure class="project-visual"><img src="assets/visuals/project-nabz-scribe.svg"
+                alt="A phone in offline mode records a consultation in Urdu, Punjabi and English and turns it into a printed prescription"
+                width="600" height="375" loading="lazy"></figure>
             <div>
-              <p class="project-num">02 / Nabz Scribe · Independent Project</p>
-              <h3 class="project-title">A clinical scribe that works offline</h3>
-              <p class="project-desc"><em lang="ur-Latn">Nabz</em> means pulse. Nabz Scribe runs quantized ASR and
-                open-source LLMs on phones and low-end hospital PCs, turning code-switched English, Urdu and Punjabi
-                consultations into printed prescriptions. It handles live doctor–patient conversations and doctor-only
-                dictation.</p>
-              <div class="tech-tags">
-                <span>PyTorch</span>
-                <span>Whisper</span>
-                <span>whisper.cpp</span>
-                <span>llama.cpp</span>
-                <span>Qwen3.5</span>
-                <span>Android</span>
-              </div>
+              <p class="project-num">Nabz Scribe · Offline mobile app</p>
+              <h3 class="project-title">A clinical scribe that runs on a phone, offline</h3>
+              <p class="project-desc">Turns code-switched Urdu, Punjabi and English consultations into printed
+                prescriptions with on-device Whisper and LLMs.</p>
               <div class="metric-row">
-                <div><strong>10% → 50%</strong><span>medicine recall</span></div>
-                <div><strong>61% → 90%</strong><span>negations kept</span></div>
-                <div><strong>11.6s</strong><span>for 37.6s audio, phone CPU</span></div>
+                <div><strong>10→50%</strong><span>medicine recall</span></div>
+                <div><strong>61→90%</strong><span>negations kept</span></div>
+                <div><strong>11.6s</strong><span>for 37.6s audio</span></div>
               </div>
-              <a class="btn btn-ghost" href="https://github.com/AbdullahPatti/Nabz-Voice-Scribe" target="_blank"
-                rel="noopener">View Repository</a>
-              <span class="status-pill"><span class="status-dot" aria-hidden="true"></span>In development</span>
+              <div class="pub-actions">
+                <a class="btn btn-ghost btn-code" href="https://github.com/AbdullahPatti/Nabz-Voice-Scribe" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-github"/></svg>Code</a>
+                <span class="status-pill"><span class="status-dot" aria-hidden="true"></span>In development</span>
+              </div>
             </div>
-            <figure class="project-visual">
-              <img src="assets/visuals/project-nabz-scribe.svg"
-                alt="Nabz Scribe pipeline: consultation audio in English, Urdu and Punjabi goes through fine-tuned Whisper and a local LLM to a printed prescription, offline, with fine-tuning gains and phone CPU speed"
-                width="600" height="500" loading="lazy">
-            </figure>
           </article>
 
-          <!-- Project 3: TaxChronos -->
-          <article class="stack-card project-card">
+          <article class="project-card reveal">
+            <figure class="project-visual"><img src="assets/visuals/project-taxchronos.svg"
+                alt="Versions of Pakistani tax law from 2019 to 2025 with the 2022 version pulled out to answer an Urdu question"
+                width="600" height="375" loading="lazy"></figure>
             <div>
-              <p class="project-num">03 / TaxChronos · 2026</p>
-              <h3 class="project-title">Stop digging through tax documents</h3>
-              <p class="project-desc">An agentic, corrective RAG system on LangGraph and Supabase pgvector for tax queries in English,
-                Urdu, and Roman Urdu. 12 FBR statutes (2,773 pages) are indexed with 840 past versions for point-in-time answers. Evaluated with RAGAS on faithfulness and context recall, it targets sub-20-second
-                answers against 2 to 3 minutes of manual search.</p>
-              <div class="tech-tags">
-                <span>Python</span>
-                <span>LangGraph</span>
-                <span>Supabase pgvector</span>
-                <span>Gemini</span>
-                <span>FastAPI</span>
-                <span>RAGAS</span>
-              </div>
+              <p class="project-num">TaxChronos · Agentic RAG</p>
+              <h3 class="project-title">Ask Pakistani tax law, as it stood on any date</h3>
+              <p class="project-desc">Corrective RAG on LangGraph over 12 FBR statutes, answering in English, Urdu or
+                Roman Urdu with citations.</p>
               <div class="metric-row">
-                <div><strong>2-3m → &lt;20s</strong><span>target latency</span></div>
-                <div><strong>3,538</strong><span>chunks, 12 statutes</span></div>
+                <div><strong>&lt;20s</strong><span>vs 2–3 min manual</span></div>
+                <div><strong>3,538</strong><span>chunks</span></div>
                 <div><strong>840</strong><span>past versions</span></div>
               </div>
-              <a class="btn btn-ghost" href="https://github.com/AbdullahPatti/TaxChronos" target="_blank"
-                rel="noopener">View Repository</a>
-            </div>
-            <div class="demo-window">
-              <div class="window-header">
-                <div class="window-dots"><span></span><span></span><span></span></div>
-                <span class="window-title">TaxChronos · Bilingual RAG Preview</span>
-              </div>
-              <div class="window-body">
-                <div class="chat-stream">
-                  <div class="bubble user urdu-text" lang="ur">ٹیکس کی شرح 2024 کیا ہے؟</div>
-                  <div class="bubble agent">
-                    <p style="margin-bottom: 6px;">Based on the Federal Board of Revenue (FBR) Circular 2024-25, the
-                      applicable slab for your income bracket is 15% with a basic exemption up to PKR 600,000.</p>
-                    <p style="font-size: 12px; color: var(--ink-3);">Sources: FBR Circular No. 01/2024-25 §4(b), Income
-                      Tax Ordinance 2001 §149</p>
-                  </div>
-                  <div class="chat-meta">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                      stroke-width="2.5">
-                      <polyline points="20 6 9 17 4 12" />
-                    </svg>
-                    <span>pgvector · LangGraph corrective RAG · Scored with RAGAS</span>
-                  </div>
-                </div>
+              <div class="pub-actions">
+                <a class="btn btn-ghost btn-code" href="https://github.com/AbdullahPatti/TaxChronos" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-github"/></svg>Code</a>
               </div>
             </div>
           </article>
 
-          <!-- Project 4: CRMind -->
-          <article class="stack-card project-card reverse">
+          <article class="project-card reveal">
+            <figure class="project-visual"><img src="assets/visuals/project-whisperbench.svg"
+                alt="A code-mixed Urdu-English waveform where Whisper mishears English words at the language switch points"
+                width="600" height="375" loading="lazy"></figure>
             <div>
-              <p class="project-num">04 / CRMind · 2026</p>
-              <h3 class="project-title">A sales CRM that flags risky leads</h3>
-              <p class="project-desc">A sales CRM with 7 modules, JWT authentication, a 5-stage drag-and-drop pipeline and a
-                4-KPI dashboard. Gemini writes lead summaries, email drafts and pipeline insights, with model fallback
-                and a 30-second timeout.</p>
-              <div class="tech-tags">
-                <span>React 19</span>
-                <span>Tailwind</span>
-                <span>Node.js</span>
-                <span>Express</span>
-                <span>MongoDB</span>
-                <span>Gemini</span>
+              <p class="project-num">Bilingual WhisperBench · ASR benchmark</p>
+              <h3 class="project-title">Where speech models mishear code-switching</h3>
+              <p class="project-desc">Whisper Tiny, Base and Small on code-mixed Urdu–English speech, with a custom
+                switch-point error metric.</p>
+              <div class="metric-row">
+                <div><strong>0.899</strong><span>zero-shot WER</span></div>
+                <div><strong>327</strong><span>recordings</span></div>
+                <div><strong>11</strong><span>speakers</span></div>
               </div>
+              <div class="pub-actions">
+                <a class="btn btn-ghost btn-code" href="https://github.com/AbdullahPatti/Bilingual-Whisper-Bench" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-github"/></svg>Code</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <figure class="project-visual"><img src="assets/visuals/project-daily-digest.svg"
+                alt="A sunrise dial of delivery hours with 7 AM selected above a morning brief of three ranked Pakistan stories"
+                width="600" height="375" loading="lazy"></figure>
+            <div>
+              <p class="project-num">Daily Digest · Live</p>
+              <h3 class="project-title">News that filters itself</h3>
+              <p class="project-desc">Ranks RSS stories by Pakistan relevance and emails a Gemini summary at each
+                reader's chosen hour.</p>
+              <div class="metric-row">
+                <div><strong>15+</strong><span>active users</span></div>
+                <div><strong>6–10 AM</strong><span>delivery windows</span></div>
+                <div><strong>$0</strong><span>monthly infra</span></div>
+              </div>
+              <div class="pub-actions">
+                <a class="btn btn-solid" href="https://dailydigest-jy4r.onrender.com/" target="_blank" rel="noopener">Live demo</a>
+                <a class="btn btn-ghost btn-code" href="https://github.com/AbdullahPatti/News-Reporter" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-github"/></svg>Code</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <figure class="project-visual"><img src="assets/visuals/project-crmind.svg"
+                alt="A five-stage sales funnel with a risky lead flagged by Gemini and a draft-email action"
+                width="600" height="375" loading="lazy"></figure>
+            <div>
+              <p class="project-num">CRMind · AI sales CRM</p>
+              <h3 class="project-title">A CRM that flags risky leads</h3>
+              <p class="project-desc">Drag-and-drop pipeline and KPI dashboard; Gemini summarizes leads and drafts
+                outreach.</p>
               <div class="metric-row">
                 <div><strong>7</strong><span>modules</span></div>
                 <div><strong>5</strong><span>pipeline stages</span></div>
                 <div><strong>4</strong><span>dashboard KPIs</span></div>
               </div>
-              <a class="btn btn-ghost" href="https://github.com/AbdullahPatti/CRMind" target="_blank"
-                rel="noopener">View Repository</a>
-            </div>
-            <figure class="project-visual">
-              <img src="assets/visuals/project-crmind.svg"
-                alt="CRMind dashboard: four KPI tiles, a donut chart of leads across five pipeline stages, and Gemini lead-risk scores with an email-draft action"
-                width="600" height="500" loading="lazy">
-            </figure>
-          </article>
-
-          <!-- Project 5: Daily Digest -->
-          <article class="stack-card project-card">
-            <div>
-              <p class="project-num">05 / Daily Digest · 2026</p>
-              <h3 class="project-title">News that filters itself</h3>
-              <p class="project-desc">Delivers Gemini-summarized news to 15+ active users at their chosen hour, 6 to 10 AM PKT.
-                RSS stories are ranked by Pakistan relevance, and it runs with Docker on Render and Neon PostgreSQL.</p>
-              <div class="tech-tags">
-                <span>FastAPI</span>
-                <span>PostgreSQL</span>
-                <span>Gemini</span>
-                <span>Docker</span>
-                <span>JWT</span>
-              </div>
-              <div class="metric-row">
-                <div><strong>15+</strong><span>active users</span></div>
-                <div><strong>5</strong><span>delivery windows</span></div>
-                <div><strong>$0</strong><span>monthly infra cost</span></div>
-              </div>
               <div class="pub-actions">
-                <a class="btn btn-solid" href="https://dailydigest-jy4r.onrender.com/" target="_blank"
-                  rel="noopener">Live Demo</a>
-                <a class="btn btn-ghost" href="https://github.com/AbdullahPatti/News-Reporter" target="_blank"
-                  rel="noopener">View Repository</a>
-              </div>
-            </div>
-            <figure class="project-visual">
-              <img src="assets/visuals/project-daily-digest.svg"
-                alt="Daily Digest: a fetch, rank, summarize and email pipeline feeding a 07:00 brief of technology, economy and policy stories, with a 94 percent Pakistan-relevance ring"
-                width="600" height="500" loading="lazy">
-            </figure>
-          </article>
-
-          <!-- Project 6: Urdu Robustness Benchmark -->
-          <article class="stack-card project-card reverse">
-            <div>
-              <p class="project-num">06 / Urdu Robustness Benchmark · 2026</p>
-              <h3 class="project-title">Where multilingual models quietly break</h3>
-              <p class="project-desc">An open benchmark of 26 Urdu datasets in two scripts, 188,309 examples across
-                four task types. Fine-tuned encoders and few-shot LLMs tested on 80 domain shifts, with leakage-aware
-                splits and shortcut audits built in. Fine-tuned models drop up to 47.6 macro-F1 off their home domain;
-                few-shot LLMs hold up far better.</p>
-              <div class="tech-tags">
-                <span>XLM-RoBERTa</span>
-                <span>mBERT</span>
-                <span>Qwen2.5</span>
-                <span>Mistral-7B</span>
-                <span>Llama 3.1</span>
-              </div>
-              <div class="metric-row">
-                <div><strong>26</strong><span>datasets</span></div>
-                <div><strong>188k</strong><span>examples</span></div>
-                <div><strong>30 / 42</strong><span>LLM wins across shifts</span></div>
-              </div>
-              <a class="btn btn-ghost" href="https://github.com/AbdullahPatti/Urdu-Multi-Domain-Script-Research"
-                target="_blank" rel="noopener">View Repository</a>
-            </div>
-            <div class="demo-window">
-              <div class="window-header">
-                <div class="window-dots"><span></span><span></span><span></span></div>
-                <span class="window-title">Urdu Robustness Benchmark Suite</span>
-              </div>
-              <div class="window-body">
-                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
-                  <span style="font-size: 12px; font-weight: 600; color: var(--ink);">Off-Domain Evaluation</span>
-                  <span
-                    style="font-size: 11px; background: #e8f5e9; color: var(--ok-text); padding: 2px 8px; border-radius: 980px; font-weight: 600;">Leakage-aware
-                    splits</span>
-                </div>
-                <div class="benchmark-rows">
-                  <div class="bm-row">
-                    <span>Shifts</span>
-                    <div class="bm-track"><div class="bm-fill ok" style="width: 100%;"></div></div>
-                    <strong>80</strong>
-                  </div>
-                  <div class="bm-row">
-                    <span>LLM wins</span>
-                    <div class="bm-track"><div class="bm-fill" style="width: 71%;"></div></div>
-                    <strong>30/42</strong>
-                  </div>
-                  <div class="bm-row">
-                    <span>Min drop</span>
-                    <div class="bm-track"><div class="bm-fill" style="width: 13.5%;"></div></div>
-                    <strong>13.5</strong>
-                  </div>
-                  <div class="bm-row">
-                    <span>Max drop</span>
-                    <div class="bm-track"><div class="bm-fill warn" style="width: 47.6%;"></div></div>
-                    <strong>47.6</strong>
-                  </div>
-                </div>
+                <a class="btn btn-ghost btn-code" href="https://github.com/AbdullahPatti/CRMind" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-github"/></svg>Code</a>
               </div>
             </div>
           </article>
 
-          <!-- Project 7: WhisperBench -->
-          <article class="stack-card project-card">
+          <article class="project-card reveal">
+            <figure class="project-visual"><img src="assets/visuals/project-finsight.svg"
+                alt="A transaction trend line with a 02:14 wire transfer flagged as an anomaly and the account rated High risk"
+                width="600" height="375" loading="lazy"></figure>
             <div>
-              <p class="project-num">07 / Bilingual WhisperBench · 2026</p>
-              <h3 class="project-title">Where speech models mishear code-switching</h3>
-              <p class="project-desc">Whisper Tiny, Base, and Small benchmarked on 327 Urdu-English recordings from 11 speakers
-                across three language modes, reporting WER, a custom SPER metric, and language-switch errors in a
-                dashboard.</p>
-              <div class="tech-tags">
-                <span>Whisper</span>
-                <span>FastAPI</span>
-                <span>SQLAlchemy</span>
-                <span>Audio DSP</span>
-              </div>
-              <div class="metric-row">
-                <div><strong>0.899</strong><span>zero-shot WER</span></div>
-                <div><strong>327</strong><span>recordings</span></div>
-                <div><strong>11</strong><span>speakers tested</span></div>
-              </div>
-              <a class="btn btn-ghost" href="https://github.com/AbdullahPatti/Bilingual-Whisper-Bench" target="_blank"
-                rel="noopener">View Repository</a>
-            </div>
-            <div class="demo-window">
-              <div class="window-header">
-                <div class="window-dots"><span></span><span></span><span></span></div>
-                <span class="window-title">WhisperBench · Code-Switch Alignment</span>
-              </div>
-              <div class="window-body">
-                <p style="font-size: 11px; color: var(--ink-3); margin-bottom: 8px;">Acoustic Audio Stream · 00:03.42
-                </p>
-                <svg viewBox="0 0 320 36" style="margin-bottom: 12px;">
-                  <path
-                    d="M0,18 Q10,4 20,18 T40,18 T60,6 T80,18 T100,2 T120,18 T140,30 T160,18 T180,4 T200,18 T220,10 T240,18 T260,26 T280,18 T300,8 T320,18"
-                    fill="none" stroke="#0071e3" stroke-width="2" />
-                </svg>
-                <div style="background: var(--mist); padding: 12px; border-radius: 8px; font-size: 13px;">
-                  <span style="font-weight: 600; color: var(--ink);">&ldquo;Kal <mark
-                      style="background: #e1edff; color: #0071e3; padding: 2px 4px; border-radius: 4px;">meeting</mark>
-                    <mark
-                      style="background: #e1edff; color: #0071e3; padding: 2px 4px; border-radius: 4px;">reschedule</mark>
-                    kar dein?&rdquo;</span>
-                  <p style="font-size: 11px; color: var(--ok-text); margin-top: 6px;">✓ Switch point boundary localized at
-                    00:01.18 · 0.899 WER</p>
-                </div>
-              </div>
-            </div>
-          </article>
-
-          <!-- Project 8: FinSight -->
-          <article class="stack-card project-card reverse">
-            <div>
-              <p class="project-num">08 / FinSight · 2025</p>
-              <h3 class="project-title">See financial risk before it is a problem</h3>
-              <p class="project-desc">A weighted multi-factor risk engine: isolation forest, HMM behavioral states, and
-                an NLP transaction analyzer. CSV in; dashboard and PDF, CSV, Excel out.</p>
-              <div class="tech-tags">
-                <span>React</span>
-                <span>FastAPI</span>
-                <span>scikit-learn</span>
-                <span>PostgreSQL</span>
-              </div>
+              <p class="project-num">FinSight · Risk analytics</p>
+              <h3 class="project-title">Spot financial risk before it is a problem</h3>
+              <p class="project-desc">Isolation forest, HMM behaviour states and NLP combine into one weighted risk
+                score. CSV in, report out.</p>
               <div class="metric-row">
                 <div><strong>4</strong><span>risk bands</span></div>
                 <div><strong>5</strong><span>weighted factors</span></div>
                 <div><strong>3</strong><span>export formats</span></div>
               </div>
-              <a class="btn btn-ghost" href="https://github.com/AbdullahPatti/FinSight-Financial-Analysis"
-                target="_blank" rel="noopener">View Repository</a>
-            </div>
-            <div class="demo-window">
-              <div class="window-header">
-                <div class="window-dots"><span></span><span></span><span></span></div>
-                <span class="window-title">FinSight Risk Dashboard</span>
-              </div>
-              <div class="window-body">
-                <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 12px;">
-                  <div>
-                    <span style="font-size: 11px; color: var(--ink-3);">Analyzed Volume</span>
-                    <h4 style="font-size: 24px; font-weight: 800; color: var(--ink);">$84,230</h4>
-                  </div>
-                  <span
-                    style="font-size: 11px; font-weight: 700; color: var(--warn); background: #ffebee; padding: 4px 8px; border-radius: 6px;">High
-                    Risk Flagged</span>
-                </div>
-                <svg viewBox="0 0 320 50" style="margin-bottom: 10px;">
-                  <path
-                    d="M0,42 L30,36 L60,40 L90,26 L120,32 L150,16 L180,22 L210,10 L240,16 L270,6 L300,14 L320,4 L320,50 L0,50 Z"
-                    fill="rgba(0,113,227,0.08)" />
-                  <path d="M0,42 L30,36 L60,40 L90,26 L120,32 L150,16 L180,22 L210,10 L240,16 L270,6 L300,14 L320,4"
-                    fill="none" stroke="#0071e3" stroke-width="2" />
-                </svg>
-                <div style="font-size: 12px; color: var(--ink-2); display: flex; justify-content: space-between;">
-                  <span>Outlier transfer detected 02:14</span>
-                  <strong style="color: var(--warn);">Isolation Forest 0.89</strong>
-                </div>
+              <div class="pub-actions">
+                <a class="btn btn-ghost btn-code" href="https://github.com/AbdullahPatti/FinSight-Financial-Analysis" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-github"/></svg>Code</a>
               </div>
             </div>
           </article>
@@ -855,294 +282,260 @@
       </div>
     </section>
 
-    <!-- ============ PROCESS — Vertical Timeline with Glowing Scroll Rail ============ -->
-    <section class="section tone-mist" id="process" data-nav="Process">
+    <!-- ============ RESEARCH ============ -->
+    <section class="section tone-mist" id="publications" data-nav="Research">
       <div class="wrap">
-        <span class="eyebrow reveal">Process</span>
-        <h2 class="reveal">From first conversation to production.</h2>
-        <p class="section-lead reveal">One disciplined thread: frame the constraint, architect data and models in
-          unison, then deploy reliable systems designed to run unattended.</p>
+        <span class="eyebrow reveal">Research</span>
+        <h2 class="reveal">Models that hold up when the world shifts.</h2>
+        <p class="section-lead reveal">New scripts, new domains, smaller models, volatile markets.</p>
 
-        <div class="process-timeline" id="process-timeline">
-          <div class="process-rail" aria-hidden="true">
-            <div class="process-rail-fill" id="process-rail-fill"></div>
-          </div>
-
-          <article class="process-step-item reveal" data-step="0">
-            <div class="step-marker">01</div>
-            <div class="step-card">
-              <span class="step-phase">Phase 01 · Day 1</span>
-              <h3>Discovery</h3>
-              <p>Understand the real user bottleneck, data schemas, and non-functional constraints. Inquisitive
-                listening, not premature pitching.</p>
+        <div class="work-grid">
+          <article class="project-card reveal">
+            <figure class="project-visual"><img src="assets/visuals/research-robustness.svg"
+                alt="The same Urdu sentence in Nastaliq and Roman script above a train-to-test domain matrix"
+                width="600" height="375" loading="lazy"></figure>
+            <div>
+              <p class="pub-meta">Submitted · ACM TALLIP · First author</p>
+              <h3 class="pub-title">Domain Robustness of Multilingual NLP Models Across Urdu and Roman Urdu Scripts</h3>
+              <p class="pub-byline">M. A. Haroon, M. Bashir</p>
+              <div class="metric-row">
+                <div><strong>26</strong><span>datasets released</span></div>
+                <div><strong>188,309</strong><span>examples</span></div>
+                <div><strong>30 / 42</strong><span>LLM wins</span></div>
+              </div>
+              <div class="pub-actions">
+                <a class="btn btn-solid" href="https://doi.org/10.5281/zenodo.22195610" target="_blank" rel="noopener">Data</a>
+                <a class="btn btn-ghost btn-code" href="https://github.com/AbdullahPatti/Urdu-Multi-Domain-Script-Research" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-github"/></svg>Code</a>
+              </div>
             </div>
           </article>
 
-          <article class="process-step-item reveal" data-step="1">
-            <div class="step-marker">02</div>
-            <div class="step-card">
-              <span class="step-phase">Phase 02 · Week 1</span>
-              <h3>Scope</h3>
-              <p>Written architecture document: API contracts, data pipelines, model benchmarks, and definitive
-                definitions of done.</p>
+          <article class="project-card reveal">
+            <figure class="project-visual"><img src="assets/visuals/research-compression.svg"
+                alt="An airplane with an adversarial patch classified as a frog, and patched accuracy of pruned, quantized and dense compressed models"
+                width="600" height="375" loading="lazy"></figure>
+            <div>
+              <p class="pub-meta">Submitted · TMLR</p>
+              <h3 class="pub-title">Does Compression Preserve Adversarial Patch Robustness?</h3>
+              <p class="pub-byline">M. A. Haroon, A. R. Antall, A. Hadi</p>
+              <div class="metric-row">
+                <div><strong>13</strong><span>ResNet-18 models</span></div>
+                <div><strong>61.2→52.9%</strong><span>dense patched acc.</span></div>
+                <div><strong>3</strong><span>seeds each</span></div>
+              </div>
+              <div class="pub-actions">
+                <a class="btn btn-ghost btn-code" href="https://github.com/AbdullahPatti/CNN-Adversarial-Patch" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-github"/></svg>Code</a>
+              </div>
             </div>
           </article>
 
-          <article class="process-step-item reveal" data-step="2">
-            <div class="step-marker">03</div>
-            <div class="step-card">
-              <span class="step-phase">Phase 03 · Weeks 2 to 4</span>
-              <h3>Build</h3>
-              <p>Clean modular code, vector stores, models, and interfaces. Rapid iterations with continuous checkpoint
-                reviews.</p>
+          <article class="project-card reveal">
+            <figure class="project-visual"><img src="assets/visuals/research-shortcut.svg"
+                alt="A fake article 3.4 times longer than a real one; transfer F1 collapses from 0.771 to 0.005 when the split is reversed"
+                width="600" height="375" loading="lazy"></figure>
+            <div>
+              <p class="pub-meta">arXiv:2607.14131 · Jul 2026 · Sole author</p>
+              <h3 class="pub-title">When Benchmarks Mislead: Shortcut Learning in Multilingual Fake News and Sarcasm Detection</h3>
+              <p class="pub-byline">M. A. Haroon</p>
+              <div class="metric-row">
+                <div><strong>0.771→0.005</strong><span>reversed split</span></div>
+                <div><strong>3.4×</strong><span>length confound</span></div>
+                <div><strong>3</strong><span>domains</span></div>
+              </div>
+              <div class="pub-actions">
+                <a class="btn btn-solid" href="https://arxiv.org/abs/2607.14131" target="_blank" rel="noopener">arXiv</a>
+                <a class="btn btn-ghost btn-code" href="https://github.com/AbdullahPatti/Cross-Data-Transfer-Learning" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-github"/></svg>Code</a>
+              </div>
             </div>
           </article>
 
-          <article class="process-step-item reveal" data-step="3">
-            <div class="step-marker">04</div>
-            <div class="step-card">
-              <span class="step-phase">Phase 04 · Week 5</span>
-              <h3>Harden</h3>
-              <p>Stress testing on live distribution shifts, edge-cases, and confound audits. If it can break quietly, I
-                catch it first.</p>
-            </div>
-          </article>
-
-          <article class="process-step-item reveal" data-step="4">
-            <div class="step-marker">05</div>
-            <div class="step-card">
-              <span class="step-phase">Phase 05 · Week 6</span>
-              <h3>Ship</h3>
-              <p>Containerized, documented, and deployed with full telemetry, CI/CD pipelines, and seamless handover.
-              </p>
+          <article class="project-card reveal">
+            <figure class="project-visual"><img src="assets/visuals/research-bitcoin.svg"
+                alt="Hourly Bitcoin candles with a volatile regime; sentiment and price features pass through a volatility gate to an up prediction"
+                width="600" height="375" loading="lazy"></figure>
+            <div>
+              <p class="pub-meta">arXiv:2607.23370 · Jul 2026 · Sole author</p>
+              <h3 class="pub-title">Bitcoin Price Direction Prediction via Regime-Aware Multi-Modal Fusion</h3>
+              <p class="pub-byline">M. A. Haroon</p>
+              <div class="metric-row">
+                <div><strong>0.551</strong><span>macro-F1 (6h)</span></div>
+                <div><strong>0.14</strong><span>recall without gate</span></div>
+                <div><strong>3,491</strong><span>hourly points</span></div>
+              </div>
+              <div class="pub-actions">
+                <a class="btn btn-solid" href="https://arxiv.org/abs/2607.23370" target="_blank" rel="noopener">arXiv</a>
+                <a class="btn btn-ghost btn-code" href="https://github.com/AbdullahPatti/StreetSmart-BitCoin-Price" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-github"/></svg>Code</a>
+              </div>
             </div>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- ============ TOOLS & TECH STACK ============ -->
-    <section class="section tone-white" id="stack" data-nav="Stack">
+    <!-- ============ EXPERIENCE ============ -->
+    <section class="section tone-white" id="experience" data-nav="Experience">
       <div class="wrap">
-        <span class="eyebrow reveal">Tools &amp; Technologies</span>
+        <span class="eyebrow reveal">Experience</span>
+        <h2 class="reveal">Where I have worked.</h2>
+
+        <div class="experience-timeline">
+          <article class="experience-item reveal">
+            <div class="exp-date"><strong>Oct 2026 – Present</strong><span class="exp-badge">Current</span></div>
+            <div class="exp-content">
+              <h3 class="exp-title">Research Assistant · AI in Healthcare Management</h3>
+              <p class="exp-company">FAST School of Management <span class="exp-loc">· Lahore · Dr. Beenish Arshad</span></p>
+              <ul class="exp-points">
+                <li>Surveyed 35+ doctors and 45+ patients on AI adoption; built the Python dashboards.</li>
+                <li>Designed an AI hospital system with an Urdu/English voice receptionist (Whisper, RAG), under HEC NRPU review.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="experience-item reveal">
+            <div class="exp-date"><strong>Jul – Oct 2026</strong></div>
+            <div class="exp-content">
+              <h3 class="exp-title">Deep Learning Intern · Urdu NLP</h3>
+              <p class="exp-company">FAST School of Computing <span class="exp-loc">· Lahore · Dr. Maryam Bashir</span></p>
+              <ul class="exp-points">
+                <li>Across 80 domain shifts, fine-tuned XLM-R/mBERT lost 13.5–47.6 macro-F1; few-shot Llama, Mistral and Qwen won 30 of 42 comparisons.</li>
+                <li>Traced an XLM-R collapse (0.771 → 0.005) to a length shortcut.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="experience-item reveal">
+            <div class="exp-date"><strong>Jun – Jul 2026</strong></div>
+            <div class="exp-content">
+              <h3 class="exp-title">IT Intern · Enterprise .NET &amp; AI</h3>
+              <p class="exp-company">QuickFuel <span class="exp-loc">· Lahore</span></p>
+              <ul class="exp-points">
+                <li>Started the company's first AI initiative: 9 use cases, LLM sentiment analysis and ChromaDB product search.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="experience-item reveal">
+            <div class="exp-date"><strong>Jun – Jul 2026</strong></div>
+            <div class="exp-content">
+              <h3 class="exp-title">AI Automation Intern · LLM Agents &amp; RAG</h3>
+              <p class="exp-company">Optimus Automate <span class="exp-loc">· Remote</span></p>
+              <ul class="exp-points">
+                <li>Built a Gmail agent that classifies intent and drafts replies, and a RAG PDF assistant.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section tone-mist" id="stack" data-nav="Skills">
+      <div class="wrap">
+        <span class="eyebrow reveal">Skills</span>
         <h2 class="reveal">What I build with.</h2>
-        <p class="section-lead reveal">Production-proven technologies across machine learning, backend pipelines, and
-          modern web interfaces.</p>
 
-        <div class="stack-groups">
-          <!-- Frontend -->
-          <div class="stack-group reveal">
-            <h3>Frontend</h3>
-            <div class="tool-grid">
-              <div class="tool"><img src="https://cdn.simpleicons.org/react/61DAFB" alt="React" width="20"
-                  height="20"><span>React</span></div>
-              <div class="tool"><img src="https://cdn.simpleicons.org/typescript/3178C6" alt="TypeScript" width="20"
-                  height="20"><span>TypeScript</span></div>
-              <div class="tool"><img src="https://cdn.simpleicons.org/javascript/F7DF1E" alt="JavaScript" width="20"
-                  height="20"><span>JavaScript</span></div>
-              <div class="tool"><img src="https://cdn.simpleicons.org/tailwindcss/06B6D4" alt="Tailwind CSS" width="20"
-                  height="20"><span>Tailwind CSS</span></div>
-              <div class="tool"><img src="https://cdn.simpleicons.org/html5/E34F26" alt="HTML5" width="20"
-                  height="20"><span>HTML5</span></div>
-              <div class="tool"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
-                  alt="CSS3" width="20" height="20"><span>CSS3</span></div>
+        <div class="skill-rows reveal">
+          <div class="skill-row">
+            <h3>ML &amp; Deep Learning</h3>
+            <div class="skill-chips">
+              <span><img src="https://cdn.simpleicons.org/pytorch/EE4C2C" alt="" width="18" height="18">PyTorch</span>
+              <span><img src="https://cdn.simpleicons.org/tensorflow/FF6F00" alt="" width="18" height="18">TensorFlow</span>
+              <span><img src="https://cdn.simpleicons.org/huggingface/FFD21E" alt="" width="18" height="18">Hugging Face</span>
+              <span><img src="https://cdn.simpleicons.org/scikitlearn/F7931E" alt="" width="18" height="18">scikit-learn</span>
+              <span><img src="assets/openai.svg" alt="" width="18" height="18">Whisper</span>
+              <span>Fine-tuning</span>
             </div>
           </div>
-
-          <!-- Backend -->
-          <div class="stack-group reveal">
-            <h3>Backend &amp; APIs</h3>
-            <div class="tool-grid">
-              <div class="tool"><img src="https://cdn.simpleicons.org/python/3776AB" alt="Python" width="20"
-                  height="20"><span>Python</span></div>
-              <div class="tool"><img src="https://cdn.simpleicons.org/fastapi/009688" alt="FastAPI" width="20"
-                  height="20"><span>FastAPI</span></div>
-              <div class="tool"><img src="https://cdn.simpleicons.org/nodedotjs/339933" alt="Node.js" width="20"
-                  height="20"><span>Node.js</span></div>
-              <div class="tool"><img src="https://cdn.simpleicons.org/express/000000" alt="Express" width="20"
-                  height="20"><span>Express</span></div>
-              <div class="tool"><img src="https://cdn.simpleicons.org/dotnet/512BD4" alt=".NET" width="20"
-                  height="20"><span>.NET Core</span></div>
-              <div class="tool"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg"
-                  alt="C#" width="20" height="20"><span>C#</span></div>
+          <div class="skill-row">
+            <h3>LLMs &amp; GenAI</h3>
+            <div class="skill-chips">
+              <span><img src="https://cdn.simpleicons.org/langchain/1C3C3C" alt="" width="18" height="18">LangChain</span>
+              <span><img src="https://cdn.simpleicons.org/langgraph/1C3C3C" alt="" width="18" height="18">LangGraph</span>
+              <span><img src="https://cdn.simpleicons.org/googlegemini/8E75B2" alt="" width="18" height="18">Gemini</span>
+              <span><img src="https://cdn.simpleicons.org/ollama/000000" alt="" width="18" height="18">Ollama</span>
+              <span>RAG</span><span>Agents</span>
             </div>
           </div>
-
-          <!-- AI & ML -->
-          <div class="stack-group reveal">
-            <h3>AI &amp; Machine Learning</h3>
-            <div class="tool-grid">
-              <div class="tool"><img src="https://cdn.simpleicons.org/pytorch/EE4C2C" alt="PyTorch" width="20"
-                  height="20"><span>PyTorch</span></div>
-              <div class="tool"><img src="https://cdn.simpleicons.org/huggingface/FFD21E" alt="Transformers" width="20"
-                  height="20"><span>Transformers</span></div>
-              <div class="tool"><img src="https://cdn.simpleicons.org/tensorflow/FF6F00" alt="TensorFlow" width="20"
-                  height="20"><span>TensorFlow</span></div>
-              <div class="tool"><img src="https://cdn.simpleicons.org/scikitlearn/F7931E" alt="scikit-learn" width="20"
-                  height="20"><span>scikit-learn</span></div>
-              <div class="tool"><img src="https://cdn.simpleicons.org/langchain/1C3C3C" alt="LangChain" width="20"
-                  height="20"><span>LangChain</span></div>
-              <div class="tool"><img src="https://cdn.simpleicons.org/langgraph/1C3C3C" alt="LangGraph" width="20"
-                  height="20"><span>LangGraph</span></div>
-              <div class="tool"><img src="https://cdn.simpleicons.org/ollama/000000" alt="Ollama" width="20"
-                  height="20"><span>Ollama</span></div>
-              <!-- Whisper with OpenAI logo icon, cleanly labeled "Whisper" -->
-              <div class="tool"><img src="assets/openai.svg" alt="OpenAI Logo" width="20"
-                  height="20"><span>Whisper</span></div>
+          <div class="skill-row">
+            <h3>Languages</h3>
+            <div class="skill-chips">
+              <span><img src="https://cdn.simpleicons.org/python/3776AB" alt="" width="18" height="18">Python</span>
+              <span><img src="https://cdn.simpleicons.org/cplusplus/00599C" alt="" width="18" height="18">C++</span>
+              <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="" width="18" height="18">C#</span>
+              <span><img src="https://cdn.simpleicons.org/typescript/3178C6" alt="" width="18" height="18">TypeScript</span>
+              <span><img src="https://cdn.simpleicons.org/javascript/F7DF1E" alt="" width="18" height="18">JavaScript</span>
+              <span>SQL</span>
             </div>
           </div>
-
-          <!-- Data & Infra -->
-          <div class="stack-group reveal">
-            <h3>Data &amp; Infrastructure</h3>
-            <div class="tool-grid">
-              <div class="tool"><img src="https://cdn.simpleicons.org/postgresql/4169E1" alt="PostgreSQL" width="20"
-                  height="20"><span>PostgreSQL</span></div>
-              <div class="tool"><img src="https://cdn.simpleicons.org/qdrant/DC244C" alt="Qdrant" width="20"
-                  height="20"><span>Qdrant</span></div>
-              <div class="tool"><img src="https://cdn.simpleicons.org/supabase/3FCF8E" alt="Supabase" width="20"
-                  height="20"><span>Supabase</span></div>
-              <div class="tool"><img src="https://cdn.simpleicons.org/mongodb/47A248" alt="MongoDB" width="20"
-                  height="20"><span>MongoDB</span></div>
-              <div class="tool"><img src="https://cdn.simpleicons.org/docker/2496ED" alt="Docker" width="20"
-                  height="20"><span>Docker</span></div>
-              <div class="tool"><img src="https://cdn.simpleicons.org/git/F05032" alt="Git" width="20"
-                  height="20"><span>Git</span></div>
-              <div class="tool"><img src="https://cdn.simpleicons.org/github/181717" alt="GitHub" width="20"
-                  height="20"><span>GitHub Actions</span></div>
+          <div class="skill-row">
+            <h3>Backend, Data &amp; DevOps</h3>
+            <div class="skill-chips">
+              <span><img src="https://cdn.simpleicons.org/fastapi/009688" alt="" width="18" height="18">FastAPI</span>
+              <span><img src="https://cdn.simpleicons.org/react/61DAFB" alt="" width="18" height="18">React</span>
+              <span><img src="https://cdn.simpleicons.org/nodedotjs/339933" alt="" width="18" height="18">Node.js</span>
+              <span><img src="https://cdn.simpleicons.org/postgresql/4169E1" alt="" width="18" height="18">PostgreSQL</span>
+              <span><img src="https://cdn.simpleicons.org/supabase/3FCF8E" alt="" width="18" height="18">Supabase</span>
+              <span><img src="https://cdn.simpleicons.org/qdrant/DC244C" alt="" width="18" height="18">Qdrant</span>
+              <span><img src="https://cdn.simpleicons.org/docker/2496ED" alt="" width="18" height="18">Docker</span>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ============ EDUCATION (SEPARATED) ============ -->
-    <section class="section tone-mist" id="education" data-nav="Education">
+    <!-- ============ EDUCATION & CERTIFICATIONS ============ -->
+    <section class="section tone-white" id="education" data-nav="Education">
       <div class="wrap">
-        <span class="eyebrow reveal">Academic Background</span>
-        <h2 class="reveal">Education.</h2>
-        <p class="section-lead reveal">Rigorous computer science fundamentals and engineering leadership at Pakistan's
-          premier computing university.</p>
+        <span class="eyebrow reveal">Education &amp; Certifications</span>
+        <h2 class="reveal">Where I learned.</h2>
 
-        <article class="education-card-full reveal">
-          <div class="uni-header">
-            <div class="uni-crest">
-              <img src="Fast-University-Logo.png" alt="FAST-NUCES University Crest" width="52" height="52"
-                onerror="this.onerror=null; this.src='assets/fast-nuces.svg';">
+        <div class="edu-grid">
+          <article class="education-card-full reveal">
+            <div class="uni-header">
+              <div class="uni-crest">
+                <img src="Fast-University-Logo.png" alt="FAST-NUCES crest" width="52" height="52"
+                  onerror="this.onerror=null; this.src='assets/fast-nuces.svg';">
+              </div>
+              <div class="uni-title">
+                <h3>FAST-NUCES, Lahore</h3>
+                <p>BS Computer Science · Aug 2023 – Expected 2027</p>
+              </div>
             </div>
-            <div class="uni-title">
-              <h3>FAST-NUCES</h3>
-              <p>National University of Computer &amp; Emerging Sciences, Lahore</p>
-            </div>
+            <ul class="honors-list">
+              <li><strong>FYP:</strong> Sachai Check, Urdu fake-news and deepfake-audio detection.</li>
+              <li><strong>Leadership:</strong> Team lead &amp; Scrum Master; Deputy Head of PR, FAST Business Club;
+                Executive Media Officer, SOFTEC.</li>
+              <li><strong>Honors:</strong> SQL Query Master champion; ACM Speed Programming competitor.</li>
+            </ul>
+          </article>
+
+          <div class="cert-list">
+            <a class="cert-card-link reveal" href="https://www.udemy.com/certificate/UC-89374373-8b55-4ae7-a648-0c8cc5903e80/" target="_blank" rel="noopener">
+              <span class="cert-issuer-badge">Udemy</span><h3>AI Engineer Core Track: LLMs, RAG &amp; Agents</h3><span class="cert-verify-link">Verify ↗</span>
+            </a>
+            <a class="cert-card-link reveal" href="https://www.coursera.org/account/accomplishments/verify/ACTZJHXRLJAD" target="_blank" rel="noopener">
+              <span class="cert-issuer-badge">IBM</span><h3>Machine Learning with Python</h3><span class="cert-verify-link">Verify ↗</span>
+            </a>
+            <a class="cert-card-link reveal" href="https://www.coursera.org/account/accomplishments/verify/R4RKKC6T0WDE" target="_blank" rel="noopener">
+              <span class="cert-issuer-badge">Microsoft</span><h3>Data Analysis and Visualization with Python</h3><span class="cert-verify-link">Verify ↗</span>
+            </a>
+            <a class="cert-card-link reveal" href="https://www.coursera.org/account/accomplishments/verify/ZB7FUFBJBRX4" target="_blank" rel="noopener">
+              <span class="cert-issuer-badge">Google</span><h3>Introduction to Generative AI</h3><span class="cert-verify-link">Verify ↗</span>
+            </a>
           </div>
-          <div class="degree-box">
-            <strong>Bachelor of Science in Computer Science (BSCS)</strong>
-            <span>August 2023 &ndash; Expected June 2027 · Final-Year Undergraduate</span>
-          </div>
-          <p style="font-size: 15px; font-weight: 700; color: var(--ink); margin-bottom: 14px;">Key Highlights &amp;
-            Leadership:</p>
-          <ul class="honors-list">
-            <li><strong>Final Year Project (FYP):</strong> Sachai Check, Urdu fake-news detection across domains and
-              deepfake-audio verification, with an LLM judge that explains every verdict.</li>
-            <li><strong>Team Lead &amp; Scrum Master:</strong> Directing cross-functional semester sprint teams across
-              data pipelines and full-stack deployments.</li>
-            <li><strong>Leadership:</strong> Deputy Head of PR, FAST Business Club; Executive Media Officer, SOFTEC
-              (Pakistan's largest student IT Olympiad).</li>
-            <li><strong>Competitive Honors:</strong> SQL Query Master champion, ACM Speed Programming competitor, and
-              technical cinematography recognitions.</li>
-          </ul>
-        </article>
-      </div>
-    </section>
-
-    <!-- ============ CERTIFICATIONS (SEPARATED) ============ -->
-    <section class="section tone-white" id="certifications" data-nav="Certifications">
-      <div class="wrap">
-        <span class="eyebrow reveal">Continuous Learning</span>
-        <h2 class="reveal">Certifications.</h2>
-        <p class="section-lead reveal">Verified professional credentials in machine learning, generative AI, LLM
-          engineering, and data analysis.</p>
-
-        <div class="cert-grid">
-          <!-- Udemy AI Engineer -->
-          <a class="cert-card-link reveal" href="https://www.udemy.com/certificate/UC-89374373-8b55-4ae7-a648-0c8cc5903e80/" target="_blank" rel="noopener">
-            <div class="cert-top">
-              <span class="cert-issuer-badge">Udemy</span>
-              <span class="cert-verify-link">Verify Credential ↗</span>
-            </div>
-            <h3>AI Engineer Core Track: LLM Engineering, RAG &amp; Agents</h3>
-            <p>Comprehensive LLM engineering, fine-tuning with QLoRA, advanced RAG architectures, and autonomous
-              multi-agent systems.</p>
-            <div class="cert-skills">
-              <span>LLMs</span>
-              <span>RAG</span>
-              <span>QLoRA</span>
-              <span>Agents</span>
-            </div>
-          </a>
-
-          <!-- IBM ML -->
-          <a class="cert-card-link reveal" href="https://www.coursera.org/account/accomplishments/verify/ACTZJHXRLJAD"
-            target="_blank" rel="noopener">
-            <div class="cert-top">
-              <span class="cert-issuer-badge">IBM</span>
-              <span class="cert-verify-link">Verify Credential ↗</span>
-            </div>
-            <h3>Machine Learning with Python</h3>
-            <p>Supervised and unsupervised algorithms, regression, classification, clustering, and scikit-learn
-              statistical pipelines.</p>
-            <div class="cert-skills">
-              <span>scikit-learn</span>
-              <span>Regression</span>
-              <span>Classification</span>
-            </div>
-          </a>
-
-          <!-- Microsoft Data Analysis -->
-          <a class="cert-card-link reveal" href="https://www.coursera.org/account/accomplishments/verify/R4RKKC6T0WDE" target="_blank" rel="noopener">
-            <div class="cert-top">
-              <span class="cert-issuer-badge">Microsoft</span>
-              <span class="cert-verify-link">Verify Credential ↗</span>
-            </div>
-            <h3>Data Analysis and Visualization with Python</h3>
-            <p>Advanced data wrangling, exploratory data analysis, statistical modeling, and visualization libraries.
-            </p>
-            <div class="cert-skills">
-              <span>Pandas</span>
-              <span>NumPy</span>
-              <span>Data Visualization</span>
-            </div>
-          </a>
-
-          <!-- Google Gen AI -->
-          <a class="cert-card-link reveal" href="https://www.coursera.org/account/accomplishments/verify/ZB7FUFBJBRX4" target="_blank" rel="noopener">
-            <div class="cert-top">
-              <span class="cert-issuer-badge">Google</span>
-              <span class="cert-verify-link">Verify Credential ↗</span>
-            </div>
-            <h3>Introduction to Generative AI</h3>
-            <p>Foundation models, attention mechanisms, large language model architectures, and ethical AI deployment.
-            </p>
-            <div class="cert-skills">
-              <span>Generative AI</span>
-              <span>Transformers</span>
-              <span>Ethics</span>
-            </div>
-          </a>
         </div>
       </div>
     </section>
 
-    <!-- ============ CONTACT & CLICK-TO-COPY ============ -->
+    <!-- ============ CONTACT ============ -->
     <section class="section tone-mist" id="contact" data-nav="Contact">
       <div class="wrap">
         <div class="contact-box">
           <span class="eyebrow reveal">Get in Touch</span>
-          <h2 class="reveal">Let's build something exceptional.</h2>
-          <p class="section-lead reveal" style="margin-inline: auto;">Open to research collaborations, AI/ML
-            engineering, forward-deployed positions, and ambitious software builds.</p>
+          <h2 class="reveal">Let's build something.</h2>
+          <p class="section-lead reveal" style="margin-inline: auto;">Open to research collaborations and AI/ML,
+            data and forward-deployed roles.</p>
 
-          <!-- Formspree Contact Form -->
           <form class="contact-form reveal" id="contact-form" action="https://formspree.io/f/mvkgzpqr" method="POST">
             <input type="text" name="_gotcha" class="hp" tabindex="-1" autocomplete="off">
             <div class="form-row">
@@ -1168,7 +561,6 @@
             </div>
           </form>
 
-          <!-- Direct Contact & Click-to-Copy Button -->
           <div class="contact-direct reveal">
             <button type="button" class="copy-email-btn" id="copy-email-btn" title="Click to copy email address">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
