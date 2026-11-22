@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 500" role="img" aria-labelledby="t d">
+<title id="t">Nabz Scribe: offline clinical voice scribe for OPD doctors</title>
+<desc id="d">Code-switched English, Urdu and Punjabi consultation audio goes through a fine-tuned, quantized Whisper model and an on-device LLM, producing a printed prescription, all offline. Fine-tuning raised medicine recall from 10% to 50% and negation accuracy from 61% to 90%; 37.6 seconds of audio is processed in 11.6 seconds on a phone CPU.</desc>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#f2f2f5"/></linearGradient>
+  <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#0071e3"/><stop offset="1" stop-color="#5856d6"/></linearGradient>
+  <filter id="sh" x="-10%" y="-10%" width="120%" height="130%"><feDropShadow dx="0" dy="6" stdDeviation="9" flood-color="#000" flood-opacity="0.07"/></filter>
+  <marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 1 L9 5 L0 9 z" fill="#a1a1a6"/></marker>
+</defs>
+<style>
+  text { font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Inter, Helvetica, Arial, sans-serif; fill: #1d1d1f; }
+  .k { font-size: 14px; font-weight: 600; letter-spacing: .08em; fill: #6e6e73; }
+  .h { font-size: 27px; font-weight: 700; letter-spacing: -.02em; }
+  .l { font-size: 13px; font-weight: 700; fill: #6e6e73; }
+  .bt { font-size: 14px; font-weight: 700; text-anchor: middle; }
+  .bs { font-size: 13px; text-anchor: middle; fill: #6e6e73; }
+  .ur { font-family: 'Noto Nastaliq Urdu', 'Jameel Noori Nastaleeq', 'Segoe UI', Tahoma, serif; }
+</style>
+<rect width="600" height="500" fill="url(#bg)"/>
+<text x="36" y="50" class="k">INDEPENDENT PROJECT · ONGOING</text>
+<text x="36" y="86" class="h">Nabz Scribe</text>
+<text x="564" y="86" text-anchor="end" font-size="32" class="ur" style="fill:#0071e3">نبض</text>
+
+<!-- Pipeline -->
+<rect x="36" y="104" width="528" height="150" rx="18" fill="#ffffff" stroke="#e5e5ea" filter="url(#sh)"/>
+<text x="54" y="132" class="l">OFFLINE · ON-DEVICE</text>
+<rect x="452" y="117" width="96" height="22" rx="11" fill="#e8f5e9"/>
+<text x="500" y="132" font-size="12" font-weight="700" text-anchor="middle" style="fill:#1b7f3b">No internet</text>
+
+<rect x="52" y="152" width="106" height="72" rx="12" fill="#f5f5f7" stroke="#e5e5ea"/>
+<rect x="66" y="172" width="3.5" height="12" rx="1.75" fill="#0071e3"/><rect x="73" y="166" width="3.5" height="24" rx="1.75" fill="#0071e3"/><rect x="80" y="162" width="3.5" height="32" rx="1.75" fill="#0071e3"/><rect x="87" y="169" width="3.5" height="18" rx="1.75" fill="#0071e3"/><rect x="94" y="174" width="3.5" height="8" rx="1.75" fill="#0071e3"/><rect x="101" y="165" width="3.5" height="26" rx="1.75" fill="#5856d6"/><rect x="108" y="161" width="3.5" height="34" rx="1.75" fill="#5856d6"/><rect x="115" y="168" width="3.5" height="20" rx="1.75" fill="#5856d6"/><rect x="122" y="164" width="3.5" height="28" rx="1.75" fill="#5856d6"/><rect x="129" y="171" width="3.5" height="14" rx="1.75" fill="#5856d6"/><rect x="136" y="173" width="3.5" height="10" rx="1.75" fill="#5856d6"/>
+<text x="105" y="214" class="bs">EN · UR · PA</text>
+<line x1="158" x2="178" y1="188" y2="188" stroke="#a1a1a6" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="182" y="152" width="106" height="72" rx="12" fill="#eef4fd" stroke="#cfe2fb"/>
+<text x="235" y="183" class="bt">Whisper</text><text x="235" y="203" class="bs">quantized</text>
+<line x1="288" x2="308" y1="188" y2="188" stroke="#a1a1a6" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="312" y="152" width="106" height="72" rx="12" fill="#eef4fd" stroke="#cfe2fb"/>
+<text x="365" y="183" class="bt">Local LLM</text><text x="365" y="203" class="bs">llama.cpp</text>
+<line x1="418" x2="438" y1="188" y2="188" stroke="#a1a1a6" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="442" y="152" width="106" height="72" rx="12" fill="#f5f5f7" stroke="#e5e5ea"/>
+<text x="458" y="176" font-size="18" font-weight="800" style="fill:#0071e3">℞</text>
+<rect x="478" y="166" width="56" height="6" rx="3" fill="#d2d2d7"/><rect x="458" y="186" width="76" height="6" rx="3" fill="#e5e5ea"/><rect x="458" y="198" width="60" height="6" rx="3" fill="#e5e5ea"/><rect x="458" y="210" width="68" height="6" rx="3" fill="#e5e5ea"/>
+
+<!-- Fine-tuning gains -->
+<rect x="36" y="270" width="332" height="150" rx="18" fill="#ffffff" stroke="#e5e5ea" filter="url(#sh)"/>
+<text x="54" y="298" class="l">5,434 SYNTHETIC DICTATIONS</text>
+<text x="54" y="328" font-size="14" style="fill:#6e6e73">Medicine recall</text>
+<text x="350" y="328" font-size="14" font-weight="700" text-anchor="end">10% → 50%</text>
+<rect x="54" y="338" width="296" height="9" rx="4.5" fill="#ececf0"/>
+<rect x="54" y="338" width="148" height="9" rx="4.5" fill="url(#accent)"/>
+<rect x="83" y="335" width="2" height="15" rx="1" fill="#1d1d1f"/>
+<text x="54" y="378" font-size="14" style="fill:#6e6e73">Negations kept</text>
+<text x="350" y="378" font-size="14" font-weight="700" text-anchor="end">61% → 90%</text>
+<rect x="54" y="388" width="296" height="9" rx="4.5" fill="#ececf0"/>
+<rect x="54" y="388" width="266" height="9" rx="4.5" fill="url(#accent)"/>
+<rect x="234" y="385" width="2" height="15" rx="1" fill="#1d1d1f"/>
+
+<!-- Device -->
+<rect x="384" y="270" width="180" height="150" rx="18" fill="#ffffff" stroke="#e5e5ea" filter="url(#sh)"/>
+<text x="400" y="298" class="l">PHONE CPU</text>
+<text x="400" y="336" font-size="27" font-weight="700" letter-spacing="-.02em">11.6s</text>
+<text x="400" y="356" font-size="13" style="fill:#6e6e73">for 37.6s of audio</text>
+<rect x="400" y="376" width="152" height="28" rx="14" fill="#ffe5e3"/>
+<text x="476" y="395" font-size="12" font-weight="700" text-anchor="middle" style="fill:#d70015">10/10 fake drugs flagged</text>
+
+<!-- Stack -->
+<rect x="36" y="446" width="80" height="30" rx="15" fill="#fff" stroke="#d2d2d7"/><text x="76" y="466" font-size="13" font-weight="600" text-anchor="middle">PyTorch</text>
+<rect x="124" y="446" width="80" height="30" rx="15" fill="#fff" stroke="#d2d2d7"/><text x="164" y="466" font-size="13" font-weight="600" text-anchor="middle">Whisper</text>
+<rect x="212" y="446" width="104" height="30" rx="15" fill="#fff" stroke="#d2d2d7"/><text x="264" y="466" font-size="13" font-weight="600" text-anchor="middle">whisper.cpp</text>
+<rect x="324" y="446" width="88" height="30" rx="15" fill="#fff" stroke="#d2d2d7"/><text x="368" y="466" font-size="13" font-weight="600" text-anchor="middle">llama.cpp</text>
+<rect x="420" y="446" width="76" height="30" rx="15" fill="#fff" stroke="#d2d2d7"/><text x="458" y="466" font-size="13" font-weight="600" text-anchor="middle">Qwen3.5</text>
+<rect x="504" y="446" width="60" height="30" rx="15" fill="#fff" stroke="#d2d2d7"/><text x="534" y="466" font-size="13" font-weight="600" text-anchor="middle">Android</text>
+</svg>
