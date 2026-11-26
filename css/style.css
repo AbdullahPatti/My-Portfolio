@@ -413,3 +413,28 @@ b, strong.k { font-weight: 650; color: var(--ink); background: linear-gradient(t
 .interests .ur, .acts .ur { display: inline-block; font-size: 15px; line-height: 1.9; vertical-align: middle; margin-top: -10px; margin-bottom: -10px; }
 @media (min-width: 1061px) { .socials { grid-template-columns: 1.6fr repeat(4, 1fr); } }
 @media (max-width: 760px) { .socials .social:first-child { grid-column: 1 / -1; } }
+/* Hero: overview tiles top-aligned with the name */
+@media (min-width: 1061px) {
+  .hero__grid { align-items: start; }
+  .hero__grid > .widgets { margin-top: 64px; }
+  .hero .hero__actions { margin-bottom: 0; }
+}
+
+/* Coursework colours by area */
+.course span { border: 1px solid transparent; font-weight: 500; }
+.course .c-ai { background: var(--sun); color: var(--graphite); }
+.course .c-core { background: var(--graphite); color: #fff; }
+.course .c-sw { background: var(--sun-soft); color: var(--graphite); }
+.course .c-sys { background: #E4E6EA; color: var(--graphite); }
+
+/* Activities: icon markers instead of bullets */
+.act-ic { width: 40px; height: 40px; flex: none; border-radius: 13px; display: grid; place-items: center; background: var(--graphite); color: var(--sun); }
+.act-ic svg { width: 20px; height: 20px; }
+.acts li:nth-child(even) .act-ic { background: var(--sun); color: var(--graphite); }
+
+/* Details toggle: clearly a button */
+.more summary { background: var(--sun); border-color: var(--sun); color: var(--graphite); font-weight: 700; padding: 10px 16px 10px 10px; box-shadow: 0 6px 16px -8px rgba(138,95,0,.55); transition: background .2s, transform .2s; }
+.more summary:hover { background: #FFD24F; transform: translateY(-1px); }
+.more summary::before { content: ""; width: 20px; height: 20px; background: var(--graphite) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23FFC629' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E") center/14px no-repeat; transition: transform .25s; }
+.more[open] summary { background: var(--graphite); border-color: var(--graphite); color: var(--sun); }
+.more[open] summary::before { content: ""; transform: rotate(180deg); background-color: var(--sun); background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%231E2024' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E"); }
