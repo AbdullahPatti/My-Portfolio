@@ -1,601 +1,692 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Abdullah Haroon</title>
-  <meta name="description"
-    content="Final-year Computer Science student at FAST-NUCES, Lahore. Investigating empirical model robustness, designing resilient data pipelines, and deploying production software.">
-  <meta property="og:title" content="Muhammad Abdullah Haroon">
-  <meta property="og:description"
-    content="Bridging empirical AI research and robust production engineering—from training models on messy data to shipping reliable software at scale.">
+  <meta name="description" content="Muhammad Abdullah Haroon: CS senior at FAST-NUCES, Lahore. AI/ML engineer and researcher working on NLP, LLMs, multilingual and low-resource AI, and end-to-end AI systems.">
+  <meta property="og:title" content="Muhammad Abdullah Haroon · AI/ML Engineer & Researcher">
+  <meta property="og:description" content="NLP and LLM research on Urdu and low-resource languages, plus end-to-end AI systems that ship.">
   <meta property="og:type" content="website">
-  <meta name="theme-color" content="#ffffff">
-  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#F4F5F7">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Nastaliq+Urdu:wght@400;600;700&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="css/site.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600;700&family=Noto+Nastaliq+Urdu:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="preload" href="fonts/web/gazpacho-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add('js')</script>
 </head>
-
 <body>
-  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
-    <symbol id="i-github" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/></symbol>
-  </svg>
-  <a class="skip" href="#top">Skip to content</a>
+  <a class="skip" href="#main">Skip to content</a>
 
-  <!-- ============ NAVIGATION ============ -->
-  <header class="nav" id="site-nav">
-    <div class="nav__inner">
-      <a class="brand" href="#top">Abdullah Haroon</a>
-
-      <!-- Desktop Navigation Links -->
-      <nav class="nav-desktop" aria-label="Primary Navigation">
-        <a href="#projects">Projects</a>
-        <a href="#publications">Research</a>
+  <header class="nav" id="nav">
+    <div class="nav__bar">
+      <a class="brand" href="#top" aria-label="Abdullah Haroon, home">Abdullah <span>Haroon</span></a>
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#about">About</a>
         <a href="#experience">Experience</a>
-        <a href="#stack">Skills</a>
-        <a href="#education">Education</a>
+        <a href="#research">Research</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
       </nav>
-
-      <!-- Nav Actions Cluster -->
-      <div class="nav-actions">
-        <a class="nav-icon-link" href="https://linkedin.com/in/abdullah-haroon-98b460217/" target="_blank"
-          rel="noopener" aria-label="LinkedIn Profile" title="LinkedIn">
-          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-            <path
-              d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.64 1.64 0 0 0 1.64-1.64c0-.91-.73-1.64-1.64-1.64a1.64 1.64 0 0 0-1.64 1.64c0 .91.73 1.64 1.64 1.64m1.39 9.74v-8.37H5.07v8.37h2.78Z" />
-          </svg>
-        </a>
-        <a class="nav-icon-link" href="https://github.com/AbdullahPatti" target="_blank" rel="noopener"
-          aria-label="GitHub Profile" title="GitHub">
-          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-            <path
-              d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z" />
-          </svg>
-        </a>
-        <a class="nav-icon-link" href="https://scholar.google.com/citations?user=q7rxGekAAAAJ&amp;hl=en&amp;authuser=2" target="_blank" rel="noopener"
-          aria-label="Google Scholar Profile" title="Google Scholar">
-          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-            <path d="M12 3 1 9l11 6 9-4.91V17h2V9L12 3ZM5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82Z" />
-          </svg>
-        </a>
-        <a class="cv-pill" href="Abdullah_Haroon_CV.pdf" target="_blank" rel="noopener">CV</a>
-
-        <!-- Mobile Hamburger Toggle -->
-        <button type="button" class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu"
-          aria-expanded="false">
-          <span></span>
-          <span></span>
-        </button>
-      </div>
+      <a class="nav__cv" href="Abdullah_Haroon_CV.pdf" target="_blank" rel="noopener">CV <span aria-hidden="true">↗</span></a>
+      <button class="nav__toggle" id="nav-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="menu"><span></span><span></span></button>
     </div>
   </header>
+  <nav class="menu" id="menu" aria-label="Mobile">
+    <a href="#about">About</a><a href="#education">Education</a><a href="#experience">Experience</a><a href="#research">Research</a>
+    <a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#teaching">Teaching</a><a href="#certifications">Certifications</a><a href="#contact">Contact</a>
+  </nav>
 
-  <!-- Mobile Overlay Menu Drawer -->
-  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
-    <nav class="mobile-menu-links" aria-label="Mobile Navigation">
-      <a href="#projects">Projects</a>
-      <a href="#publications">Research</a>
-      <a href="#experience">Experience</a>
-      <a href="#stack">Skills</a>
-      <a href="#education">Education</a>
-      <a href="#contact">Contact</a>
-    </nav>
-    <div class="mobile-menu-footer">
-      <div style="display: flex; gap: 10px;">
-        <a class="btn btn-solid" href="mailto:abdullaharoon.work@gmail.com" style="flex: 1;">Email me</a>
-        <a class="btn btn-ghost" href="Abdullah_Haroon_CV.pdf" target="_blank" rel="noopener" style="flex: 1;">Download CV</a>
-      </div>
-      <div class="mobile-socials">
-        <a href="https://linkedin.com/in/abdullah-haroon-98b460217/" target="_blank" rel="noopener">LinkedIn ↗</a>
-        <a href="https://github.com/AbdullahPatti" target="_blank" rel="noopener">GitHub ↗</a>
-        <a href="https://scholar.google.com/citations?user=q7rxGekAAAAJ&amp;hl=en&amp;authuser=2" target="_blank" rel="noopener">Scholar ↗</a>
-      </div>
-    </div>
-  </div>
-
-  <main id="top">
-
+  <main id="main">
     <!-- ============ HERO ============ -->
-    <section class="hero">
-      <div class="hero__headline-box">
-        <h1 class="hero__hi reveal">Hi. I'm Abdullah Haroon.</h1>
-        <span class="hero__tagline gradient-text reveal">AI research and end-to-end systems that hold up in the real
-          world.</span>
-        <p class="lede reveal">Final-year CS student at FAST-NUCES, Lahore. I study why models break under real-world
-          shift, and I ship the products that have to survive it.</p>
-        <div class="hero-actions reveal">
-          <a class="btn btn-solid" href="#projects">See my work</a>
-          <a class="btn btn-ghost" href="Abdullah_Haroon_CV.pdf" target="_blank" rel="noopener">Download CV</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="impact-showcase" aria-label="Key Achievements">
-      <div class="wrap">
-        <div class="stats-strip reveal" id="stat-strip">
-          <div class="stat-card"><strong data-count="5" data-suffix="+">0</strong><span>Papers &amp; manuscripts, 2 sole-authored on arXiv</span></div>
-          <div class="stat-card"><strong data-count="25" data-suffix="+">0</strong><span>Open-source models &amp; datasets</span></div>
-          <div class="stat-card"><strong data-count="4">0</strong><span>Research &amp; industry roles</span></div>
-          <div class="stat-card"><strong data-count="10" data-suffix="+">0</strong><span>Certifications from Google, IBM, Microsoft, Udemy</span></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ PROJECTS ============ -->
-    <section class="section tone-white" id="projects" data-nav="Projects">
-      <div class="wrap">
-        <span class="eyebrow reveal">Selected Work</span>
-        <h2 class="reveal">Things I have built.</h2>
-
-        <div class="work-grid">
-          <article class="project-card featured reveal">
-            <figure class="project-visual"><img src="assets/visuals/project-sachai-check.svg"
-                alt="An Urdu news screenshot scanned and stamped likely fake at 87 percent, and a voice note flagged as synthetic"
-                width="600" height="375" loading="lazy"></figure>
-            <div>
-              <p class="project-num">Sachai Check · Final Year Project</p>
-              <h3 class="project-title">Fact-checks Urdu news and catches deepfake voices</h3>
-              <p class="project-desc">Detects fake Urdu news (text, Roman Urdu and screenshots via Gemini OCR) and
-                voice deepfakes, with a Gemini judge that shows its evidence.</p>
-              <div class="metric-row">
-                <div><strong>8.6%</strong><span>EER, unseen speakers</span></div>
-                <div><strong>0.981</strong><span>AUC</span></div>
-                <div><strong>49.5%</strong><span>baseline EER</span></div>
-              </div>
-              <div class="tech-tags"><span>PyTorch</span><span>XLS-R</span><span>Gemini</span><span>React</span></div>
-              <div class="pub-actions">
-                <a class="btn btn-ghost btn-code" href="https://github.com/AbdullahPatti/Sachai-Check" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-github"/></svg>Code</a>
-                <span class="status-pill"><span class="status-dot" aria-hidden="true"></span>In development</span>
-              </div>
-            </div>
-          </article>
-
-          <article class="project-card reveal">
-            <figure class="project-visual"><img src="assets/visuals/project-nabz-scribe.svg"
-                alt="A phone in offline mode records a consultation in Urdu, Punjabi and English and turns it into a printed prescription"
-                width="600" height="375" loading="lazy"></figure>
-            <div>
-              <p class="project-num">Nabz Scribe · Offline mobile app</p>
-              <h3 class="project-title">A clinical scribe that runs on a phone, offline</h3>
-              <p class="project-desc">Turns code-switched Urdu, Punjabi and English consultations into printed
-                prescriptions with on-device Whisper and LLMs.</p>
-              <div class="metric-row">
-                <div><strong>10→50%</strong><span>medicine recall</span></div>
-                <div><strong>61→90%</strong><span>negations kept</span></div>
-                <div><strong>11.6s</strong><span>for 37.6s audio</span></div>
-              </div>
-              <div class="pub-actions">
-                <a class="btn btn-ghost btn-code" href="https://github.com/AbdullahPatti/Nabz-Voice-Scribe" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-github"/></svg>Code</a>
-                <span class="status-pill"><span class="status-dot" aria-hidden="true"></span>In development</span>
-              </div>
-            </div>
-          </article>
-
-          <article class="project-card reveal">
-            <figure class="project-visual"><img src="assets/visuals/project-taxchronos.svg"
-                alt="Versions of Pakistani tax law from 2019 to 2025 with the 2022 version pulled out to answer an Urdu question"
-                width="600" height="375" loading="lazy"></figure>
-            <div>
-              <p class="project-num">TaxChronos · Agentic RAG</p>
-              <h3 class="project-title">Ask Pakistani tax law, as it stood on any date</h3>
-              <p class="project-desc">Corrective RAG on LangGraph over 12 FBR statutes, answering in English, Urdu or
-                Roman Urdu with citations.</p>
-              <div class="metric-row">
-                <div><strong>&lt;20s</strong><span>vs 2–3 min manual</span></div>
-                <div><strong>3,538</strong><span>chunks</span></div>
-                <div><strong>840</strong><span>past versions</span></div>
-              </div>
-              <div class="pub-actions">
-                <a class="btn btn-ghost btn-code" href="https://github.com/AbdullahPatti/TaxChronos" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-github"/></svg>Code</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="project-card reveal">
-            <figure class="project-visual"><img src="assets/visuals/project-whisperbench.svg"
-                alt="A code-mixed Urdu-English waveform where Whisper mishears English words at the language switch points"
-                width="600" height="375" loading="lazy"></figure>
-            <div>
-              <p class="project-num">Bilingual WhisperBench · ASR benchmark</p>
-              <h3 class="project-title">Where speech models mishear code-switching</h3>
-              <p class="project-desc">Whisper Tiny, Base and Small on code-mixed Urdu–English speech, with a custom
-                switch-point error metric.</p>
-              <div class="metric-row">
-                <div><strong>0.899</strong><span>zero-shot WER</span></div>
-                <div><strong>327</strong><span>recordings</span></div>
-                <div><strong>11</strong><span>speakers</span></div>
-              </div>
-              <div class="pub-actions">
-                <a class="btn btn-ghost btn-code" href="https://github.com/AbdullahPatti/Bilingual-Whisper-Bench" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-github"/></svg>Code</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="project-card reveal">
-            <figure class="project-visual"><img src="assets/visuals/project-daily-digest.svg"
-                alt="A sunrise dial of delivery hours with 7 AM selected above a morning brief of three ranked Pakistan stories"
-                width="600" height="375" loading="lazy"></figure>
-            <div>
-              <p class="project-num">Daily Digest · Live</p>
-              <h3 class="project-title">News that filters itself</h3>
-              <p class="project-desc">Ranks RSS stories by Pakistan relevance and emails a Gemini summary at each
-                reader's chosen hour.</p>
-              <div class="metric-row">
-                <div><strong>15+</strong><span>active users</span></div>
-                <div><strong>6–10 AM</strong><span>delivery windows</span></div>
-                <div><strong>$0</strong><span>monthly infra</span></div>
-              </div>
-              <div class="pub-actions">
-                <a class="btn btn-solid" href="https://dailydigest-jy4r.onrender.com/" target="_blank" rel="noopener">Live demo</a>
-                <a class="btn btn-ghost btn-code" href="https://github.com/AbdullahPatti/News-Reporter" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-github"/></svg>Code</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="project-card reveal">
-            <figure class="project-visual"><img src="assets/visuals/project-crmind.svg"
-                alt="A five-stage sales funnel with a risky lead flagged by Gemini and a draft-email action"
-                width="600" height="375" loading="lazy"></figure>
-            <div>
-              <p class="project-num">CRMind · AI sales CRM</p>
-              <h3 class="project-title">A CRM that flags risky leads</h3>
-              <p class="project-desc">Drag-and-drop pipeline and KPI dashboard; Gemini summarizes leads and drafts
-                outreach.</p>
-              <div class="metric-row">
-                <div><strong>7</strong><span>modules</span></div>
-                <div><strong>5</strong><span>pipeline stages</span></div>
-                <div><strong>4</strong><span>dashboard KPIs</span></div>
-              </div>
-              <div class="pub-actions">
-                <a class="btn btn-ghost btn-code" href="https://github.com/AbdullahPatti/CRMind" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-github"/></svg>Code</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="project-card reveal">
-            <figure class="project-visual"><img src="assets/visuals/project-finsight.svg"
-                alt="A transaction trend line with a 02:14 wire transfer flagged as an anomaly and the account rated High risk"
-                width="600" height="375" loading="lazy"></figure>
-            <div>
-              <p class="project-num">FinSight · Risk analytics</p>
-              <h3 class="project-title">Spot financial risk before it is a problem</h3>
-              <p class="project-desc">Isolation forest, HMM behaviour states and NLP combine into one weighted risk
-                score. CSV in, report out.</p>
-              <div class="metric-row">
-                <div><strong>4</strong><span>risk bands</span></div>
-                <div><strong>5</strong><span>weighted factors</span></div>
-                <div><strong>3</strong><span>export formats</span></div>
-              </div>
-              <div class="pub-actions">
-                <a class="btn btn-ghost btn-code" href="https://github.com/AbdullahPatti/FinSight-Financial-Analysis" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-github"/></svg>Code</a>
-              </div>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ RESEARCH ============ -->
-    <section class="section tone-mist" id="publications" data-nav="Research">
-      <div class="wrap">
-        <span class="eyebrow reveal">Research</span>
-        <h2 class="reveal">Models that hold up when the world shifts.</h2>
-        <p class="section-lead reveal">New scripts, new domains, smaller models, volatile markets.</p>
-
-        <div class="work-grid">
-          <article class="project-card reveal">
-            <figure class="project-visual"><img src="assets/visuals/research-robustness.svg"
-                alt="The same Urdu sentence in Nastaliq and Roman script above a train-to-test domain matrix"
-                width="600" height="375" loading="lazy"></figure>
-            <div>
-              <p class="pub-meta">Submitted · ACM TALLIP · First author</p>
-              <h3 class="pub-title">Domain Robustness of Multilingual NLP Models Across Urdu and Roman Urdu Scripts</h3>
-              <p class="pub-byline">M. A. Haroon, M. Bashir</p>
-              <div class="metric-row">
-                <div><strong>26</strong><span>datasets released</span></div>
-                <div><strong>188,309</strong><span>examples</span></div>
-                <div><strong>30 / 42</strong><span>LLM wins</span></div>
-              </div>
-              <div class="pub-actions">
-                <a class="btn btn-solid" href="https://doi.org/10.5281/zenodo.22195610" target="_blank" rel="noopener">Data</a>
-                <a class="btn btn-ghost btn-code" href="https://github.com/AbdullahPatti/Urdu-Multi-Domain-Script-Research" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-github"/></svg>Code</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="project-card reveal">
-            <figure class="project-visual"><img src="assets/visuals/research-compression.svg"
-                alt="An airplane with an adversarial patch classified as a frog, and patched accuracy of pruned, quantized and dense compressed models"
-                width="600" height="375" loading="lazy"></figure>
-            <div>
-              <p class="pub-meta">Submitted · TMLR</p>
-              <h3 class="pub-title">Does Compression Preserve Adversarial Patch Robustness?</h3>
-              <p class="pub-byline">M. A. Haroon, A. R. Antall, A. Hadi</p>
-              <div class="metric-row">
-                <div><strong>13</strong><span>ResNet-18 models</span></div>
-                <div><strong>61.2→52.9%</strong><span>dense patched acc.</span></div>
-                <div><strong>3</strong><span>seeds each</span></div>
-              </div>
-              <div class="pub-actions">
-                <a class="btn btn-ghost btn-code" href="https://github.com/AbdullahPatti/CNN-Adversarial-Patch" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-github"/></svg>Code</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="project-card reveal">
-            <figure class="project-visual"><img src="assets/visuals/research-shortcut.svg"
-                alt="A fake article 3.4 times longer than a real one; transfer F1 collapses from 0.771 to 0.005 when the split is reversed"
-                width="600" height="375" loading="lazy"></figure>
-            <div>
-              <p class="pub-meta">arXiv:2607.14131 · Jul 2026 · Sole author</p>
-              <h3 class="pub-title">When Benchmarks Mislead: Shortcut Learning in Multilingual Fake News and Sarcasm Detection</h3>
-              <p class="pub-byline">M. A. Haroon</p>
-              <div class="metric-row">
-                <div><strong>0.771→0.005</strong><span>reversed split</span></div>
-                <div><strong>3.4×</strong><span>length confound</span></div>
-                <div><strong>3</strong><span>domains</span></div>
-              </div>
-              <div class="pub-actions">
-                <a class="btn btn-solid" href="https://arxiv.org/abs/2607.14131" target="_blank" rel="noopener">arXiv</a>
-                <a class="btn btn-ghost btn-code" href="https://github.com/AbdullahPatti/Cross-Data-Transfer-Learning" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-github"/></svg>Code</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="project-card reveal">
-            <figure class="project-visual"><img src="assets/visuals/research-bitcoin.svg"
-                alt="Hourly Bitcoin candles with a volatile regime; sentiment and price features pass through a volatility gate to an up prediction"
-                width="600" height="375" loading="lazy"></figure>
-            <div>
-              <p class="pub-meta">arXiv:2607.23370 · Jul 2026 · Sole author</p>
-              <h3 class="pub-title">Bitcoin Price Direction Prediction via Regime-Aware Multi-Modal Fusion</h3>
-              <p class="pub-byline">M. A. Haroon</p>
-              <div class="metric-row">
-                <div><strong>0.551</strong><span>macro-F1 (6h)</span></div>
-                <div><strong>0.14</strong><span>recall without gate</span></div>
-                <div><strong>3,491</strong><span>hourly points</span></div>
-              </div>
-              <div class="pub-actions">
-                <a class="btn btn-solid" href="https://arxiv.org/abs/2607.23370" target="_blank" rel="noopener">arXiv</a>
-                <a class="btn btn-ghost btn-code" href="https://github.com/AbdullahPatti/StreetSmart-BitCoin-Price" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-github"/></svg>Code</a>
-              </div>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ EXPERIENCE ============ -->
-    <section class="section tone-white" id="experience" data-nav="Experience">
-      <div class="wrap">
-        <span class="eyebrow reveal">Experience</span>
-        <h2 class="reveal">Where I have worked.</h2>
-
-        <div class="experience-timeline">
-          <article class="experience-item reveal">
-            <div class="exp-date"><strong>Oct 2026 – Present</strong><span class="exp-badge">Current</span></div>
-            <div class="exp-content">
-              <h3 class="exp-title">Research Assistant · AI in Healthcare Management</h3>
-              <p class="exp-company">FAST School of Management <span class="exp-loc">· Lahore · Dr. Beenish Arshad</span></p>
-              <ul class="exp-points">
-                <li>Surveyed 35+ doctors and 45+ patients on AI adoption; built the Python dashboards.</li>
-                <li>Designed an AI hospital system with an Urdu/English voice receptionist (Whisper, RAG), under HEC NRPU review.</li>
-              </ul>
-            </div>
-          </article>
-
-          <article class="experience-item reveal">
-            <div class="exp-date"><strong>Jul – Oct 2026</strong></div>
-            <div class="exp-content">
-              <h3 class="exp-title">Deep Learning Intern · Urdu NLP</h3>
-              <p class="exp-company">FAST School of Computing <span class="exp-loc">· Lahore · Dr. Maryam Bashir</span></p>
-              <ul class="exp-points">
-                <li>Across 80 domain shifts, fine-tuned XLM-R/mBERT lost 13.5–47.6 macro-F1; few-shot Llama, Mistral and Qwen won 30 of 42 comparisons.</li>
-                <li>Traced an XLM-R collapse (0.771 → 0.005) to a length shortcut.</li>
-              </ul>
-            </div>
-          </article>
-
-          <article class="experience-item reveal">
-            <div class="exp-date"><strong>Jun – Jul 2026</strong></div>
-            <div class="exp-content">
-              <h3 class="exp-title">IT Intern · Enterprise .NET &amp; AI</h3>
-              <p class="exp-company">QuickFuel <span class="exp-loc">· Lahore</span></p>
-              <ul class="exp-points">
-                <li>Started the company's first AI initiative: 9 use cases, LLM sentiment analysis and ChromaDB product search.</li>
-              </ul>
-            </div>
-          </article>
-
-          <article class="experience-item reveal">
-            <div class="exp-date"><strong>Jun – Jul 2026</strong></div>
-            <div class="exp-content">
-              <h3 class="exp-title">AI Automation Intern · LLM Agents &amp; RAG</h3>
-              <p class="exp-company">Optimus Automate <span class="exp-loc">· Remote</span></p>
-              <ul class="exp-points">
-                <li>Built a Gmail agent that classifies intent and drafts replies, and a RAG PDF assistant.</li>
-              </ul>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ SKILLS ============ -->
-    <section class="section tone-mist" id="stack" data-nav="Skills">
-      <div class="wrap">
-        <span class="eyebrow reveal">Skills</span>
-        <h2 class="reveal">What I build with.</h2>
-
-        <div class="skill-rows reveal">
-          <div class="skill-row">
-            <h3>ML &amp; Deep Learning</h3>
-            <div class="skill-chips">
-              <span><img src="https://cdn.simpleicons.org/pytorch/EE4C2C" alt="" width="18" height="18">PyTorch</span>
-              <span><img src="https://cdn.simpleicons.org/tensorflow/FF6F00" alt="" width="18" height="18">TensorFlow</span>
-              <span><img src="https://cdn.simpleicons.org/huggingface/FFD21E" alt="" width="18" height="18">Hugging Face</span>
-              <span><img src="https://cdn.simpleicons.org/scikitlearn/F7931E" alt="" width="18" height="18">scikit-learn</span>
-              <span><img src="assets/openai.svg" alt="" width="18" height="18">Whisper</span>
-              <span>Fine-tuning</span>
-            </div>
+    <section class="hero" id="top">
+      <div class="wrap hero__grid">
+        <div>
+          <span class="hero__kicker reveal"><img src="Fast-University-Logo.png" alt="" width="22" height="22">CS Senior · FAST-NUCES, Lahore <span class="dot" aria-hidden="true"></span>Open to AI/ML roles</span>
+          <h1 class="reveal">Muhammad<br>Abdullah <span class="u"><em>Haroon</em></span></h1>
+          <p class="lead reveal">An <b>AI/ML Engineer &amp; Researcher</b> in the making. I study <b>why models fail</b> under real-world shift, especially in <b>Urdu and low-resource languages</b>, and I build the <b>end-to-end systems</b> that have to survive it.</p>
+          <div class="hero__actions reveal">
+            <a class="btn btn--dark" href="#projects">See my work</a>
+            <a class="btn btn--glass" href="Abdullah_Haroon_CV.pdf" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h4"/></svg>Read my CV</a>
           </div>
-          <div class="skill-row">
-            <h3>LLMs &amp; GenAI</h3>
-            <div class="skill-chips">
-              <span><img src="https://cdn.simpleicons.org/langchain/1C3C3C" alt="" width="18" height="18">LangChain</span>
-              <span><img src="https://cdn.simpleicons.org/langgraph/1C3C3C" alt="" width="18" height="18">LangGraph</span>
-              <span><img src="https://cdn.simpleicons.org/googlegemini/8E75B2" alt="" width="18" height="18">Gemini</span>
-              <span><img src="https://cdn.simpleicons.org/ollama/000000" alt="" width="18" height="18">Ollama</span>
-              <span>RAG</span><span>Agents</span>
-            </div>
+          <div class="topskills reveal" aria-label="Top skills">
+            <span>Machine Learning</span><span>NLP</span><span>Large Language Models</span><span>Generative AI</span><span>Agentic AI</span><span>R&amp;D</span>
           </div>
-          <div class="skill-row">
-            <h3>Languages</h3>
-            <div class="skill-chips">
-              <span><img src="https://cdn.simpleicons.org/python/3776AB" alt="" width="18" height="18">Python</span>
-              <span><img src="https://cdn.simpleicons.org/cplusplus/00599C" alt="" width="18" height="18">C++</span>
-              <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="" width="18" height="18">C#</span>
-              <span><img src="https://cdn.simpleicons.org/typescript/3178C6" alt="" width="18" height="18">TypeScript</span>
-              <span><img src="https://cdn.simpleicons.org/javascript/F7DF1E" alt="" width="18" height="18">JavaScript</span>
-              <span>SQL</span>
-            </div>
-          </div>
-          <div class="skill-row">
-            <h3>Backend, Data &amp; DevOps</h3>
-            <div class="skill-chips">
-              <span><img src="https://cdn.simpleicons.org/fastapi/009688" alt="" width="18" height="18">FastAPI</span>
-              <span><img src="https://cdn.simpleicons.org/react/61DAFB" alt="" width="18" height="18">React</span>
-              <span><img src="https://cdn.simpleicons.org/nodedotjs/339933" alt="" width="18" height="18">Node.js</span>
-              <span><img src="https://cdn.simpleicons.org/postgresql/4169E1" alt="" width="18" height="18">PostgreSQL</span>
-              <span><img src="https://cdn.simpleicons.org/supabase/3FCF8E" alt="" width="18" height="18">Supabase</span>
-              <span><img src="https://cdn.simpleicons.org/qdrant/DC244C" alt="" width="18" height="18">Qdrant</span>
-              <span><img src="https://cdn.simpleicons.org/docker/2496ED" alt="" width="18" height="18">Docker</span>
-            </div>
+        </div>
+        <nav class="widgets reveal" aria-label="Everything at a glance">
+          <div class="widget widget--wide"><small>The question that started it</small><p>How can we build computers that genuinely understand what people need?</p></div>
+          <a class="widget" href="#education"><small>01 Education</small><strong>BSCS</strong><span>FAST-NUCES · 2027</span></a>
+          <a class="widget" href="#experience"><small>02 Experience</small><strong>4</strong><span>research &amp; industry roles</span></a>
+          <a class="widget widget--sun" href="#research"><small>03 Research</small><strong>4</strong><span>papers, 2 on arXiv</span></a>
+          <a class="widget" href="#projects"><small>04 Projects</small><strong>6</strong><span>AI products, 1 live</span></a>
+          <a class="widget" href="#skills"><small>05 Skills</small><strong>45+</strong><span>languages &amp; tools</span></a>
+          <a class="widget" href="#teaching"><small>06 Teaching</small><strong>2×</strong><span>Teacher of the Month</span></a>
+        </nav>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section section--white" id="about">
+      <div class="wrap">
+        <div class="head"><span class="eyebrow reveal" data-n="00">About</span>
+          <h2 class="h2 reveal">It started with <em>the next video.</em></h2></div>
+        <div class="about">
+          <ol class="journey reveal">
+            <li><span>Then</span><p>How did YouTube know <b>what I'd watch next?</b></p></li>
+            <li><span>Study</span><p><b>CS at FAST-NUCES</b>: ML, NLP, GenAI, LLMs, RAG, agents.</p></li>
+            <li><span>Research</span><p>Data, experiments, and <b>why models fail</b>.</p></li>
+            <li><span>Build</span><p><b>APIs, databases, MERN apps</b> wired to AI.</p></li>
+            <li><span>Beyond</span><p>Teaching, workshops, <b>team leadership</b>.</p></li>
+            <li class="goal"><span>Next</span><p>AI/ML Engineer &amp; AI Researcher.</p></li>
+          </ol>
+          <div class="panel reveal">
+            <h3>Research interests</h3>
+            <p><b>NLP and LLMs</b> for <b>low-resource languages</b> like Urdu: why a model behaves, not just what it scores.</p>
+            <ul class="interests">
+              <li class="hot">Natural Language Processing</li><li class="hot">Large Language Models</li>
+              <li>Multilingual &amp; low-resource AI · <span class="ur" lang="ur">اردو</span></li>
+              <li>Domain robustness</li><li>Cross-dataset generalization</li><li>Model evaluation</li>
+              <li>Reliability of intelligent systems</li><li>Time-series analysis</li>
+            </ul>
+            <div class="methods"><strong>Methods I use</strong>Fine-tuning · Quantization · Pruning · Knowledge distillation · RAG · Prompt engineering · LLM-as-Judge · VLM OCR</div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ============ EDUCATION & CERTIFICATIONS ============ -->
-    <section class="section tone-white" id="education" data-nav="Education">
+    <!-- ============ 01 EDUCATION ============ -->
+    <section class="section" id="education">
       <div class="wrap">
-        <span class="eyebrow reveal">Education &amp; Certifications</span>
-        <h2 class="reveal">Where I learned.</h2>
+        <div class="head"><span class="eyebrow reveal" data-n="01">Education</span>
+          <h2 class="h2 reveal">Where the <em>fundamentals</em> come from.</h2></div>
+        <div class="edu">
+          <article class="card reveal">
+            <div class="org"><span class="org__logo"><img src="Fast-University-Logo.png" alt="FAST-NUCES logo" width="44" height="44"></span>
+              <div><h3>National University of Computer and Emerging Sciences</h3><p>FAST-NUCES · Bachelor of Science in Computer Science</p></div></div>
+            <div class="meta"><span>Aug 2023 – Expected 2027</span><span>Lahore, Pakistan</span></div>
+            <ul class="bul"><li><b>Final Year Project:</b> Sachai Check, Urdu fake-news and audio deepfake detection, supervised by Ms. Sukhan Amir.</li></ul>
+          </article>
+          <article class="card reveal">
+            <span class="kv" style="margin-top:0">Relevant coursework</span>
+            <div class="course"><span>Programming Fundamentals</span><span>Object-Oriented Programming</span><span>Data Structures</span><span>Artificial Intelligence</span><span>Applied Machine Learning</span><span>Data Science</span><span>Software Engineering</span><span>Software Design &amp; Analysis</span><span>Design &amp; Analysis of Algorithms</span><span>Parallel &amp; Distributed Computing</span><span>Compiler Construction</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
 
-        <div class="edu-grid">
-          <article class="education-card-full reveal">
-            <div class="uni-header">
-              <div class="uni-crest">
-                <img src="Fast-University-Logo.png" alt="FAST-NUCES crest" width="52" height="52"
-                  onerror="this.onerror=null; this.src='assets/fast-nuces.svg';">
+    <!-- ============ 02 EXPERIENCE ============ -->
+    <section class="section section--white" id="experience">
+      <div class="wrap">
+        <div class="head"><span class="eyebrow reveal" data-n="02">Experience</span>
+          <h2 class="h2 reveal">Research labs and <em>real teams.</em></h2></div>
+        <div class="xp">
+          <article class="xp__item reveal">
+            <div class="xp__when"><strong>Sep 2026 – Present</strong><span>Lahore, Pakistan</span><br><span class="badge">Current</span></div>
+            <div class="card">
+              <div class="org"><span class="org__logo"><img src="Fast-University-Logo.png" alt="" width="44" height="44"></span>
+                <div><h3>Research Assistant, AI in Healthcare Management</h3><p>FAST School of Management · Dr. Beenish Arshad</p></div></div>
+              <ul class="bul">
+                <li>Surveyed <b>35+ doctors</b> across 3 Lahore hospitals and <b>45+ patients</b>, and built Python dashboards of each group's <b>AI readiness</b>.</li>
+                <li>Wrote the <b>AI module of an HEC NRPU proposal</b>: an <b>Urdu/English voice receptionist</b> (Whisper, RAG) that books, reschedules and cancels appointments, with a management dashboard. Build starts on approval.</li>
+                <li>Prototyped the receptionist on <b>ElevenLabs</b> with an <b>n8n webhook</b> backend.</li>
+              </ul>
+              <div class="tags"><span class="tag"><img src="assets/logos/python.svg" alt="" width="16" height="16" loading="lazy">Python</span><span class="tag"><img src="assets/logos/pandas.svg" alt="" width="16" height="16" loading="lazy">Pandas</span><span class="tag"><img src="assets/logos/elevenlabs.svg" alt="" width="16" height="16" loading="lazy">ElevenLabs</span><span class="tag"><img src="assets/logos/n8n.svg" alt="" width="16" height="16" loading="lazy">n8n</span><span class="tag"><img src="assets/logos/n8n.svg" alt="" width="16" height="16" loading="lazy">Webhooks</span><span class="tag"><img src="assets/logos/latex.svg" alt="" width="16" height="16" loading="lazy">LaTeX</span></div>
+            </div>
+          </article>
+          <article class="xp__item reveal">
+            <div class="xp__when"><strong>Jul – Oct 2026</strong><span>Lahore, Pakistan</span></div>
+            <div class="card">
+              <div class="org"><span class="org__logo"><img src="Fast-University-Logo.png" alt="" width="44" height="44"></span>
+                <div><h3>Deep Learning Intern, Urdu NLP</h3><p>FAST School of Computing · Dr. Maryam Bashir</p></div></div>
+              <ul class="bul">
+                <li>Built a <b>26-dataset, 188,309-example</b> Urdu / Roman Urdu benchmark with <b>leakage-free splits</b>, released on Hugging Face and Zenodo.</li>
+                <li>Fine-tuned XLM-R and mBERT and prompted Llama 3.1, Mistral and Qwen2.5 few-shot across <b>80 domain shifts</b>: encoders lost <b>13.5–47.6 macro-F1</b>, while LLMs won <b>30 of 42</b> paired comparisons (Holm-corrected bootstrap, 3 seeds).</li>
+                <li>Showed the worst failures come from <b>label definitions, not vocabulary</b>.</li>
+                <li>Traced a <b>0.771 → 0.005</b> macro-F1 Urdu fake-news transfer drop to <b>article length</b>.</li>
+              </ul>
+              <div class="tags"><span class="tag"><img src="assets/logos/python.svg" alt="" width="16" height="16" loading="lazy">Python</span><span class="tag"><img src="assets/logos/pytorch.svg" alt="" width="16" height="16" loading="lazy">PyTorch</span><span class="tag"><img src="assets/logos/huggingface.svg" alt="" width="16" height="16" loading="lazy">Hugging Face</span></div>
+              <div class="tags tags--models"><em>Models</em><span class="tag"><img src="assets/logos/meta.svg" alt="" width="16" height="16" loading="lazy">XLM-R</span><span class="tag"><img src="assets/logos/google.svg" alt="" width="16" height="16" loading="lazy">mBERT</span><span class="tag"><img src="assets/logos/meta.svg" alt="" width="16" height="16" loading="lazy">Llama 3.1</span><span class="tag"><img src="assets/logos/mistral.svg" alt="" width="16" height="16" loading="lazy">Mistral</span><span class="tag"><img src="assets/logos/qwen.svg" alt="" width="16" height="16" loading="lazy">Qwen2.5</span></div>
+            </div>
+          </article>
+          <article class="xp__item reveal">
+            <div class="xp__when"><strong>Jun – Jul 2026</strong><span>Lahore, Pakistan</span></div>
+            <div class="card">
+              <div class="org"><span class="org__logo org__logo--img"><img src="assets/orgs/quickfuel.png" alt="QuickFuel logo"></span>
+                <div><h3>IT Intern, Enterprise .NET and AI</h3><p>QuickFuel · Mr. Asadullah</p></div></div>
+              <ul class="bul">
+                <li>Brought the <b>first AI/ML work</b> to a .NET team; a portal audit put <b>9 AI use cases</b> and <b>6 design flaws</b> before senior leadership.</li>
+                <li>Prototyped <b>LLM sentiment analysis</b> (FastAPI, PostgreSQL) and <b>ChromaDB semantic product search</b> that goes beyond keywords.</li>
+              </ul>
+              <div class="tags"><span class="tag"><img src="assets/logos/python.svg" alt="" width="16" height="16" loading="lazy">Python</span><span class="tag"><img src="assets/logos/fastapi.svg" alt="" width="16" height="16" loading="lazy">FastAPI</span><span class="tag"><img src="assets/logos/postgresql.svg" alt="" width="16" height="16" loading="lazy">PostgreSQL</span><span class="tag"><img src="assets/logos/huggingface.svg" alt="" width="16" height="16" loading="lazy">HF Transformers</span><span class="tag"><i class="mg" aria-hidden="true">Gq</i>Groq API</span><span class="tag"><img src="assets/logos/dotnet.svg" alt="" width="16" height="16" loading="lazy">.NET</span></div>
+            </div>
+          </article>
+          <article class="xp__item reveal">
+            <div class="xp__when"><strong>Jun – Jul 2026</strong><span>Remote</span></div>
+            <div class="card">
+              <div class="org"><span class="org__logo org__logo--img"><img src="assets/orgs/optimus.png" alt="Optimus Automate logo"></span>
+                <div><h3>AI Automation Intern, LLM Agents and RAG</h3><p>Optimus Automate</p></div></div>
+              <ul class="bul">
+                <li>Built an <b>LLM agent</b> that sorts <b>Gmail by intent</b> and drafts replies.</li>
+                <li>Built a <b>RAG assistant</b> for PDF Q&amp;A that answers with <b>cited sources</b>.</li>
+              </ul>
+              <div class="tags"><span class="tag"><img src="assets/logos/python.svg" alt="" width="16" height="16" loading="lazy">Python</span><span class="tag"><i class="mg" aria-hidden="true">Gq</i>Groq API</span><span class="tag"><img src="assets/logos/google.svg" alt="" width="16" height="16" loading="lazy">Google AI Studio</span><span class="tag"><i class="mg" aria-hidden="true">R</i>RAG</span><span class="tag"><img src="assets/logos/streamlit.svg" alt="" width="16" height="16" loading="lazy">Streamlit</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 03 RESEARCH ============ -->
+    <section class="section" id="research">
+      <div class="wrap">
+        <div class="head"><span class="eyebrow reveal" data-n="03">Publications &amp; Research</span>
+          <h2 class="h2 reveal">Models that hold up <em>when the world shifts.</em></h2>
+          <p class="lead reveal">Full list on <a class="link" style="display:inline-flex;vertical-align:middle" href="https://scholar.google.com/citations?user=q7rxGekAAAAJ&amp;hl=en&amp;authuser=2" target="_blank" rel="noopener"><img src="assets/logos/googlescholar.svg" alt="">Google Scholar</a></p></div>
+        <div class="stack">
+          <article class="work work--wide" style="--i:0">
+            <figure class="work__viz"><svg class="viz" viewBox="0 0 640 400" role="img" aria-label="The same Urdu sentence in Nastaliq and Roman script, above a train-to-test domain transfer matrix where fake news does not transfer" xmlns="http://www.w3.org/2000/svg">
+<defs><filter id="rb-sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#1E2024" flood-opacity=".16"/></filter></defs><defs><radialGradient id="rb-g" cx="0%" cy="0%" r="75%"><stop offset="0" stop-color="#FFC629" stop-opacity="0.35"/><stop offset="1" stop-color="#FFC629" stop-opacity="0"/></radialGradient></defs>
+<rect width="640" height="400" fill="#F4F5F7"/><rect width="640" height="400" fill="url(#rb-g)"/>
+<g filter="url(#rb-sh)"><rect x="30" y="34" width="234" height="96" rx="22" fill="#FFFFFF"/></g>
+<text x="50" y="58" class="m" font-size="9.5" fill="#8D929B" letter-spacing="1">NASTALIQ</text>
+<foreignObject x="46" y="64" width="202" height="56"><div xmlns="http://www.w3.org/1999/xhtml" class="viz-ur" dir="rtl" lang="ur" style="font-size:22px;color:#1E2024;text-align:right;">یہ فلم بہت اچھی تھی</div></foreignObject>
+<g filter="url(#rb-sh)"><rect x="30" y="150" width="234" height="96" rx="22" fill="#1E2024"/></g>
+<text x="50" y="174" class="m" font-size="9.5" fill="#8D929B" letter-spacing="1">ROMAN URDU</text>
+<text x="50" y="214" class="s" font-size="19" font-style="italic" fill="#FFFFFF" textLength="190" lengthAdjust="spacingAndGlyphs">yeh film bohat achi thi</text>
+<path d="M147 130v20" stroke="#FFC629" stroke-width="3" stroke-linecap="round"/><circle cx="147" cy="140" r="9" fill="#FFC629"/><path d="M143 140h8M148 136l3 4-3 4" stroke="#1E2024" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+<text x="30" y="290" class="s" font-size="46" fill="#1E2024">188,309</text>
+<text x="30" y="314" font-size="12" fill="#5B6069">examples across 26 released datasets</text>
+<text x="30" y="350" class="m" font-size="10" fill="#5B6069" letter-spacing="1">SCRIPT · DOMAIN · CODE-MIX</text>
+<text x="326" y="56" class="m" font-size="9.5" fill="#8D929B" letter-spacing="1">TRANSFER MATRIX · TRAIN ↓ TEST →</text>
+<text x="326" y="86" class="s" font-size="19" fill="#1E2024">Fake news does not transfer.</text>
+<text x="326" y="108" font-size="11.5" fill="#5B6069">Encoders lose 13.5–47.6 macro-F1 across 80 shifts;</text>
+<text x="326" y="124" font-size="11.5" fill="#5B6069">few-shot LLMs win 30 of 42 paired comparisons.</text>
+<text x="318" y="181" text-anchor="end" class="m" font-size="9.5" fill="#5B6069">Senti</text><text x="318" y="215" text-anchor="end" class="m" font-size="9.5" fill="#5B6069">Hate</text><text x="318" y="249" text-anchor="end" class="m" font-size="9.5" fill="#5B6069">Abuse</text><text x="318" y="283" text-anchor="end" class="m" font-size="9.5" fill="#5B6069">Fake</text><text x="318" y="317" text-anchor="end" class="m" font-size="9.5" fill="#5B6069">QA</text><text x="318" y="351" text-anchor="end" class="m" font-size="9.5" fill="#5B6069">Pol.</text><text x="341" y="154" text-anchor="middle" class="m" font-size="9.5" fill="#5B6069">Senti</text><text x="375" y="154" text-anchor="middle" class="m" font-size="9.5" fill="#5B6069">Hate</text><text x="409" y="154" text-anchor="middle" class="m" font-size="9.5" fill="#5B6069">Abuse</text><text x="443" y="154" text-anchor="middle" class="m" font-size="9.5" fill="#5B6069">Fake</text><text x="477" y="154" text-anchor="middle" class="m" font-size="9.5" fill="#5B6069">QA</text><text x="511" y="154" text-anchor="middle" class="m" font-size="9.5" fill="#5B6069">Pol.</text><rect x="326" y="162" width="30" height="30" rx="7" fill="#FFC629" fill-opacity="1"/><rect x="360" y="162" width="30" height="30" rx="7" fill="#1E2024" fill-opacity="0.41"/><rect x="394" y="162" width="30" height="30" rx="7" fill="#1E2024" fill-opacity="0.5"/><rect x="428" y="162" width="30" height="30" rx="7" fill="#1E2024" fill-opacity="0.15"/><rect x="462" y="162" width="30" height="30" rx="7" fill="#1E2024" fill-opacity="0.4"/><rect x="496" y="162" width="30" height="30" rx="7" fill="#1E2024" fill-opacity="0.5"/><rect x="326" y="196" width="30" height="30" rx="7" fill="#1E2024" fill-opacity="0.66"/><rect x="360" y="196" width="30" height="30" rx="7" fill="#FFC629" fill-opacity="1"/><rect x="394" y="196" width="30" height="30" rx="7" fill="#1E2024" fill-opacity="0.62"/><rect x="428" y="196" width="30" height="30" rx="7" fill="#1E2024" fill-opacity="0.16"/><rect x="462" y="196" width="30" height="30" rx="7" fill="#1E2024" fill-opacity="0.54"/><rect x="496" y="196" width="30" height="30" rx="7" fill="#1E2024" fill-opacity="0.46"/><rect x="326" y="230" width="30" height="30" rx="7" fill="#1E2024" fill-opacity="0.43"/><rect x="360" y="230" width="30" height="30" rx="7" fill="#1E2024" fill-opacity="0.41"/><rect x="394" y="230" width="30" height="30" rx="7" fill="#FFC629" fill-opacity="1"/><rect x="428" y="230" width="30" height="30" rx="7" fill="#1E2024" fill-opacity="0.23"/><rect x="462" y="230" width="30" height="30" rx="7" fill="#1E2024" fill-opacity="0.64"/><rect x="496" y="230" width="30" height="30" rx="7" fill="#1E2024" fill-opacity="0.63"/><rect x="326" y="264" width="30" height="30" rx="7" fill="#1E2024" fill-opacity="0.22"/><rect x="360" y="264" width="30" height="30" rx="7" fill="#1E2024" fill-opacity="0.15"/><rect x="394" y="264" width="30" height="30" rx="7" fill="#1E2024" fill-opacity="0.17"/><rect x="428" y="264" width="30" height="30" rx="7" fill="#FFC629" fill-opacity="1"/><rect x="462" y="264" width="30" height="30" rx="7" fill="#1E2024" fill-opacity="0.21"/><rect x="496" y="264" width="30" height="30" rx="7" fill="#1E2024" fill-opacity="0.22"/><rect x="326" y="298" width="30" height="30" rx="7" fill="#1E2024" fill-opacity="0.65"/><rect x="360" y="298" width="30" height="30" rx="7" fill="#1E2024" fill-opacity="0.4"/><rect x="394" y="298" width="30" height="30" rx="7" fill="#1E2024" fill-opacity="0.57"/><rect x="428" y="298" width="30" height="30" rx="7" fill="#1E2024" fill-opacity="0.2"/><rect x="462" y="298" width="30" height="30" rx="7" fill="#FFC629" fill-opacity="1"/><rect x="496" y="298" width="30" height="30" rx="7" fill="#1E2024" fill-opacity="0.43"/><rect x="326" y="332" width="30" height="30" rx="7" fill="#1E2024" fill-opacity="0.52"/><rect x="360" y="332" width="30" height="30" rx="7" fill="#1E2024" fill-opacity="0.4"/><rect x="394" y="332" width="30" height="30" rx="7" fill="#1E2024" fill-opacity="0.67"/><rect x="428" y="332" width="30" height="30" rx="7" fill="#1E2024" fill-opacity="0.23"/><rect x="462" y="332" width="30" height="30" rx="7" fill="#1E2024" fill-opacity="0.55"/><rect x="496" y="332" width="30" height="30" rx="7" fill="#FFC629" fill-opacity="1"/></svg></figure>
+            <div class="work__body">
+              <div class="work__meta"><span class="pill">ACM TALLIP · Submitted</span><span>First author</span></div>
+              <h3>Domain Robustness of Multilingual NLP Models Across Urdu and Roman Urdu Scripts</h3>
+              <p class="authors"><b>Muhammad Abdullah Haroon</b>, Maryam Bashir</p>
+              <p class="one">Fine-tuned encoders <b>break under script and domain shift</b>; few-shot LLMs hold up better.</p>
+              <div class="stats"><div><strong>26</strong><span>datasets released</span></div><div><strong>188,309</strong><span>examples</span></div><div><strong>83–100%</strong><span>target-trained wins</span></div></div>
+              <details class="more"><summary>Details</summary><ul class="bul">
+                <li>Released <b>26 datasets (188,309 examples)</b> and <b>7 transfer matrices</b> over sentiment, hate speech, cyber abuse, fake news, QA validation and 3-class polarity, with documented provenance and licensing.</li>
+                <li>A <b>target-trained model wins 83–100%</b> of shifts, proving encoder losses are <b>true robustness failures</b>; <b>fake news does not transfer</b> for either model family.</li>
+              </ul></details>
+              <div class="work__foot"><div class="links"><a class="link" href="https://github.com/AbdullahPatti/Urdu-Multi-Domain-Script-Research" target="_blank" rel="noopener"><img src="assets/logos/github.svg" alt="" width="16" height="16" loading="lazy">GitHub</a><a class="link" href="https://huggingface.co/datasets/abdullaharoon/Urdu-Multi-Domain-Benchmark" target="_blank" rel="noopener"><img src="assets/logos/huggingface.svg" alt="" width="16" height="16" loading="lazy">Dataset</a><a class="link" href="https://doi.org/10.5281/zenodo.23053495" target="_blank" rel="noopener"><img src="assets/logos/zenodo.svg" alt="" width="16" height="16" loading="lazy">Zenodo</a></div></div>
+            </div>
+          </article>
+          <article class="work work--wide" style="--i:1">
+            <figure class="work__viz is-dark"><svg class="viz" viewBox="0 0 640 400" role="img" aria-label="An airplane image with an adversarial patch misread as a frog, and patched accuracy showing pruned models hold while equally small dense models fall from 61.2 to 52.9 percent" xmlns="http://www.w3.org/2000/svg">
+<defs><radialGradient id="cp-g" cx="0%" cy="100%" r="75%"><stop offset="0" stop-color="#FFC629" stop-opacity="0.22"/><stop offset="1" stop-color="#FFC629" stop-opacity="0"/></radialGradient></defs>
+<defs><clipPath id="cp-c"><rect x="40" y="60" width="176" height="176" rx="18"/></clipPath></defs>
+<rect width="640" height="400" fill="#1E2024"/><rect width="640" height="400" fill="url(#cp-g)"/>
+<text x="40" y="44" class="m" font-size="10" fill="#8D929B" letter-spacing="1">CIFAR-10 · RESNET-18 ZOO</text>
+<g clip-path="url(#cp-c)"><rect x="40" y="60" width="22" height="22" fill="rgb(70,110,240)"/><rect x="62" y="60" width="22" height="22" fill="rgb(70,110,240)"/><rect x="84" y="60" width="22" height="22" fill="rgb(70,110,240)"/><rect x="106" y="60" width="22" height="22" fill="rgb(70,110,240)"/><rect x="128" y="60" width="22" height="22" fill="rgb(70,110,240)"/><rect x="150" y="60" width="22" height="22" fill="rgb(70,110,240)"/><rect x="172" y="60" width="22" height="22" fill="rgb(70,110,240)"/><rect x="194" y="60" width="22" height="22" fill="rgb(70,110,240)"/><rect x="40" y="82" width="22" height="22" fill="rgb(76,118,231)"/><rect x="62" y="82" width="22" height="22" fill="rgb(76,118,231)"/><rect x="84" y="82" width="22" height="22" fill="rgb(76,118,231)"/><rect x="106" y="82" width="22" height="22" fill="rgb(76,118,231)"/><rect x="128" y="82" width="22" height="22" fill="rgb(76,118,231)"/><rect x="150" y="82" width="22" height="22" fill="rgb(76,118,231)"/><rect x="172" y="82" width="22" height="22" fill="rgb(76,118,231)"/><rect x="194" y="82" width="22" height="22" fill="rgb(76,118,231)"/><rect x="40" y="104" width="22" height="22" fill="rgb(82,126,222)"/><rect x="62" y="104" width="22" height="22" fill="rgb(82,126,222)"/><rect x="84" y="104" width="22" height="22" fill="rgb(82,126,222)"/><rect x="106" y="104" width="22" height="22" fill="rgb(82,126,222)"/><rect x="128" y="104" width="22" height="22" fill="rgb(82,126,222)"/><rect x="150" y="104" width="22" height="22" fill="rgb(82,126,222)"/><rect x="172" y="104" width="22" height="22" fill="rgb(82,126,222)"/><rect x="194" y="104" width="22" height="22" fill="rgb(82,126,222)"/><rect x="40" y="126" width="22" height="22" fill="rgb(88,134,213)"/><rect x="62" y="126" width="22" height="22" fill="rgb(88,134,213)"/><rect x="84" y="126" width="22" height="22" fill="rgb(88,134,213)"/><rect x="106" y="126" width="22" height="22" fill="rgb(88,134,213)"/><rect x="128" y="126" width="22" height="22" fill="rgb(88,134,213)"/><rect x="150" y="126" width="22" height="22" fill="rgb(88,134,213)"/><rect x="172" y="126" width="22" height="22" fill="rgb(88,134,213)"/><rect x="194" y="126" width="22" height="22" fill="rgb(88,134,213)"/><rect x="40" y="148" width="22" height="22" fill="rgb(94,142,204)"/><rect x="62" y="148" width="22" height="22" fill="rgb(94,142,204)"/><rect x="84" y="148" width="22" height="22" fill="rgb(94,142,204)"/><rect x="106" y="148" width="22" height="22" fill="rgb(94,142,204)"/><rect x="128" y="148" width="22" height="22" fill="rgb(94,142,204)"/><rect x="150" y="148" width="22" height="22" fill="rgb(94,142,204)"/><rect x="172" y="148" width="22" height="22" fill="rgb(94,142,204)"/><rect x="194" y="148" width="22" height="22" fill="rgb(94,142,204)"/><rect x="40" y="170" width="22" height="22" fill="rgb(100,150,195)"/><rect x="62" y="170" width="22" height="22" fill="rgb(100,150,195)"/><rect x="84" y="170" width="22" height="22" fill="rgb(100,150,195)"/><rect x="106" y="170" width="22" height="22" fill="rgb(100,150,195)"/><rect x="128" y="170" width="22" height="22" fill="rgb(100,150,195)"/><rect x="150" y="170" width="22" height="22" fill="rgb(100,150,195)"/><rect x="172" y="170" width="22" height="22" fill="rgb(100,150,195)"/><rect x="194" y="170" width="22" height="22" fill="rgb(100,150,195)"/><rect x="40" y="192" width="22" height="22" fill="rgb(106,158,186)"/><rect x="62" y="192" width="22" height="22" fill="rgb(106,158,186)"/><rect x="84" y="192" width="22" height="22" fill="rgb(106,158,186)"/><rect x="106" y="192" width="22" height="22" fill="rgb(106,158,186)"/><rect x="128" y="192" width="22" height="22" fill="rgb(106,158,186)"/><rect x="150" y="192" width="22" height="22" fill="rgb(106,158,186)"/><rect x="172" y="192" width="22" height="22" fill="rgb(106,158,186)"/><rect x="194" y="192" width="22" height="22" fill="rgb(106,158,186)"/><rect x="40" y="214" width="22" height="22" fill="rgb(112,166,177)"/><rect x="62" y="214" width="22" height="22" fill="rgb(112,166,177)"/><rect x="84" y="214" width="22" height="22" fill="rgb(112,166,177)"/><rect x="106" y="214" width="22" height="22" fill="rgb(112,166,177)"/><rect x="128" y="214" width="22" height="22" fill="rgb(112,166,177)"/><rect x="150" y="214" width="22" height="22" fill="rgb(112,166,177)"/><rect x="172" y="214" width="22" height="22" fill="rgb(112,166,177)"/><rect x="194" y="214" width="22" height="22" fill="rgb(112,166,177)"/><path d="M64 168l60-22 24-36 10 2-12 30 36-12 10-16 8 2-6 22 18 4-2 6-20-2-58 24-36 6z" fill="#F4F5F7"/></g>
+<rect x="150" y="170" width="11" height="11" fill="#B46CFF"/><rect x="161" y="170" width="11" height="11" fill="#FFFFFF"/><rect x="172" y="170" width="11" height="11" fill="#3FD0C9"/><rect x="183" y="170" width="11" height="11" fill="#3FD0C9"/><rect x="150" y="181" width="11" height="11" fill="#FF5A4F"/><rect x="161" y="181" width="11" height="11" fill="#FF5A4F"/><rect x="172" y="181" width="11" height="11" fill="#1E2024"/><rect x="183" y="181" width="11" height="11" fill="#FFC629"/><rect x="150" y="192" width="11" height="11" fill="#3FD0C9"/><rect x="161" y="192" width="11" height="11" fill="#FFFFFF"/><rect x="172" y="192" width="11" height="11" fill="#B46CFF"/><rect x="183" y="192" width="11" height="11" fill="#FFFFFF"/><rect x="150" y="203" width="11" height="11" fill="#FFC629"/><rect x="161" y="203" width="11" height="11" fill="#3FD0C9"/><rect x="172" y="203" width="11" height="11" fill="#FFFFFF"/><rect x="183" y="203" width="11" height="11" fill="#FFFFFF"/><rect x="148" y="168" width="48" height="48" fill="none" stroke="#FFC629" stroke-width="2" stroke-dasharray="3 3"/>
+<rect x="40" y="252" width="176" height="36" rx="18" fill="#2B2E34" stroke="#3A3E46"/>
+<text x="58" y="275" font-size="12" fill="#D9DBDF">airplane</text><text x="128" y="275" font-size="12" fill="#8D929B">→</text><text x="150" y="275" font-size="12" font-weight="700" fill="#FF5A4F">frog</text>
+<text x="40" y="330" class="s" font-size="22" fill="#FFFFFF">Capacity, not sparsity.</text>
+<text x="40" y="352" font-size="11.5" fill="#8D929B">2× / 4× / 8× compression · 3 seeds</text>
+<text x="300" y="64" class="m" font-size="9.5" fill="#8D929B" letter-spacing="1">PATCHED ACCURACY</text>
+<text x="300" y="92" class="s" font-size="22" fill="#FFFFFF">Who survives the patch?</text>
+<text x="300" y="134" font-size="11.5" fill="#D9DBDF">Full model</text><rect x="300" y="143" width="250" height="14" rx="7" fill="#3A3E46"/><rect x="300" y="143" width="212" height="14" rx="7" fill="#FFFFFF"/><text x="608" y="155" text-anchor="end" class="m" font-size="10.5" fill="#FFFFFF">61.2%</text><text x="300" y="198" font-size="11.5" fill="#D9DBDF">Pruned</text><rect x="300" y="207" width="250" height="14" rx="7" fill="#3A3E46"/><rect x="300" y="207" width="212" height="14" rx="7" fill="#FFC629"/><text x="608" y="219" text-anchor="end" class="m" font-size="10.5" fill="#FFC629">held</text><text x="300" y="262" font-size="11.5" fill="#D9DBDF">Dense, same size</text><rect x="300" y="271" width="250" height="14" rx="7" fill="#3A3E46"/><rect x="300" y="271" width="129" height="14" rx="7" fill="#FF5A4F"/><text x="608" y="283" text-anchor="end" class="m" font-size="10.5" fill="#FF5A4F">52.9%</text>
+<rect x="300" y="330" width="176" height="28" rx="14" fill="#2B2E34" stroke="#3A3E46"/><text x="388" y="348" text-anchor="middle" class="m" font-size="10" fill="#FFC629">CERTIFIED · PATCHCLEANSER</text></svg></figure>
+            <div class="work__body">
+              <div class="work__meta"><span class="pill">TMLR · Submitted</span><span>First author</span></div>
+              <h3>Does Compression Preserve Adversarial Patch Robustness?</h3>
+              <p class="authors"><b>Muhammad Abdullah Haroon</b>, A. R. Antall, A. Hadi, D. Farhat</p>
+              <p class="one">Patch robustness follows <b>lost capacity, not sparsity</b>: pruning keeps it, shrinking breaks it.</p>
+              <div class="stats"><div><strong>13</strong><span>ResNet-18 models</span></div><div><strong>61.2→52.9%</strong><span>dense patched acc.</span></div><div><strong>3</strong><span>seeds each</span></div></div>
+              <details class="more"><summary>Details</summary><ul class="bul">
+                <li><b>First joint test</b> of pruning, quantization and distillation against patch attacks: a <b>13-model ResNet-18 zoo</b> at 2/4/8× compression, universal and per-image LaVAN attacks, 3 seeds.</li>
+                <li>Pruned models held baseline robustness, while equally sized dense models fell from <b>61.2% to 52.9%</b> patched accuracy.</li>
+                <li>Certified with <b>PatchCleanser</b> (60.6 points via mask augmentation); adaptive attacks <b>ruled out gradient masking</b>.</li>
+              </ul></details>
+              <div class="work__foot"><div class="links"><a class="link" href="https://github.com/AbdullahPatti/CNN-Adversarial-Patch" target="_blank" rel="noopener"><img src="assets/logos/github.svg" alt="" width="16" height="16" loading="lazy">GitHub</a><a class="link" href="https://abdullahpatti.github.io/CNN-Adversarial-Patch/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" width="16" height="16"><path d="M7 17 17 7M8 7h9v9"/></svg>Live demo</a></div></div>
+            </div>
+          </article>
+          <article class="work work--wide" style="--i:2">
+            <figure class="work__viz"><svg class="viz" viewBox="0 0 640 400" role="img" aria-label="A fake Urdu article 3.4 times longer than a real one; a model learns length, and transfer collapses from 0.771 to 0.005 macro-F1" xmlns="http://www.w3.org/2000/svg">
+<defs><filter id="sh-sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#1E2024" flood-opacity=".16"/></filter></defs>
+<rect width="640" height="400" fill="#F4F5F7"/>
+<g filter="url(#sh-sh)"><rect x="36" y="286" width="120" height="84" rx="14" fill="#FFFFFF"/><rect x="52" y="304" width="88" height="5" rx="2.5" fill="#D3D6DB"/><rect x="52" y="317" width="71" height="5" rx="2.5" fill="#D3D6DB"/><rect x="52" y="330" width="84" height="5" rx="2.5" fill="#D3D6DB"/><rect x="52" y="343" width="67" height="5" rx="2.5" fill="#D3D6DB"/><rect x="176" y="84" width="120" height="286" rx="14" fill="#1E2024"/><rect x="192" y="102" width="88" height="5" rx="2.5" fill="#5B6069"/><rect x="192" y="115" width="71" height="5" rx="2.5" fill="#5B6069"/><rect x="192" y="128" width="84" height="5" rx="2.5" fill="#5B6069"/><rect x="192" y="141" width="67" height="5" rx="2.5" fill="#5B6069"/><rect x="192" y="154" width="80" height="5" rx="2.5" fill="#5B6069"/><rect x="192" y="167" width="63" height="5" rx="2.5" fill="#5B6069"/><rect x="192" y="180" width="76" height="5" rx="2.5" fill="#5B6069"/><rect x="192" y="193" width="59" height="5" rx="2.5" fill="#5B6069"/><rect x="192" y="206" width="72" height="5" rx="2.5" fill="#5B6069"/><rect x="192" y="219" width="85" height="5" rx="2.5" fill="#5B6069"/><rect x="192" y="232" width="68" height="5" rx="2.5" fill="#5B6069"/><rect x="192" y="245" width="81" height="5" rx="2.5" fill="#5B6069"/><rect x="192" y="258" width="64" height="5" rx="2.5" fill="#5B6069"/><rect x="192" y="271" width="77" height="5" rx="2.5" fill="#5B6069"/><rect x="192" y="284" width="60" height="5" rx="2.5" fill="#5B6069"/><rect x="192" y="297" width="73" height="5" rx="2.5" fill="#5B6069"/><rect x="192" y="310" width="86" height="5" rx="2.5" fill="#5B6069"/><rect x="192" y="323" width="69" height="5" rx="2.5" fill="#5B6069"/><rect x="192" y="336" width="82" height="5" rx="2.5" fill="#5B6069"/><rect x="192" y="349" width="65" height="5" rx="2.5" fill="#5B6069"/></g>
+<text x="96" y="272" text-anchor="middle" class="m" font-size="10" fill="#5B6069" letter-spacing="1">REAL</text>
+<text x="236" y="70" text-anchor="middle" class="m" font-size="10" fill="#5B6069" letter-spacing="1">FAKE</text>
+<path d="M312 84v286" stroke="#FFC629" stroke-width="2.5"/><path d="M304 84h16M304 370h16" stroke="#FFC629" stroke-width="2.5" stroke-linecap="round"/>
+<rect x="290" y="210" width="44" height="28" rx="14" fill="#FFC629"/><text x="312" y="229" text-anchor="middle" font-size="13" font-weight="700" fill="#1E2024">3.4×</text>
+<text x="364" y="66" class="m" font-size="9.5" fill="#8D929B" letter-spacing="1">WHAT THE CLASSIFIER LEARNED</text>
+<text x="364" y="100" class="s" font-size="30" fill="#1E2024">Length, not</text>
+<text x="364" y="134" class="s" font-size="30" font-style="italic" fill="#1E2024">content.</text>
+<text x="364" y="182" class="m" font-size="9.5" fill="#8D929B" letter-spacing="1">TRANSFER MACRO-F1</text>
+<path d="M368 214C430 214 460 214 490 252S560 316 600 318" stroke="#1E2024" stroke-width="3" fill="none" stroke-linecap="round"/>
+<circle cx="368" cy="214" r="6" fill="#1E2024"/><circle cx="600" cy="318" r="7" fill="#FF5A4F"/>
+<text x="368" y="204" font-size="14" font-weight="700" fill="#1E2024" dy="-6">0.771</text>
+<text x="600" y="300" text-anchor="end" font-size="14" font-weight="700" fill="#FF5A4F">0.005</text>
+<g class="m" font-size="9.5" fill="#1E2024">
+<rect x="364" y="342" width="62" height="24" rx="12" fill="#FFFFFF" stroke="#DADDE2"/><text x="395" y="358" text-anchor="middle">XLM-R</text>
+<rect x="432" y="342" width="90" height="24" rx="12" fill="#FFFFFF" stroke="#DADDE2"/><text x="477" y="358" text-anchor="middle">TF-IDF + LR</text>
+<rect x="528" y="342" width="48" height="24" rx="12" fill="#FFFFFF" stroke="#DADDE2"/><text x="552" y="358" text-anchor="middle">SVM</text></g></svg></figure>
+            <div class="work__body">
+              <div class="work__meta"><span class="pill pill--dark">arXiv:2607.14131 · Jul 2026</span><span>Sole author</span></div>
+              <h3>When Benchmarks Mislead: Shortcut Learning in Multilingual Fake News and Sarcasm Detection</h3>
+              <p class="authors"><b>Muhammad Abdullah Haroon</b></p>
+              <p class="one">Urdu fake-news classifiers learn <b>article length, not content</b>.</p>
+              <div class="stats"><div><strong>3.4×</strong><span>longer fake articles</span></div><div><strong>0.771→0.005</strong><span>transfer macro-F1</span></div><div><strong>3</strong><span>tasks tested</span></div></div>
+              <details class="more"><summary>Details</summary><ul class="bul">
+                <li>Fake Urdu articles run <b>3.4× longer</b> than real ones, so classifiers <b>learn length instead of content</b>, sinking transfer to <b>0.005 macro-F1</b>.</li>
+                <li>Compared <b>XLM-RoBERTa</b> with TF-IDF + Logistic Regression and SVM baselines; the pattern <b>repeats in English</b> fake news and sarcasm.</li>
+              </ul></details>
+              <div class="work__foot"><div class="links"><a class="link" href="https://arxiv.org/abs/2607.14131" target="_blank" rel="noopener"><img src="assets/logos/arxiv.svg" alt="" width="16" height="16" loading="lazy">arXiv</a><a class="link" href="https://github.com/AbdullahPatti/Cross-Data-Transfer-Learning" target="_blank" rel="noopener"><img src="assets/logos/github.svg" alt="" width="16" height="16" loading="lazy">GitHub</a></div></div>
+            </div>
+          </article>
+          <article class="work work--wide" style="--i:3">
+            <figure class="work__viz is-dark"><svg class="viz" viewBox="0 0 640 400" role="img" aria-label="Hourly Bitcoin candles with a high-volatility regime shaded; Reddit sentiment and price features pass a volatility gate to an up prediction" xmlns="http://www.w3.org/2000/svg">
+<rect width="640" height="400" fill="#1E2024"/>
+<rect x="250" y="40" width="187" height="190" rx="14" fill="#FFC629" fill-opacity=".09"/>
+<text x="260" y="60" class="m" font-size="9.5" fill="#FFC629" letter-spacing="1">HIGH-VOL REGIME</text>
+<text x="40" y="34" class="m" font-size="10" fill="#8D929B" letter-spacing="1">BTC / USD · HOURLY · 3,491 OBSERVATIONS</text>
+<line x1="45.0" y1="106.7" x2="45.0" y2="126.1" stroke="#FFC629" stroke-width="1.4"/><rect x="40.0" y="113.9" width="10" height="8.1" rx="2" fill="#FFC629"/><line x1="61.6" y1="111.9" x2="61.6" y2="130.2" stroke="#7C818A" stroke-width="1.4"/><rect x="56.6" y="113.9" width="10" height="6.8" rx="2" fill="#7C818A"/><line x1="78.2" y1="109.8" x2="78.2" y2="124.8" stroke="#FFC629" stroke-width="1.4"/><rect x="73.2" y="115.9" width="10" height="4.9" rx="2" fill="#FFC629"/><line x1="94.8" y1="109.9" x2="94.8" y2="116.0" stroke="#FFC629" stroke-width="1.4"/><rect x="89.8" y="115.1" width="10" height="2.0" rx="2" fill="#FFC629"/><line x1="111.4" y1="114.1" x2="111.4" y2="118.2" stroke="#7C818A" stroke-width="1.4"/><rect x="106.4" y="115.1" width="10" height="2.0" rx="2" fill="#7C818A"/><line x1="128.0" y1="117.0" x2="128.0" y2="124.1" stroke="#7C818A" stroke-width="1.4"/><rect x="123.0" y="117.1" width="10" height="5.4" rx="2" fill="#7C818A"/><line x1="144.6" y1="106.5" x2="144.6" y2="127.9" stroke="#FFC629" stroke-width="1.4"/><rect x="139.6" y="106.6" width="10" height="15.9" rx="2" fill="#FFC629"/><line x1="161.2" y1="101.9" x2="161.2" y2="115.6" stroke="#7C818A" stroke-width="1.4"/><rect x="156.2" y="106.6" width="10" height="7.9" rx="2" fill="#7C818A"/><line x1="177.8" y1="114.5" x2="177.8" y2="123.1" stroke="#7C818A" stroke-width="1.4"/><rect x="172.8" y="114.6" width="10" height="3.5" rx="2" fill="#7C818A"/><line x1="194.4" y1="112.4" x2="194.4" y2="128.0" stroke="#7C818A" stroke-width="1.4"/><rect x="189.4" y="118.1" width="10" height="2.0" rx="2" fill="#7C818A"/><line x1="211.0" y1="95.1" x2="211.0" y2="126.3" stroke="#FFC629" stroke-width="1.4"/><rect x="206.0" y="104.0" width="10" height="15.7" rx="2" fill="#FFC629"/><line x1="227.6" y1="96.2" x2="227.6" y2="109.2" stroke="#FFC629" stroke-width="1.4"/><rect x="222.6" y="99.7" width="10" height="4.3" rx="2" fill="#FFC629"/><line x1="244.2" y1="96.3" x2="244.2" y2="102.3" stroke="#FFC629" stroke-width="1.4"/><rect x="239.2" y="97.7" width="10" height="2.0" rx="2" fill="#FFC629"/><line x1="260.8" y1="96.0" x2="260.8" y2="117.7" stroke="#7C818A" stroke-width="1.4"/><rect x="255.8" y="97.7" width="10" height="11.1" rx="2" fill="#7C818A"/><line x1="277.4" y1="56.4" x2="277.4" y2="109.5" stroke="#FFC629" stroke-width="1.4"/><rect x="272.4" y="61.9" width="10" height="46.9" rx="2" fill="#FFC629"/><line x1="294.0" y1="43.2" x2="294.0" y2="108.8" stroke="#7C818A" stroke-width="1.4"/><rect x="289.0" y="61.9" width="10" height="36.5" rx="2" fill="#7C818A"/><line x1="310.6" y1="68.9" x2="310.6" y2="102.5" stroke="#FFC629" stroke-width="1.4"/><rect x="305.6" y="79.4" width="10" height="19.0" rx="2" fill="#FFC629"/><line x1="327.2" y1="54.8" x2="327.2" y2="104.4" stroke="#7C818A" stroke-width="1.4"/><rect x="322.2" y="79.4" width="10" height="12.1" rx="2" fill="#7C818A"/><line x1="343.8" y1="84.7" x2="343.8" y2="120.8" stroke="#7C818A" stroke-width="1.4"/><rect x="338.8" y="91.5" width="10" height="16.8" rx="2" fill="#7C818A"/><line x1="360.4" y1="87.7" x2="360.4" y2="108.7" stroke="#FFC629" stroke-width="1.4"/><rect x="355.4" y="100.8" width="10" height="7.5" rx="2" fill="#FFC629"/><line x1="377.0" y1="89.2" x2="377.0" y2="109.1" stroke="#FFC629" stroke-width="1.4"/><rect x="372.0" y="90.1" width="10" height="10.6" rx="2" fill="#FFC629"/><line x1="393.6" y1="74.7" x2="393.6" y2="157.6" stroke="#7C818A" stroke-width="1.4"/><rect x="388.6" y="90.1" width="10" height="67.1" rx="2" fill="#7C818A"/><line x1="410.2" y1="150.4" x2="410.2" y2="194.3" stroke="#7C818A" stroke-width="1.4"/><rect x="405.2" y="157.2" width="10" height="33.9" rx="2" fill="#7C818A"/><line x1="426.8" y1="143.0" x2="426.8" y2="197.6" stroke="#FFC629" stroke-width="1.4"/><rect x="421.8" y="160.3" width="10" height="30.8" rx="2" fill="#FFC629"/><line x1="443.4" y1="154.0" x2="443.4" y2="167.6" stroke="#FFC629" stroke-width="1.4"/><rect x="438.4" y="157.0" width="10" height="3.3" rx="2" fill="#FFC629"/><line x1="460.0" y1="134.8" x2="460.0" y2="163.1" stroke="#FFC629" stroke-width="1.4"/><rect x="455.0" y="139.0" width="10" height="18.0" rx="2" fill="#FFC629"/><line x1="476.6" y1="136.7" x2="476.6" y2="148.7" stroke="#7C818A" stroke-width="1.4"/><rect x="471.6" y="139.0" width="10" height="2.0" rx="2" fill="#7C818A"/><line x1="493.2" y1="131.0" x2="493.2" y2="144.8" stroke="#FFC629" stroke-width="1.4"/><rect x="488.2" y="131.9" width="10" height="7.7" rx="2" fill="#FFC629"/><line x1="509.8" y1="124.4" x2="509.8" y2="147.5" stroke="#7C818A" stroke-width="1.4"/><rect x="504.8" y="131.9" width="10" height="4.6" rx="2" fill="#7C818A"/><line x1="526.4" y1="122.8" x2="526.4" y2="158.2" stroke="#7C818A" stroke-width="1.4"/><rect x="521.4" y="136.5" width="10" height="12.7" rx="2" fill="#7C818A"/><line x1="543.0" y1="134.6" x2="543.0" y2="153.8" stroke="#FFC629" stroke-width="1.4"/><rect x="538.0" y="136.3" width="10" height="12.8" rx="2" fill="#FFC629"/><line x1="559.6" y1="133.4" x2="559.6" y2="145.4" stroke="#7C818A" stroke-width="1.4"/><rect x="554.6" y="136.3" width="10" height="6.1" rx="2" fill="#7C818A"/><line x1="576.2" y1="135.3" x2="576.2" y2="151.4" stroke="#FFC629" stroke-width="1.4"/><rect x="571.2" y="137.6" width="10" height="4.8" rx="2" fill="#FFC629"/><line x1="592.8" y1="128.8" x2="592.8" y2="143.8" stroke="#FFC629" stroke-width="1.4"/><rect x="587.8" y="129.7" width="10" height="7.9" rx="2" fill="#FFC629"/>
+<g transform="translate(40 262)" font-size="12">
+  <rect width="150" height="44" rx="22" fill="#2B2E34" stroke="#3A3E46"/><text x="18" y="27" font-weight="600" fill="#FFFFFF">FinBERT</text><text x="132" y="27" text-anchor="end" class="m" font-size="9.5" fill="#8D929B">REDDIT</text>
+  <rect y="58" width="150" height="44" rx="22" fill="#2B2E34" stroke="#3A3E46"/><text x="18" y="85" font-weight="600" fill="#FFFFFF">BiLSTM</text><text x="132" y="85" text-anchor="end" class="m" font-size="9.5" fill="#8D929B">PRICE</text>
+  <path d="M150 22c40 0 40 29 74 29M150 80c40 0 40-29 74-29" stroke="#5B6069" stroke-width="1.8" fill="none"/>
+  <rect x="224" y="24" width="150" height="54" rx="27" fill="#FFC629"/><text x="299" y="47" text-anchor="middle" font-weight="700" fill="#1E2024">Regime gate</text><text x="299" y="64" text-anchor="middle" class="m" font-size="9.5" fill="#1E2024">24 h volatility</text>
+  <path d="M374 51h40" stroke="#5B6069" stroke-width="1.8"/>
+  <text x="400" y="44" class="s" font-size="30" fill="#FFFFFF">↑ Up</text><text x="400" y="66" class="m" font-size="10" fill="#8D929B">6 h horizon</text>
+  <text x="566" y="44" text-anchor="end" class="s" font-size="30" fill="#FFC629">0.551</text><text x="566" y="66" text-anchor="end" class="m" font-size="10" fill="#8D929B">macro-F1</text>
+</g></svg></figure>
+            <div class="work__body">
+              <div class="work__meta"><span class="pill pill--dark">arXiv:2607.23370 · Jul 2026</span><span>Sole author</span></div>
+              <h3>Bitcoin Price Direction Prediction via Regime-Aware Multi-Modal Fusion</h3>
+              <p class="authors"><b>Muhammad Abdullah Haroon</b></p>
+              <p class="one"><b>RAML</b> fuses Reddit sentiment and price history through a <b>volatility gate</b>.</p>
+              <div class="stats"><div><strong>0.551</strong><span>macro-F1 at 6h</span></div><div><strong>0.547</strong><span>macro-F1 at 3h</span></div><div><strong>3,491</strong><span>hourly points</span></div></div>
+              <details class="more"><summary>Details</summary><ul class="bul">
+                <li>Fuses <b>FinBERT Reddit sentiment</b> with <b>BiLSTM price features</b> through a <b>volatility-based regime gate</b>.</li>
+                <li>Beat price-only, sentiment-only and static-fusion baselines; <b>ablations showed every component matters</b>.</li>
+              </ul></details>
+              <div class="work__foot"><div class="links"><a class="link" href="https://arxiv.org/abs/2607.23370" target="_blank" rel="noopener"><img src="assets/logos/arxiv.svg" alt="" width="16" height="16" loading="lazy">arXiv</a><a class="link" href="https://github.com/AbdullahPatti/StreetSmart-BitCoin-Price" target="_blank" rel="noopener"><img src="assets/logos/github.svg" alt="" width="16" height="16" loading="lazy">GitHub</a></div></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 04 PROJECTS ============ -->
+    <section class="section section--white" id="projects">
+      <div class="wrap">
+        <div class="head"><span class="eyebrow reveal" data-n="04">Projects</span>
+          <h2 class="h2 reveal">Things I've <em>built and shipped.</em></h2></div>
+        <div class="stack">
+          <article class="work work--wide" style="--i:0">
+            <figure class="work__viz is-dark"><svg class="viz" viewBox="0 0 640 400" role="img" aria-label="An Urdu image post scanned by OCR and judged False with 87 percent confidence, and a voice note flagged as a deepfake" xmlns="http://www.w3.org/2000/svg">
+<defs><radialGradient id="sc-g" cx="85%" cy="0%" r="75%"><stop offset="0" stop-color="#FFC629" stop-opacity="0.22"/><stop offset="1" stop-color="#FFC629" stop-opacity="0"/></radialGradient></defs>
+<rect width="640" height="400" fill="#1E2024"/><rect width="640" height="400" fill="url(#sc-g)"/>
+<g transform="translate(32 32)">
+  <rect width="272" height="216" rx="22" fill="#2B2E34" stroke="#3A3E46"/>
+  <circle cx="28" cy="28" r="11" fill="#5B6069"/>
+  <rect x="48" y="20" width="86" height="7" rx="3.5" fill="#5B6069"/><rect x="48" y="32" width="54" height="6" rx="3" fill="#3A3E46"/>
+  <text x="252" y="32" text-anchor="end" class="m" font-size="10" fill="#8D929B">SHARED 12K</text>
+  <rect x="16" y="54" width="240" height="116" rx="14" fill="#15171A"/>
+  <foreignObject x="28" y="64" width="216" height="100"><div xmlns="http://www.w3.org/1999/xhtml" class="viz-ur" dir="rtl" lang="ur" style="font-size:19px;color:#FFFFFF;text-align:center;">بجلی کی قیمتوں میں پچاس فیصد کمی کا اعلان</div></foreignObject>
+  <rect class="scan" x="16" y="58" width="240" height="2" fill="#FFC629"/>
+  <path d="M10 66V48h18M244 48h18v18M262 158v18h-18M28 176H10v-18" stroke="#FFC629" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="16" y="198" class="m" font-size="10.5" fill="#FFC629" letter-spacing="1">VLM OCR · CLAIM EXTRACTED</text>
+</g>
+<g transform="translate(308 128)"><circle r="13" fill="#FFC629"/><path d="M-4-5l6 5-6 5" stroke="#1E2024" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g>
+<g transform="translate(336 32)">
+  <rect width="272" height="216" rx="22" fill="#FFFFFF"/>
+  <text x="20" y="32" class="m" font-size="10" fill="#8D929B" letter-spacing="1">TEXT VERDICT</text>
+  <rect x="164" y="18" width="90" height="22" rx="11" fill="#FFE8A0"/><text x="209" y="33" text-anchor="middle" class="m" font-size="10" fill="#1E2024">Gemini judge</text>
+  <text x="20" y="84" class="s" font-size="46" fill="#1E2024">False</text>
+  <rect x="150" y="52" width="102" height="36" rx="18" fill="#FFE3E1"/>
+  <foreignObject x="150" y="50" width="102" height="40"><div xmlns="http://www.w3.org/1999/xhtml" class="viz-ur" dir="rtl" lang="ur" style="font-size:15px;color:#C4261D;text-align:center;">جھوٹی خبر</div></foreignObject>
+  <text x="20" y="116" font-size="11.5" fill="#5B6069">Confidence</text><text x="252" y="116" text-anchor="end" font-size="11.5" font-weight="700" fill="#1E2024">87%</text>
+  <rect x="20" y="124" width="232" height="8" rx="4" fill="#ECEEF1"/><rect x="20" y="124" width="202" height="8" rx="4" fill="#FFC629"/>
+  <text x="20" y="158" class="m" font-size="9.5" fill="#8D929B" letter-spacing="1">EVIDENCE · DATED RSS</text>
+  <circle cx="25" cy="176" r="3.5" fill="#1E2024"/><text x="36" y="180" font-size="11.5" fill="#1E2024">Regulator notice, 10 Nov: tariff unchanged</text>
+  <circle cx="25" cy="198" r="3.5" fill="#1E2024"/><text x="36" y="202" font-size="11.5" fill="#1E2024">National daily, 12 Nov: claim denied</text>
+</g>
+<g transform="translate(32 268)">
+  <rect width="576" height="100" rx="22" fill="#2B2E34" stroke="#3A3E46"/>
+  <circle cx="50" cy="50" r="24" fill="#FFC629"/>
+  <path d="M50 38a5 5 0 0 1 5 5v8a5 5 0 0 1-10 0v-8a5 5 0 0 1 5-5zM41 50a9 9 0 0 0 18 0M50 59v5" stroke="#1E2024" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+  <text x="88" y="44" font-size="14" font-weight="600" fill="#FFFFFF">Voice note · 0:14</text>
+  <text x="88" y="64" font-size="11.5" fill="#8D929B">Urdu · unseen speaker</text>
+  <rect x="236.0" y="43.6" width="2.4" height="12.7" rx="1.2" fill="#7C818A"/><rect x="240.4" y="44.4" width="2.4" height="11.2" rx="1.2" fill="#7C818A"/><rect x="244.8" y="39.5" width="2.4" height="21.0" rx="1.2" fill="#7C818A"/><rect x="249.2" y="44.2" width="2.4" height="11.6" rx="1.2" fill="#7C818A"/><rect x="253.6" y="39.0" width="2.4" height="21.9" rx="1.2" fill="#7C818A"/><rect x="258.0" y="40.2" width="2.4" height="19.7" rx="1.2" fill="#7C818A"/><rect x="262.3" y="43.1" width="2.4" height="13.8" rx="1.2" fill="#7C818A"/><rect x="266.7" y="37.3" width="2.4" height="25.5" rx="1.2" fill="#7C818A"/><rect x="271.1" y="42.6" width="2.4" height="14.7" rx="1.2" fill="#7C818A"/><rect x="275.5" y="37.0" width="2.4" height="26.0" rx="1.2" fill="#7C818A"/><rect x="279.9" y="41.5" width="2.4" height="17.0" rx="1.2" fill="#7C818A"/><rect x="284.3" y="40.9" width="2.4" height="18.2" rx="1.2" fill="#7C818A"/><rect x="288.7" y="35.6" width="2.4" height="28.8" rx="1.2" fill="#7C818A"/><rect x="293.1" y="29.0" width="2.4" height="42.1" rx="1.2" fill="#7C818A"/><rect x="297.5" y="39.5" width="2.4" height="21.0" rx="1.2" fill="#7C818A"/><rect x="301.9" y="37.7" width="2.4" height="24.7" rx="1.2" fill="#7C818A"/><rect x="306.3" y="30.7" width="2.4" height="38.5" rx="1.2" fill="#7C818A"/><rect x="310.7" y="25.0" width="2.4" height="50.0" rx="1.2" fill="#7C818A"/><rect x="315.0" y="31.0" width="2.4" height="38.1" rx="1.2" fill="#7C818A"/><rect x="319.4" y="33.9" width="2.4" height="32.3" rx="1.2" fill="#7C818A"/><rect x="323.8" y="23.6" width="2.4" height="52.7" rx="1.2" fill="#7C818A"/><rect x="328.2" y="39.8" width="2.4" height="20.5" rx="1.2" fill="#7C818A"/><rect x="332.6" y="25.5" width="2.4" height="49.0" rx="1.2" fill="#7C818A"/><rect x="337.0" y="35.5" width="2.4" height="29.1" rx="1.2" fill="#7C818A"/><rect x="341.4" y="38.1" width="2.4" height="23.9" rx="1.2" fill="#7C818A"/><rect x="345.8" y="38.6" width="2.4" height="22.8" rx="1.2" fill="#7C818A"/><rect x="350.2" y="35.4" width="2.4" height="29.2" rx="1.2" fill="#7C818A"/><rect x="354.6" y="26.9" width="2.4" height="46.2" rx="1.2" fill="#7C818A"/><rect x="359.0" y="37.9" width="2.4" height="24.2" rx="1.2" fill="#7C818A"/><rect x="363.3" y="31.5" width="2.4" height="37.0" rx="1.2" fill="#7C818A"/><rect x="367.7" y="30.9" width="2.4" height="38.1" rx="1.2" fill="#7C818A"/><rect x="372.1" y="35.6" width="2.4" height="28.8" rx="1.2" fill="#7C818A"/><rect x="376.5" y="33.3" width="2.4" height="33.5" rx="1.2" fill="#7C818A"/><rect x="380.9" y="41.0" width="2.4" height="18.0" rx="1.2" fill="#7C818A"/><rect x="385.3" y="41.3" width="2.4" height="17.3" rx="1.2" fill="#7C818A"/><rect x="389.7" y="39.6" width="2.4" height="20.8" rx="1.2" fill="#7C818A"/><rect x="394.1" y="33.7" width="2.4" height="32.6" rx="1.2" fill="#7C818A"/><rect x="398.5" y="37.6" width="2.4" height="24.7" rx="1.2" fill="#7C818A"/><rect x="402.9" y="39.6" width="2.4" height="20.8" rx="1.2" fill="#7C818A"/><rect x="407.3" y="37.0" width="2.4" height="25.9" rx="1.2" fill="#7C818A"/><rect x="411.7" y="39.2" width="2.4" height="21.6" rx="1.2" fill="#7C818A"/><rect x="416.0" y="41.4" width="2.4" height="17.1" rx="1.2" fill="#7C818A"/><rect x="420.4" y="37.3" width="2.4" height="25.4" rx="1.2" fill="#7C818A"/><rect x="424.8" y="39.1" width="2.4" height="21.8" rx="1.2" fill="#7C818A"/><rect x="429.2" y="43.7" width="2.4" height="12.7" rx="1.2" fill="#7C818A"/><rect x="433.6" y="41.8" width="2.4" height="16.4" rx="1.2" fill="#7C818A"/>
+  <rect x="456" y="22" width="100" height="28" rx="14" fill="#FF5A4F" fill-opacity=".16"/>
+  <circle cx="474" cy="36" r="4" fill="#FF5A4F"/><text x="484" y="40" font-size="12" font-weight="600" fill="#FF5A4F">Deepfake</text>
+  <text x="506" y="74" text-anchor="middle" class="m" font-size="10.5" fill="#8D929B">XLS-R · 8.6% EER</text>
+</g></svg></figure>
+            <div class="work__body">
+              <div class="work__meta"><span class="pill">Final Year Project</span><span>Ongoing</span></div>
+              <h3>Sachai Check</h3>
+              <p class="one">Fact-checks <b>Urdu news, screenshots and voice notes</b>, and says “Unverified” when evidence is thin.</p>
+              <div class="stats"><div><strong>8.6%</strong><span>EER, unseen speakers</span></div><div><strong>0.981</strong><span>AUC</span></div><div><strong>~49.5%</strong><span>baseline EER</span></div></div>
+              <details class="more"><summary>Details</summary><ul class="bul">
+                <li>Two separate verdicts, text and voice; <b>thin evidence returns “Unverified”</b> instead of a guess.</li>
+                <li>Text: <b>LLM transliteration</b> of Roman Urdu, an <b>XLM-R classifier</b>, dated RSS evidence, and a <b>Gemini judge</b> that explains each verdict with a confidence score.</li>
+                <li><b>Urdu OCR</b> via the Gemini API as a VLM pulls claims out of screenshots and image posts.</li>
+                <li>Fine-tuned <b>XLS-R 300M</b> on speaker-disjoint splits for voice deepfakes.</li>
+              </ul></details>
+              <div class="work__foot"><div class="tags"><span class="tag"><img src="assets/logos/pytorch.svg" alt="" width="16" height="16" loading="lazy">PyTorch</span><span class="tag"><img src="assets/logos/fastapi.svg" alt="" width="16" height="16" loading="lazy">FastAPI</span><span class="tag"><img src="assets/logos/react.svg" alt="" width="16" height="16" loading="lazy">React</span></div><div class="tags tags--models"><em>Models</em><span class="tag"><img src="assets/logos/meta.svg" alt="" width="16" height="16" loading="lazy">XLS-R</span><span class="tag"><img src="assets/logos/meta.svg" alt="" width="16" height="16" loading="lazy">XLM-R</span><span class="tag"><img src="assets/logos/gemini.svg" alt="" width="16" height="16" loading="lazy">Gemini</span></div>
+                <div class="links"><a class="link" href="https://github.com/AbdullahPatti/Sachai-Check" target="_blank" rel="noopener"><img src="assets/logos/github.svg" alt="" width="16" height="16" loading="lazy">GitHub</a></div></div>
+            </div>
+          </article>
+          <article class="work work--wide" style="--i:1">
+            <figure class="work__viz"><svg class="viz" viewBox="0 0 640 400" role="img" aria-label="An Android phone running Nabz Scribe offline, transcribing an Urdu, Punjabi and English consultation and printing a prescription" xmlns="http://www.w3.org/2000/svg">
+<defs><radialGradient id="nb-g" cx="75%" cy="10%" r="75%"><stop offset="0" stop-color="#FFC629" stop-opacity="0.35"/><stop offset="1" stop-color="#FFC629" stop-opacity="0"/></radialGradient></defs><defs><filter id="nb-sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#1E2024" flood-opacity=".16"/></filter></defs>
+<rect width="640" height="400" fill="#F4F5F7"/><rect width="640" height="400" fill="url(#nb-g)"/>
+<g transform="translate(64 14)" filter="url(#nb-sh)">
+  <rect x="214" y="86" width="4" height="44" rx="2" fill="#3A3E46"/><rect x="214" y="142" width="4" height="26" rx="2" fill="#3A3E46"/>
+  <rect width="216" height="372" rx="36" fill="#1E2024"/>
+  <rect x="8" y="8" width="200" height="356" rx="29" fill="#FFFFFF"/>
+  <circle cx="108" cy="23" r="5.5" fill="#1E2024"/>
+  <text x="26" y="27" font-size="10.5" font-weight="600" fill="#1E2024">10:24</text>
+  <path d="M158 22.5l6-2.2 .1-4a1 1 0 0 1 2 0l-.1 4 6 2.2v1.6l-6-1.4-.1 3 1.8 1.3v1.2l-2.8-.8-2.8.8v-1.2l1.8-1.3.1-3-6 1.4z" fill="#1E2024"/>
+  <rect x="178" y="18" width="16" height="9" rx="2.5" fill="none" stroke="#1E2024" stroke-width="1.3"/><rect x="180" y="20" width="10" height="5" rx="1" fill="#1E2024"/>
+  <text x="22" y="62" class="s" font-size="17" fill="#1E2024">Nabz Scribe</text>
+  <rect x="142" y="48" width="54" height="20" rx="10" fill="#FFE8A0"/><text x="169" y="62" text-anchor="middle" font-size="9.5" font-weight="600" fill="#1E2024">Offline</text>
+  <rect x="18" y="78" width="180" height="66" rx="18" fill="#1E2024"/>
+  <circle cx="34" cy="96" r="4" fill="#FF5A4F"/><text x="44" y="100" class="m" font-size="10" fill="#FFFFFF">REC 00:37</text>
+  <text x="186" y="100" text-anchor="end" class="m" font-size="9" fill="#8D929B">UR · EN · PA</text>
+  <rect x="30.0" y="121.2" width="3.3" height="5.7" rx="1.6" fill="#FFC629"/><rect x="35.3" y="119.5" width="3.3" height="9.0" rx="1.6" fill="#FFC629"/><rect x="40.5" y="119.7" width="3.3" height="8.5" rx="1.6" fill="#FFC629"/><rect x="45.8" y="118.1" width="3.3" height="11.9" rx="1.6" fill="#FFC629"/><rect x="51.1" y="117.4" width="3.3" height="13.2" rx="1.6" fill="#FFC629"/><rect x="56.3" y="120.3" width="3.3" height="7.4" rx="1.6" fill="#FFC629"/><rect x="61.6" y="120.4" width="3.3" height="7.2" rx="1.6" fill="#FFC629"/><rect x="66.9" y="114.4" width="3.3" height="19.2" rx="1.6" fill="#FFC629"/><rect x="72.1" y="118.2" width="3.3" height="11.7" rx="1.6" fill="#FFC629"/><rect x="77.4" y="118.1" width="3.3" height="11.8" rx="1.6" fill="#FFC629"/><rect x="82.7" y="111.9" width="3.3" height="24.2" rx="1.6" fill="#FFC629"/><rect x="87.9" y="115.8" width="3.3" height="16.4" rx="1.6" fill="#FFC629"/><rect x="93.2" y="112.6" width="3.3" height="22.8" rx="1.6" fill="#FFC629"/><rect x="98.5" y="115.5" width="3.3" height="17.0" rx="1.6" fill="#FFC629"/><rect x="103.7" y="114.1" width="3.3" height="19.9" rx="1.6" fill="#FFC629"/><rect x="109.0" y="118.2" width="3.3" height="11.6" rx="1.6" fill="#FFC629"/><rect x="114.3" y="114.2" width="3.3" height="19.7" rx="1.6" fill="#FFC629"/><rect x="119.5" y="112.4" width="3.3" height="23.3" rx="1.6" fill="#FFC629"/><rect x="124.8" y="115.4" width="3.3" height="17.2" rx="1.6" fill="#FFC629"/><rect x="130.1" y="113.9" width="3.3" height="20.2" rx="1.6" fill="#FFC629"/><rect x="135.3" y="114.8" width="3.3" height="18.5" rx="1.6" fill="#FFC629"/><rect x="140.6" y="119.6" width="3.3" height="8.8" rx="1.6" fill="#FFC629"/><rect x="145.9" y="115.0" width="3.3" height="18.1" rx="1.6" fill="#FFC629"/><rect x="151.1" y="116.6" width="3.3" height="14.8" rx="1.6" fill="#FFC629"/><rect x="156.4" y="118.8" width="3.3" height="10.3" rx="1.6" fill="#FFC629"/><rect x="161.7" y="120.8" width="3.3" height="6.5" rx="1.6" fill="#FFC629"/><rect x="166.9" y="116.7" width="3.3" height="14.6" rx="1.6" fill="#FFC629"/><rect x="172.2" y="119.3" width="3.3" height="9.5" rx="1.6" fill="#FFC629"/><rect x="177.5" y="118.8" width="3.3" height="10.5" rx="1.6" fill="#FFC629"/><rect x="182.7" y="118.8" width="3.3" height="10.3" rx="1.6" fill="#FFC629"/>
+  <rect x="18" y="154" width="128" height="34" rx="14" fill="#F4F5F7"/><foreignObject x="24" y="155" width="116" height="32"><div xmlns="http://www.w3.org/1999/xhtml" class="viz-ur" dir="rtl" lang="ur" style="font-size:13px;color:#1E2024;text-align:right;">بخار کب سے ہے؟</div></foreignObject>
+  <rect x="30" y="194" width="168" height="34" rx="14" fill="#FFE8A0"/><foreignObject x="34" y="195" width="158" height="32"><div xmlns="http://www.w3.org/1999/xhtml" class="viz-ur" dir="rtl" lang="ur" style="font-size:11px;color:#1E2024;text-align:right;">تین دن سے، رات کو زیادہ ہوتا ہے</div></foreignObject>
+  <rect x="18" y="234" width="180" height="30" rx="14" fill="#F4F5F7"/><text x="28" y="253" font-size="10" fill="#1E2024" textLength="160" lengthAdjust="spacingAndGlyphs">No antibiotics. Paracetamol 500.</text>
+  <rect x="18" y="270" width="140" height="34" rx="14" fill="#F4F5F7"/><foreignObject x="24" y="271" width="96" height="32"><div xmlns="http://www.w3.org/1999/xhtml" class="viz-ur" dir="rtl" lang="ur" style="font-size:13px;color:#1E2024;text-align:right;">بوہتا پانی پیو</div></foreignObject><text x="140" y="291" text-anchor="middle" class="m" font-size="8.5" fill="#8D929B">PA</text>
+  <rect x="18" y="316" width="180" height="32" rx="16" fill="#FFC629"/><text x="108" y="336" text-anchor="middle" font-size="11.5" font-weight="700" fill="#1E2024">Write prescription</text>
+  <rect x="80" y="354" width="56" height="4" rx="2" fill="#1E2024" opacity=".45"/>
+</g>
+<path d="M292 200c26 0 30-30 58-30" stroke="#5B6069" stroke-width="2" stroke-dasharray="4 5" fill="none"/>
+<g transform="translate(352 44) rotate(2.5)" filter="url(#nb-sh)">
+  <rect width="250" height="300" rx="10" fill="#FFFFFF"/>
+  <text x="22" y="52" class="s" font-size="38" font-style="italic" fill="#1E2024">Rx</text>
+  <text x="228" y="34" text-anchor="end" class="m" font-size="9.5" fill="#8D929B">OPD · LAHORE</text>
+  <text x="228" y="50" text-anchor="end" class="m" font-size="9.5" fill="#8D929B">AGE 34 · M</text>
+  <line x1="22" y1="68" x2="228" y2="68" stroke="#E6E8EC"/>
+  <text x="22" y="96" font-size="13" font-weight="600" fill="#1E2024">Tab. Paracetamol 500 mg</text>
+  <text x="22" y="114" class="m" font-size="10.5" fill="#5B6069">1 + 0 + 1 · 3 days</text>
+  <text x="22" y="146" font-size="13" font-weight="600" fill="#1E2024">Oral fluids</text>
+  <text x="22" y="164" class="m" font-size="10.5" fill="#5B6069">2 L daily</text>
+  <rect x="22" y="182" width="206" height="30" rx="10" fill="#E9F8EE"/>
+  <path d="M34 197l4 4 8-8" stroke="#1F9D55" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="54" y="201" font-size="11.5" font-weight="600" fill="#167A42">No antibiotics · negation kept</text>
+  <line x1="22" y1="232" x2="228" y2="232" stroke="#E6E8EC" stroke-dasharray="3 4"/>
+  <text x="22" y="256" class="m" font-size="10" fill="#5B6069">37.6 s audio → 11.6 s</text>
+  <text x="22" y="274" class="m" font-size="10" fill="#5B6069">on-device · phone CPU</text>
+</g></svg></figure>
+            <div class="work__body">
+              <div class="work__meta"><span class="pill pill--dark">Android · Offline</span><span>Ongoing</span></div>
+              <h3>Nabz Scribe</h3>
+              <p class="one">An <b>offline Android scribe</b> that turns Urdu, English and Punjabi consultations into prescriptions.</p>
+              <div class="stats"><div><strong>10→50%</strong><span>drug recall</span></div><div><strong>61→90%</strong><span>negations kept</span></div><div><strong>11.6 s</strong><span>for 37.6 s audio</span></div></div>
+              <details class="more"><summary>Details</summary><ul class="bul">
+                <li><b>On-device Whisper</b> turns code-switched consultations into notes, and a <b>local LLM</b> writes the prescription. No internet needed.</li>
+                <li>Benchmarked <b>30 ASR settings</b> and <b>8 local LLMs</b> for speed, memory and medicine recall on phones and low-end hospital PCs.</li>
+                <li>Fine-tuned Whisper on <b>5,434 dictations</b>; it flags <b>10/10 fake drugs</b>.</li>
+              </ul></details>
+              <div class="work__foot"><div class="tags"><span class="tag"><img src="assets/logos/pytorch.svg" alt="" width="16" height="16" loading="lazy">PyTorch</span><span class="tag"><i class="mg" aria-hidden="true">W</i>whisper.cpp</span><span class="tag"><i class="mg" aria-hidden="true">L</i>llama.cpp</span><span class="tag"><img src="assets/logos/android.svg" alt="" width="16" height="16" loading="lazy">Android</span></div><div class="tags tags--models"><em>Models</em><span class="tag"><img src="assets/logos/openai.svg" alt="" width="16" height="16" loading="lazy">Whisper</span><span class="tag"><img src="assets/logos/qwen.svg" alt="" width="16" height="16" loading="lazy">Qwen3.5</span></div>
+                <div class="links"><a class="link" href="https://github.com/AbdullahPatti/Nabz-Voice-Scribe" target="_blank" rel="noopener"><img src="assets/logos/github.svg" alt="" width="16" height="16" loading="lazy">GitHub</a></div></div>
+            </div>
+          </article>
+          <article class="work work--wide" style="--i:2">
+            <figure class="work__viz"><svg class="viz" viewBox="0 0 640 400" role="img" aria-label="Versions of Pakistani tax law from 2019 to 2024 with 2022 pulled out, an Urdu question, and a LangGraph retrieve, grade, rewrite loop" xmlns="http://www.w3.org/2000/svg">
+<defs><filter id="tx-sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#1E2024" flood-opacity=".16"/></filter></defs>
+<rect width="640" height="400" fill="#F4F5F7"/>
+<g transform="translate(32 34)"><rect width="196" height="38" rx="12" fill="#FFFFFF" stroke="#E3E5E9"/><text x="14" y="16" class="m" font-size="9" fill="#8D929B">ITO 2001 · v2019</text><text x="14" y="30" font-size="11.5" font-weight="600" fill="#1E2024">As of 30 June 2019</text></g><g transform="translate(32 80)"><rect width="196" height="38" rx="12" fill="#FFFFFF" stroke="#E3E5E9"/><text x="14" y="16" class="m" font-size="9" fill="#8D929B">ITO 2001 · v2020</text><text x="14" y="30" font-size="11.5" font-weight="600" fill="#1E2024">As of 30 June 2020</text></g><g transform="translate(32 126)"><rect width="196" height="38" rx="12" fill="#FFFFFF" stroke="#E3E5E9"/><text x="14" y="16" class="m" font-size="9" fill="#8D929B">ITO 2001 · v2021</text><text x="14" y="30" font-size="11.5" font-weight="600" fill="#1E2024">As of 30 June 2021</text></g><g transform="translate(58 172)"><rect width="196" height="38" rx="12" fill="#FFC629" stroke="none"/><text x="14" y="16" class="m" font-size="9" fill="#1E2024">ITO 2001 · v2022</text><text x="14" y="30" font-size="11.5" font-weight="600" fill="#1E2024">As of 30 June 2022</text></g><g transform="translate(32 218)"><rect width="196" height="38" rx="12" fill="#FFFFFF" stroke="#E3E5E9"/><text x="14" y="16" class="m" font-size="9" fill="#8D929B">ITO 2001 · v2023</text><text x="14" y="30" font-size="11.5" font-weight="600" fill="#1E2024">As of 30 June 2023</text></g><g transform="translate(32 264)"><rect width="196" height="38" rx="12" fill="#FFFFFF" stroke="#E3E5E9"/><text x="14" y="16" class="m" font-size="9" fill="#8D929B">ITO 2001 · v2024</text><text x="14" y="30" font-size="11.5" font-weight="600" fill="#1E2024">As of 30 June 2024</text></g>
+<text x="32" y="330" class="m" font-size="10" fill="#5B6069" letter-spacing="1">12 STATUTES · 840 PAST VERSIONS</text>
+<path d="M254 191c24 0 22-40 54-60" stroke="#5B6069" stroke-width="1.6" stroke-dasharray="4 4" fill="none"/>
+<g filter="url(#tx-sh)"><rect x="300" y="30" width="308" height="62" rx="22" fill="#1E2024"/>
+<foreignObject x="314" y="34" width="280" height="54"><div xmlns="http://www.w3.org/1999/xhtml" class="viz-ur" dir="rtl" lang="ur" style="font-size:16px;color:#FFFFFF;text-align:right;">۲۰۲۲ میں تنخواہ پر ٹیکس کی شرح کیا تھی؟</div></foreignObject></g>
+<defs><marker id="tx-ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0l10 5-10 5z" fill="#5B6069"/></marker></defs>
+<g font-size="12" font-weight="600">
+<rect x="318" y="128" width="104" height="36" rx="18" fill="#FFFFFF" stroke="#DADDE2"/><text x="370" y="151" text-anchor="middle" fill="#1E2024">Retrieve</text>
+<rect x="494" y="128" width="96" height="36" rx="18" fill="#1E2024"/><text x="542" y="151" text-anchor="middle" fill="#FFFFFF">Grade</text>
+<rect x="406" y="206" width="104" height="36" rx="18" fill="#FFFFFF" stroke="#DADDE2"/><text x="458" y="229" text-anchor="middle" fill="#1E2024">Rewrite</text>
+</g>
+<path d="M426 146h62" stroke="#5B6069" stroke-width="1.6" marker-end="url(#tx-ar)"/>
+<path d="M542 168c0 30-12 54-26 54" stroke="#5B6069" stroke-width="1.6" fill="none" marker-end="url(#tx-ar)"/>
+<path d="M402 224c-34 0-40-30-38-54" stroke="#5B6069" stroke-width="1.6" fill="none" marker-end="url(#tx-ar)"/>
+<text x="560" y="194" class="m" font-size="9.5" fill="#8D929B">weak?</text>
+<path d="M590 146c26 0 20 120-8 146" stroke="#FFC629" stroke-width="2.4" fill="none" marker-end="url(#tx-ar)"/>
+<text x="604" y="226" class="m" font-size="9.5" fill="#5B6069" transform="rotate(90 604 226)">relevant</text>
+<g filter="url(#tx-sh)"><rect x="300" y="274" width="270" height="92" rx="20" fill="#FFFFFF"/></g>
+<text x="318" y="298" class="m" font-size="9.5" fill="#8D929B" letter-spacing="1">CITED ANSWER · TAX YEAR 2022</text>
+<text x="318" y="322" font-size="13" font-weight="600" fill="#1E2024">Sec. 149, ITO 2001 — salary slabs</text>
+<text x="318" y="340" font-size="11.5" fill="#5B6069">as the law stood on 30 June 2022</text>
+<text x="318" y="356" class="m" font-size="9.5" fill="#8D929B">pgvector + full-text · RRF</text></svg></figure>
+            <div class="work__body">
+              <div class="work__meta"><span class="pill">Agentic RAG</span></div>
+              <h3>TaxChronos</h3>
+              <p class="one">Ask <b>Pakistani tax law as it stood on any date</b>, with cited answers in English or Urdu.</p>
+              <div class="stats"><div><strong>12</strong><span>FBR statutes</span></div><div><strong>3,538</strong><span>chunks</span></div><div><strong>840</strong><span>past versions</span></div></div>
+              <details class="more"><summary>Details</summary><ul class="bul">
+                <li><b>Corrective agentic RAG</b>: a LangGraph loop retrieves, grades and rewrites.</li>
+                <li>Indexed 12 statutes (2,773 pages) plus <b>840 past versions</b> for point-in-time Q&amp;A.</li>
+                <li><b>Hybrid search</b> (pgvector + full-text, RRF) finds meaning and exact clauses; evaluated with <b>RAGAS</b> on 45 code-switched questions.</li>
+              </ul></details>
+              <div class="work__foot"><div class="tags"><span class="tag"><img src="assets/logos/langgraph.svg" alt="" width="16" height="16" loading="lazy">LangGraph</span><span class="tag"><img src="assets/logos/gemini.svg" alt="" width="16" height="16" loading="lazy">Gemini API</span><span class="tag"><img src="assets/logos/supabase.svg" alt="" width="16" height="16" loading="lazy">Supabase pgvector</span><span class="tag"><img src="assets/logos/fastapi.svg" alt="" width="16" height="16" loading="lazy">FastAPI</span><span class="tag"><i class="mg" aria-hidden="true">Rs</i>RAGAS</span></div>
+                <div class="links"><a class="link" href="https://github.com/AbdullahPatti/TaxChronos" target="_blank" rel="noopener"><img src="assets/logos/github.svg" alt="" width="16" height="16" loading="lazy">GitHub</a></div></div>
+            </div>
+          </article>
+          <article class="work work--wide" style="--i:3">
+            <figure class="work__viz is-dark"><svg class="viz" viewBox="0 0 640 400" role="img" aria-label="A code-mixed Urdu-English waveform with errors clustered at the language switch points, and a reference versus Whisper transcript" xmlns="http://www.w3.org/2000/svg">
+<defs><radialGradient id="wb-g" cx="10%" cy="100%" r="75%"><stop offset="0" stop-color="#FFC629" stop-opacity="0.22"/><stop offset="1" stop-color="#FFC629" stop-opacity="0"/></radialGradient></defs>
+<rect width="640" height="400" fill="#1E2024"/><rect width="640" height="400" fill="url(#wb-g)"/>
+<text x="32" y="30" class="m" font-size="10" fill="#8D929B" letter-spacing="1">CODE-MIXED CLIP · 4 SWITCH POINTS</text>
+<rect x="470" y="17" width="40" height="18" rx="9" fill="#D9DBDF"/><text x="490" y="30" text-anchor="middle" class="m" font-size="9.5" fill="#1E2024">UR</text>
+<rect x="516" y="17" width="40" height="18" rx="9" fill="#FFC629"/><text x="536" y="30" text-anchor="middle" class="m" font-size="9.5" fill="#1E2024">EN</text>
+<rect x="562" y="17" width="46" height="18" rx="9" fill="#FF5A4F" fill-opacity=".2"/><text x="585" y="30" text-anchor="middle" class="m" font-size="9.5" fill="#FF5A4F">ERR</text>
+<rect x="32.0" y="85.6" width="10.0" height="24.9" rx="2.0" fill="#D9DBDF"/><rect x="44.0" y="82.9" width="10.0" height="30.1" rx="2.0" fill="#D9DBDF"/><rect x="56.1" y="76.2" width="10.0" height="43.5" rx="2.0" fill="#D9DBDF"/><rect x="68.1" y="81.9" width="10.0" height="32.2" rx="2.0" fill="#D9DBDF"/><rect x="80.2" y="80.0" width="10.0" height="35.9" rx="2.0" fill="#D9DBDF"/><rect x="92.2" y="77.4" width="10.0" height="41.2" rx="2.0" fill="#D9DBDF"/><rect x="104.2" y="84.0" width="10.0" height="28.0" rx="2.0" fill="#D9DBDF"/><rect x="116.3" y="76.6" width="10.0" height="42.9" rx="2.0" fill="#D9DBDF"/><rect x="128.3" y="73.0" width="10.0" height="50.1" rx="2.0" fill="#D9DBDF"/><rect x="140.4" y="68.2" width="10.0" height="59.7" rx="2.0" fill="#D9DBDF"/><rect x="152.4" y="83.2" width="10.0" height="29.5" rx="2.0" fill="#D9DBDF"/><rect x="164.5" y="77.6" width="10.0" height="40.8" rx="2.0" fill="#D9DBDF"/><rect x="176.5" y="82.2" width="10.0" height="31.5" rx="2.0" fill="#FFC629"/><rect x="188.5" y="63.2" width="10.0" height="69.6" rx="2.0" fill="#FFC629"/><rect x="200.6" y="65.3" width="10.0" height="65.4" rx="2.0" fill="#FFC629"/><rect x="212.6" y="82.2" width="10.0" height="31.6" rx="2.0" fill="#FFC629"/><rect x="224.7" y="55.8" width="10.0" height="84.5" rx="2.0" fill="#FFC629"/><rect x="236.7" y="55.5" width="10.0" height="85.1" rx="2.0" fill="#FFC629"/><rect x="248.8" y="63.7" width="10.0" height="68.6" rx="2.0" fill="#FFC629"/><rect x="260.8" y="64.4" width="10.0" height="67.2" rx="2.0" fill="#FFC629"/><rect x="272.8" y="77.5" width="10.0" height="41.0" rx="2.0" fill="#D9DBDF"/><rect x="284.9" y="81.6" width="10.0" height="32.8" rx="2.0" fill="#D9DBDF"/><rect x="296.9" y="66.2" width="10.0" height="63.6" rx="2.0" fill="#D9DBDF"/><rect x="309.0" y="80.1" width="10.0" height="35.7" rx="2.0" fill="#D9DBDF"/><rect x="321.0" y="76.2" width="10.0" height="43.6" rx="2.0" fill="#D9DBDF"/><rect x="333.0" y="74.7" width="10.0" height="46.5" rx="2.0" fill="#D9DBDF"/><rect x="345.1" y="81.1" width="10.0" height="33.7" rx="2.0" fill="#FFC629"/><rect x="357.1" y="68.5" width="10.0" height="59.0" rx="2.0" fill="#FFC629"/><rect x="369.2" y="69.5" width="10.0" height="57.0" rx="2.0" fill="#FFC629"/><rect x="381.2" y="58.3" width="10.0" height="79.4" rx="2.0" fill="#FFC629"/><rect x="393.2" y="68.1" width="10.0" height="59.9" rx="2.0" fill="#FFC629"/><rect x="405.3" y="65.3" width="10.0" height="65.5" rx="2.0" fill="#FFC629"/><rect x="417.3" y="69.8" width="10.0" height="56.5" rx="2.0" fill="#FFC629"/><rect x="429.4" y="66.1" width="10.0" height="63.8" rx="2.0" fill="#FFC629"/><rect x="441.4" y="72.3" width="10.0" height="51.4" rx="2.0" fill="#FFC629"/><rect x="453.5" y="77.5" width="10.0" height="40.9" rx="2.0" fill="#FFC629"/><rect x="465.5" y="60.8" width="10.0" height="74.4" rx="2.0" fill="#D9DBDF"/><rect x="477.5" y="62.2" width="10.0" height="71.6" rx="2.0" fill="#D9DBDF"/><rect x="489.6" y="67.1" width="10.0" height="61.8" rx="2.0" fill="#D9DBDF"/><rect x="501.6" y="71.3" width="10.0" height="53.4" rx="2.0" fill="#D9DBDF"/><rect x="513.7" y="80.6" width="10.0" height="34.9" rx="2.0" fill="#D9DBDF"/><rect x="525.7" y="83.1" width="10.0" height="29.7" rx="2.0" fill="#D9DBDF"/><rect x="537.8" y="82.9" width="10.0" height="30.3" rx="2.0" fill="#D9DBDF"/><rect x="549.8" y="87.6" width="10.0" height="20.9" rx="2.0" fill="#D9DBDF"/><rect x="561.8" y="77.1" width="10.0" height="41.8" rx="2.0" fill="#D9DBDF"/><rect x="573.9" y="84.0" width="10.0" height="27.9" rx="2.0" fill="#D9DBDF"/><rect x="585.9" y="79.0" width="10.0" height="38.0" rx="2.0" fill="#D9DBDF"/><rect x="598.0" y="86.4" width="10.0" height="23.2" rx="2.0" fill="#D9DBDF"/>
+<line x1="175.5" y1="44" x2="175.5" y2="148" stroke="#FF5A4F" stroke-width="1.4" stroke-dasharray="3 3"/><circle cx="175.5" cy="44" r="4" fill="#FF5A4F"/><line x1="271.8" y1="44" x2="271.8" y2="148" stroke="#FF5A4F" stroke-width="1.4" stroke-dasharray="3 3"/><circle cx="271.8" cy="44" r="4" fill="#FF5A4F"/><line x1="344.1" y1="44" x2="344.1" y2="148" stroke="#FF5A4F" stroke-width="1.4" stroke-dasharray="3 3"/><circle cx="344.1" cy="44" r="4" fill="#FF5A4F"/><line x1="464.5" y1="44" x2="464.5" y2="148" stroke="#FF5A4F" stroke-width="1.4" stroke-dasharray="3 3"/><circle cx="464.5" cy="44" r="4" fill="#FF5A4F"/>
+<g transform="translate(32 170)">
+  <rect width="576" height="110" rx="20" fill="#2B2E34" stroke="#3A3E46"/>
+  <text x="20" y="34" class="m" font-size="9.5" fill="#8D929B" letter-spacing="1">REFERENCE</text>
+  <foreignObject x="110" y="10" width="446" height="40"><div xmlns="http://www.w3.org/1999/xhtml" class="viz-ur" dir="rtl" lang="ur" style="font-size:16px;color:#FFFFFF;text-align:right;">میں نے <b class="en">meeting</b> کو <b class="en">reschedule</b> کر دیا</div></foreignObject>
+  <line x1="20" y1="56" x2="556" y2="56" stroke="#3A3E46"/>
+  <text x="20" y="88" class="m" font-size="9.5" fill="#8D929B" letter-spacing="1">WHISPER</text>
+  <foreignObject x="110" y="64" width="446" height="40"><div xmlns="http://www.w3.org/1999/xhtml" class="viz-ur" dir="rtl" lang="ur" style="font-size:16px;color:#FFFFFF;text-align:right;">میں نے <s class="err">میٹنگ</s> کو <s class="err">ری شیڈول</s> کر دیا</div></foreignObject>
+</g>
+<g transform="translate(32 300)">
+  <text x="0" y="40" class="s" font-size="44" fill="#FFFFFF">0.899</text><text x="0" y="66" font-size="11.5" fill="#8D929B">best WER</text>
+  <text x="168" y="40" class="s" font-size="44" fill="#FFC629">&gt;0.93</text><text x="168" y="66" font-size="11.5" fill="#8D929B">switch-point error</text>
+  <g class="m" font-size="10" fill="#1E2024">
+  <rect x="380" y="18" width="60" height="26" rx="13" fill="#D9DBDF"/><text x="410" y="35" text-anchor="middle">Tiny</text>
+  <rect x="448" y="18" width="60" height="26" rx="13" fill="#D9DBDF"/><text x="478" y="35" text-anchor="middle">Base</text>
+  <rect x="516" y="18" width="60" height="26" rx="13" fill="#FFC629"/><text x="546" y="35" text-anchor="middle">Small</text></g>
+  <text x="576" y="66" text-anchor="end" class="m" font-size="10" fill="#8D929B">327 clips · 11 speakers</text>
+</g></svg></figure>
+            <div class="work__body">
+              <div class="work__meta"><span class="pill">Speech benchmark</span></div>
+              <h3>Bilingual WhisperBench</h3>
+              <p class="one">Whisper's errors <b>cluster where the language switches</b> in Urdu–English speech.</p>
+              <div class="stats"><div><strong>0.899</strong><span>best WER</span></div><div><strong>&gt;0.93</strong><span>switch-point error</span></div><div><strong>327</strong><span>recordings, 11 speakers</span></div></div>
+              <details class="more"><summary>Details</summary><ul class="bul">
+                <li>Benchmarked <b>Whisper Tiny / Base / Small</b> on code-mixed Urdu–English recordings, with WER and a custom <b>switch-point error rate</b>.</li>
+              </ul></details>
+              <div class="work__foot"><div class="tags"><span class="tag"><img src="assets/logos/python.svg" alt="" width="16" height="16" loading="lazy">Python</span><span class="tag"><img src="assets/logos/openai.svg" alt="" width="16" height="16" loading="lazy">Whisper</span><span class="tag"><img src="assets/logos/fastapi.svg" alt="" width="16" height="16" loading="lazy">FastAPI</span><span class="tag"><img src="assets/logos/sqlalchemy.svg" alt="" width="16" height="16" loading="lazy">SQLAlchemy</span></div>
+                <div class="links"><a class="link" href="https://github.com/AbdullahPatti/Bilingual-Whisper-Bench" target="_blank" rel="noopener"><img src="assets/logos/github.svg" alt="" width="16" height="16" loading="lazy">GitHub</a></div></div>
+            </div>
+          </article>
+          <article class="work work--wide" style="--i:4">
+            <figure class="work__viz"><svg class="viz" viewBox="0 0 640 400" role="img" aria-label="A sunrise dial of delivery hours with 7 AM chosen, above a morning email of three stories ranked by Pakistan relevance" xmlns="http://www.w3.org/2000/svg">
+<defs><filter id="dd-sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#1E2024" flood-opacity=".16"/></filter></defs><defs><radialGradient id="dd-g" cx="20%" cy="90%" r="75%"><stop offset="0" stop-color="#FFC629" stop-opacity="0.4"/><stop offset="1" stop-color="#FFC629" stop-opacity="0"/></radialGradient></defs>
+<rect width="640" height="400" fill="#F4F5F7"/><rect width="640" height="400" fill="url(#dd-g)"/>
+<text x="38" y="50" class="m" font-size="10" fill="#5B6069" letter-spacing="1">DELIVERY HOUR · PKT</text>
+<text x="38" y="84" class="s" font-size="30" fill="#1E2024">Good morning.</text>
+<path d="M38 270A112 112 0 0 1 262 270" stroke="#DADDE2" stroke-width="2" fill="none" stroke-dasharray="2 6" stroke-linecap="round"/>
+<line x1="179.0" y1="262.2" x2="190.6" y2="259.1" stroke="#FFC629" stroke-width="3" stroke-linecap="round"/><line x1="171.2" y1="248.8" x2="179.7" y2="240.3" stroke="#FFC629" stroke-width="3" stroke-linecap="round"/><line x1="157.8" y1="241.0" x2="160.9" y2="229.4" stroke="#FFC629" stroke-width="3" stroke-linecap="round"/><line x1="142.2" y1="241.0" x2="139.1" y2="229.4" stroke="#FFC629" stroke-width="3" stroke-linecap="round"/><line x1="128.8" y1="248.8" x2="120.3" y2="240.3" stroke="#FFC629" stroke-width="3" stroke-linecap="round"/><line x1="121.0" y1="262.2" x2="109.4" y2="259.1" stroke="#FFC629" stroke-width="3" stroke-linecap="round"/><path d="M126 270a24 24 0 0 1 48 0z" fill="#FFC629"/>
+<line x1="20" y1="270" x2="290" y2="270" stroke="#1E2024" stroke-width="2" stroke-linecap="round"/>
+<circle cx="38.0" cy="270.0" r="15" fill="#FFFFFF" stroke="#DADDE2"/><text x="38.0" y="274.0" text-anchor="middle" font-size="11" font-weight="500" fill="#1E2024">6</text><circle cx="70.8" cy="190.8" r="19" fill="#FFC629" stroke="none"/><text x="70.8" y="194.8" text-anchor="middle" font-size="12" font-weight="700" fill="#1E2024">7</text><circle cx="150.0" cy="158.0" r="15" fill="#FFFFFF" stroke="#DADDE2"/><text x="150.0" y="162.0" text-anchor="middle" font-size="11" font-weight="500" fill="#1E2024">8</text><circle cx="229.2" cy="190.8" r="15" fill="#FFFFFF" stroke="#DADDE2"/><text x="229.2" y="194.8" text-anchor="middle" font-size="11" font-weight="500" fill="#1E2024">9</text><circle cx="262.0" cy="270.0" r="15" fill="#FFFFFF" stroke="#DADDE2"/><text x="262.0" y="274.0" text-anchor="middle" font-size="11" font-weight="500" fill="#1E2024">10</text>
+<text x="150" y="304" text-anchor="middle" class="m" font-size="10" fill="#5B6069">15+ readers · each at their hour</text>
+<g filter="url(#dd-sh)"><rect x="300" y="30" width="310" height="340" rx="24" fill="#FFFFFF"/></g>
+<circle cx="330" cy="62" r="12" fill="#1E2024"/><path d="M324 58l6 5 6-5" stroke="#FFC629" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="350" y="59" font-size="12.5" font-weight="700" fill="#1E2024">Your 7:00 AM brief</text>
+<text x="350" y="74" font-size="10.5" fill="#8D929B">Daily Digest · summarized by Gemini</text>
+<line x1="324" y1="88" x2="586" y2="88" stroke="#ECEEF1"/>
+<g transform="translate(324 104)"><text x="0" y="0" class="m" font-size="9.5" fill="#8D929B" letter-spacing="1">01 · ECONOMY</text><text x="0" y="20" font-size="13" font-weight="600" fill="#1E2024">Policy-rate decision, explained</text><rect x="0" y="32" width="200" height="6" rx="3" fill="#ECEEF1"/><rect x="0" y="32" width="184" height="6" rx="3" fill="#FFC629"/><text x="262" y="39" text-anchor="end" class="m" font-size="10" fill="#5B6069">PK 0.92</text></g><g transform="translate(324 184)"><text x="0" y="0" class="m" font-size="9.5" fill="#8D929B" letter-spacing="1">02 · TECH</text><text x="0" y="20" font-size="13" font-weight="600" fill="#1E2024">Lahore startups and the AI hiring wave</text><rect x="0" y="32" width="200" height="6" rx="3" fill="#ECEEF1"/><rect x="0" y="32" width="162" height="6" rx="3" fill="#1E2024"/><text x="262" y="39" text-anchor="end" class="m" font-size="10" fill="#5B6069">PK 0.81</text></g><g transform="translate(324 264)"><text x="0" y="0" class="m" font-size="9.5" fill="#8D929B" letter-spacing="1">03 · WEATHER</text><text x="0" y="20" font-size="13" font-weight="600" fill="#1E2024">Heat advisory issued for Punjab</text><rect x="0" y="32" width="200" height="6" rx="3" fill="#ECEEF1"/><rect x="0" y="32" width="134" height="6" rx="3" fill="#1E2024"/><text x="262" y="39" text-anchor="end" class="m" font-size="10" fill="#5B6069">PK 0.67</text></g></svg></figure>
+            <div class="work__body">
+              <div class="work__meta"><span class="pill pill--dark"><span class="dot" style="display:inline-block;width:6px;height:6px;margin-right:6px;vertical-align:1px"></span>Live</span><span>News agent</span></div>
+              <h3>Daily Digest</h3>
+              <p class="one">A <b>live news agent</b> that ranks stories for Pakistan and emails each reader at their chosen hour.</p>
+              <div class="stats"><div><strong>15+</strong><span>active users</span></div><div><strong>Daily</strong><span>Gemini summaries</span></div><div><strong>1×</strong><span>summary per story, cached</span></div></div>
+              <details class="more"><summary>Details</summary><ul class="bul">
+                <li>Ranks RSS stories by <b>Pakistan relevance</b> and summarizes them with <b>Gemini</b>.</li>
+                <li><b>APScheduler</b> pre-fetches feeds, <b>caches each summary once</b>, and mails every user at their hour via Resend.</li>
+              </ul></details>
+              <div class="work__foot"><div class="tags"><span class="tag"><img src="assets/logos/fastapi.svg" alt="" width="16" height="16" loading="lazy">FastAPI</span><span class="tag"><img src="assets/logos/postgresql.svg" alt="" width="16" height="16" loading="lazy">PostgreSQL</span><span class="tag"><i class="mg" aria-hidden="true">As</i>APScheduler</span><span class="tag"><img src="assets/logos/gemini.svg" alt="" width="16" height="16" loading="lazy">Gemini API</span><span class="tag"><img src="assets/logos/docker.svg" alt="" width="16" height="16" loading="lazy">Docker</span></div>
+                <div class="links"><a class="link" href="https://dailydigest-jy4r.onrender.com/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" width="16" height="16"><path d="M7 17 17 7M8 7h9v9"/></svg>Live site</a><a class="link" href="https://github.com/AbdullahPatti/News-Reporter" target="_blank" rel="noopener"><img src="assets/logos/github.svg" alt="" width="16" height="16" loading="lazy">GitHub</a></div></div>
+            </div>
+          </article>
+          <article class="work work--wide" style="--i:5">
+            <figure class="work__viz"><svg class="viz" viewBox="0 0 640 400" role="img" aria-label="A five-stage sales pipeline with a lead card being dragged and a Gemini summary suggesting a follow-up email" xmlns="http://www.w3.org/2000/svg">
+<defs><filter id="cr-sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#1E2024" flood-opacity=".16"/></filter></defs>
+<rect width="640" height="400" fill="#F4F5F7"/>
+<rect x="30" y="28" width="136" height="80" rx="18" fill="#FFFFFF"/><text x="46" y="54" font-size="10.5" fill="#8D929B">Pipeline value</text><text x="46" y="88" class="s" font-size="22" fill="#1E2024">PKR 4.8M</text><rect x="176" y="28" width="136" height="80" rx="18" fill="#FFFFFF"/><text x="192" y="54" font-size="10.5" fill="#8D929B">Revenue won</text><text x="192" y="88" class="s" font-size="22" fill="#1E2024">PKR 1.2M</text><rect x="322" y="28" width="136" height="80" rx="18" fill="#FFFFFF"/><text x="338" y="54" font-size="10.5" fill="#8D929B">Total leads</text><text x="338" y="88" class="s" font-size="22" fill="#1E2024">27</text><rect x="468" y="28" width="136" height="80" rx="18" fill="#FFFFFF"/><text x="484" y="54" font-size="10.5" fill="#8D929B">Win rate</text><text x="484" y="88" class="s" font-size="22" fill="#1E2024">32%</text><rect x="30" y="28" width="136" height="80" rx="18" fill="none" stroke="#FFC629" stroke-width="2"/><rect x="30" y="128" width="108" height="244" rx="16" fill="#ECEEF1"/><text x="42" y="150" font-size="11" font-weight="700" fill="#1E2024">New</text><text x="126" y="150" text-anchor="end" class="m" font-size="10" fill="#8D929B">3</text><rect x="38" y="162" width="92" height="52" rx="10" fill="#FFFFFF"/><rect x="48" y="174" width="48" height="6" rx="3" fill="#3A3E46"/><rect x="48" y="186" width="34" height="5" rx="2.5" fill="#D3D6DB"/><circle cx="56" cy="202" r="5" fill="#FFC629"/><rect x="38" y="224" width="92" height="52" rx="10" fill="#FFFFFF"/><rect x="48" y="236" width="61" height="6" rx="3" fill="#3A3E46"/><rect x="48" y="248" width="43" height="5" rx="2.5" fill="#D3D6DB"/><circle cx="56" cy="264" r="5" fill="#C9CCD2"/><rect x="38" y="286" width="92" height="52" rx="10" fill="#FFFFFF"/><rect x="48" y="298" width="52" height="6" rx="3" fill="#3A3E46"/><rect x="48" y="310" width="52" height="5" rx="2.5" fill="#D3D6DB"/><circle cx="56" cy="326" r="5" fill="#C9CCD2"/><rect x="147" y="128" width="108" height="244" rx="16" fill="#ECEEF1"/><text x="159" y="150" font-size="11" font-weight="700" fill="#1E2024">Qualified</text><text x="243" y="150" text-anchor="end" class="m" font-size="10" fill="#8D929B">2</text><rect x="155" y="162" width="92" height="52" rx="10" fill="#FFFFFF"/><rect x="165" y="174" width="55" height="6" rx="3" fill="#3A3E46"/><rect x="165" y="186" width="39" height="5" rx="2.5" fill="#D3D6DB"/><circle cx="173" cy="202" r="5" fill="#C9CCD2"/><rect x="264" y="128" width="108" height="244" rx="16" fill="#ECEEF1"/><text x="276" y="150" font-size="11" font-weight="700" fill="#1E2024">Proposal</text><text x="360" y="150" text-anchor="end" class="m" font-size="10" fill="#8D929B">2</text><rect x="272" y="162" width="92" height="52" rx="10" fill="#FFFFFF"/><rect x="282" y="174" width="62" height="6" rx="3" fill="#3A3E46"/><rect x="282" y="186" width="44" height="5" rx="2.5" fill="#D3D6DB"/><circle cx="290" cy="202" r="5" fill="#C9CCD2"/><rect x="272" y="224" width="92" height="52" rx="10" fill="#FFFFFF"/><rect x="282" y="236" width="53" height="6" rx="3" fill="#3A3E46"/><rect x="282" y="248" width="53" height="5" rx="2.5" fill="#D3D6DB"/><circle cx="290" cy="264" r="5" fill="#FFC629"/><rect x="381" y="128" width="108" height="244" rx="16" fill="#ECEEF1"/><text x="393" y="150" font-size="11" font-weight="700" fill="#1E2024">Won</text><text x="477" y="150" text-anchor="end" class="m" font-size="10" fill="#8D929B">1</text><rect x="389" y="162" width="92" height="52" rx="10" fill="#FFFFFF"/><rect x="399" y="174" width="69" height="6" rx="3" fill="#3A3E46"/><rect x="399" y="186" width="49" height="5" rx="2.5" fill="#D3D6DB"/><circle cx="407" cy="202" r="5" fill="#FFC629"/><rect x="498" y="128" width="108" height="244" rx="16" fill="#ECEEF1"/><text x="510" y="150" font-size="11" font-weight="700" fill="#1E2024">Lost</text><text x="594" y="150" text-anchor="end" class="m" font-size="10" fill="#8D929B">1</text><rect x="506" y="162" width="92" height="52" rx="10" fill="#FFFFFF"/><rect x="516" y="174" width="54" height="6" rx="3" fill="#3A3E46"/><rect x="516" y="186" width="34" height="5" rx="2.5" fill="#D3D6DB"/><circle cx="524" cy="202" r="5" fill="#C9CCD2"/><rect x="389" y="162" width="92" height="52" rx="10" fill="#1E2024"/><text x="399" y="184" font-size="11" font-weight="700" fill="#FFC629">Closed</text><text x="399" y="200" class="m" font-size="9.5" fill="#8D929B">PKR 1.2M</text>
+<g transform="translate(166 214) rotate(-5)" filter="url(#cr-sh)">
+  <rect width="132" height="60" rx="12" fill="#FFFFFF" stroke="#FFC629" stroke-width="2"/>
+  <text x="14" y="24" font-size="11.5" font-weight="700" fill="#1E2024">Hassan Traders</text>
+  <text x="14" y="42" class="m" font-size="9.5" fill="#5B6069">PKR 650K · warm</text>
+</g>
+<path d="M286 262l0 18 5-5 4 9 4-2-4-9 7 0z" fill="#1E2024" stroke="#FFFFFF" stroke-width="1.4" stroke-linejoin="round"/>
+<g transform="translate(330 240)" filter="url(#cr-sh)">
+  <rect width="272" height="110" rx="20" fill="#1E2024"/>
+  <path d="M24 22c1 7 3 9 10 10-7 1-9 3-10 10-1-7-3-9-10-10 7-1 9-3 10-10z" fill="#FFC629"/>
+  <text x="42" y="37" font-size="12" font-weight="700" fill="#FFFFFF">Gemini summary</text>
+  <text x="18" y="62" font-size="11.5" fill="#D9DBDF">High intent: asked for pricing twice.</text>
+  <text x="18" y="80" font-size="11.5" fill="#D9DBDF">Suggest a follow-up this week.</text>
+  <rect x="160" y="88" width="98" height="0" fill="none"/>
+  <text x="254" y="98" text-anchor="end" font-size="11" font-weight="700" fill="#FFC629">Draft email →</text>
+</g></svg></figure>
+            <div class="work__body">
+              <div class="work__meta"><span class="pill">Full-stack MERN</span></div>
+              <h3>CRMind</h3>
+              <p class="one">A <b>sales CRM for small teams</b> with a drag-and-drop pipeline and a <b>Gemini co-pilot</b>.</p>
+              <div class="stats"><div><strong>7</strong><span>modules</span></div><div><strong>3</strong><span>AI actions</span></div><div><strong>JWT</strong><span>per-owner data</span></div></div>
+              <details class="more"><summary>Details</summary><ul class="bul">
+                <li>Leads, contacts, the deal pipeline, notes and follow-ups <b>in one place</b>, instead of spreadsheets and inboxes.</li>
+                <li><b>KPI dashboard</b> (pipeline value, revenue won, win rate) and a <b>Kanban pipeline</b> with drag-and-drop between stages.</li>
+                <li><b>Gemini</b> summarizes leads, drafts follow-up emails and gives <b>pipeline health insights</b>, with a fallback model.</li>
+                <li><b>JWT auth</b>; every record is scoped to its owner.</li>
+              </ul></details>
+              <div class="work__foot"><div class="tags"><span class="tag"><img src="assets/logos/react.svg" alt="" width="16" height="16" loading="lazy">React</span><span class="tag"><img src="assets/logos/nodejs.svg" alt="" width="16" height="16" loading="lazy">Node.js</span><span class="tag"><img src="assets/logos/express.svg" alt="" width="16" height="16" loading="lazy">Express.js</span><span class="tag"><img src="assets/logos/mongodb.svg" alt="" width="16" height="16" loading="lazy">MongoDB</span><span class="tag"><img src="assets/logos/gemini.svg" alt="" width="16" height="16" loading="lazy">Gemini API</span><span class="tag"><img src="assets/logos/jwt.svg" alt="" width="16" height="16" loading="lazy">JWT</span></div>
+                <div class="links"><a class="link" href="https://github.com/AbdullahPatti/CRMind" target="_blank" rel="noopener"><img src="assets/logos/github.svg" alt="" width="16" height="16" loading="lazy">GitHub</a></div></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <!-- ============ 05 SKILLS ============ -->
+    <section class="section dark" id="skills">
+      <div class="wrap">
+        <div class="head"><span class="eyebrow reveal" data-n="05">Technical Skills</span>
+          <h2 class="h2 reveal">The tools <em>I reach for.</em></h2>
+          <p class="lead reveal">Languages, libraries and tools only. The methods (fine-tuning, quantization, RAG and the rest) live in my <a href="#about" style="color:#fff;text-decoration:underline;text-decoration-color:var(--sun);text-underline-offset:3px">research interests</a>.</p></div>
+        <div class="skills">
+          <div class="skill reveal"><h3><small>Languages</small>Code</h3><div class="chips"><span class="chip"><i><img src="assets/logos/python.svg" alt="" width="16" height="16" loading="lazy"></i>Python</span><span class="chip"><i><img src="assets/logos/c.svg" alt="" width="16" height="16" loading="lazy"></i>C</span><span class="chip"><i><img src="assets/logos/cpp.svg" alt="" width="16" height="16" loading="lazy"></i>C++</span><span class="chip"><i><img src="assets/logos/csharp.svg" alt="" width="16" height="16" loading="lazy"></i>C#</span><span class="chip"><i class="mg" aria-hidden="true">SQL</i>SQL</span><span class="chip"><i><img src="assets/logos/javascript.svg" alt="" width="16" height="16" loading="lazy"></i>JavaScript</span><span class="chip"><i><img src="assets/logos/typescript.svg" alt="" width="16" height="16" loading="lazy"></i>TypeScript</span><span class="chip"><i><img src="assets/logos/html.svg" alt="" width="16" height="16" loading="lazy"></i>HTML</span><span class="chip"><i><img src="assets/logos/css.svg" alt="" width="16" height="16" loading="lazy"></i>CSS</span></div></div>
+          <div class="skill reveal"><h3><small>LLMs &amp; Agents</small>Agentic AI</h3><div class="chips"><span class="chip"><i><img src="assets/logos/langchain.svg" alt="" width="16" height="16" loading="lazy"></i>LangChain</span><span class="chip"><i><img src="assets/logos/langgraph.svg" alt="" width="16" height="16" loading="lazy"></i>LangGraph</span><span class="chip"><i><img src="assets/logos/langchain.svg" alt="" width="16" height="16" loading="lazy"></i>LangSmith</span><span class="chip"><i class="mg" aria-hidden="true">Rs</i>RAGAS</span><span class="chip"><i><img src="assets/logos/ollama.svg" alt="" width="16" height="16" loading="lazy"></i>Ollama</span><span class="chip"><i><img src="assets/logos/n8n.svg" alt="" width="16" height="16" loading="lazy"></i>n8n</span><span class="chip"><i><img src="assets/logos/gemini.svg" alt="" width="16" height="16" loading="lazy"></i>Gemini</span><span class="chip"><i><img src="assets/logos/meta.svg" alt="" width="16" height="16" loading="lazy"></i>Llama</span><span class="chip"><i><img src="assets/logos/mistral.svg" alt="" width="16" height="16" loading="lazy"></i>Mistral</span><span class="chip"><i><img src="assets/logos/qwen.svg" alt="" width="16" height="16" loading="lazy"></i>Qwen</span></div></div>
+          <div class="skill reveal"><h3><small>ML &amp; Deep Learning</small>Models</h3><div class="chips"><span class="chip"><i><img src="assets/logos/pytorch.svg" alt="" width="16" height="16" loading="lazy"></i>PyTorch</span><span class="chip"><i><img src="assets/logos/tensorflow.svg" alt="" width="16" height="16" loading="lazy"></i>TensorFlow</span><span class="chip"><i><img src="assets/logos/huggingface.svg" alt="" width="16" height="16" loading="lazy"></i>Hugging Face</span><span class="chip"><i><img src="assets/logos/scikitlearn.svg" alt="" width="16" height="16" loading="lazy"></i>scikit-learn</span></div></div>
+          <div class="skill reveal"><h3><small>Speech &amp; Vision</small>Voice</h3><div class="chips"><span class="chip"><i><img src="assets/logos/openai.svg" alt="" width="16" height="16" loading="lazy"></i>Whisper</span><span class="chip"><i class="mg" aria-hidden="true">W</i>whisper.cpp</span><span class="chip"><i><img src="assets/logos/meta.svg" alt="" width="16" height="16" loading="lazy"></i>XLS-R</span><span class="chip"><i><img src="assets/logos/elevenlabs.svg" alt="" width="16" height="16" loading="lazy"></i>ElevenLabs</span></div></div>
+          <div class="skill reveal"><h3><small>Backend &amp; DevOps</small>Shipping</h3><div class="chips"><span class="chip"><i><img src="assets/logos/fastapi.svg" alt="" width="16" height="16" loading="lazy"></i>FastAPI</span><span class="chip"><i><img src="assets/logos/sqlalchemy.svg" alt="" width="16" height="16" loading="lazy"></i>SQLAlchemy</span><span class="chip"><i><img src="assets/logos/nodejs.svg" alt="" width="16" height="16" loading="lazy"></i>Node.js</span><span class="chip"><i><img src="assets/logos/express.svg" alt="" width="16" height="16" loading="lazy"></i>Express.js</span><span class="chip"><i><img src="assets/logos/react.svg" alt="" width="16" height="16" loading="lazy"></i>React.js</span><span class="chip"><i><img src="assets/logos/dotnet.svg" alt="" width="16" height="16" loading="lazy"></i>.NET</span><span class="chip"><i><img src="assets/logos/git.svg" alt="" width="16" height="16" loading="lazy"></i>Git</span><span class="chip"><i><img src="assets/logos/docker.svg" alt="" width="16" height="16" loading="lazy"></i>Docker</span><span class="chip"><i><img src="assets/logos/render.svg" alt="" width="16" height="16" loading="lazy"></i>Render</span><span class="chip"><i><img src="assets/logos/jupyter.svg" alt="" width="16" height="16" loading="lazy"></i>Jupyter</span><span class="chip"><i><img src="assets/logos/claude.svg" alt="" width="16" height="16" loading="lazy"></i>Claude Code</span></div></div>
+          <div class="skill reveal"><h3><small>Data &amp; Databases</small>Storage</h3><div class="chips"><span class="chip"><i><img src="assets/logos/pandas.svg" alt="" width="16" height="16" loading="lazy"></i>Pandas</span><span class="chip"><i><img src="assets/logos/numpy.svg" alt="" width="16" height="16" loading="lazy"></i>NumPy</span><span class="chip"><i><img src="assets/logos/postgresql.svg" alt="" width="16" height="16" loading="lazy"></i>PostgreSQL</span><span class="chip"><i><img src="assets/logos/mssql.svg" alt="" width="16" height="16" loading="lazy"></i>SQL Server</span><span class="chip"><i><img src="assets/logos/supabase.svg" alt="" width="16" height="16" loading="lazy"></i>Supabase</span><span class="chip"><i><img src="assets/logos/neon.svg" alt="" width="16" height="16" loading="lazy"></i>Neon</span><span class="chip"><i><img src="assets/logos/mongodb.svg" alt="" width="16" height="16" loading="lazy"></i>MongoDB</span><span class="chip"><i><img src="assets/logos/qdrant.svg" alt="" width="16" height="16" loading="lazy"></i>Qdrant</span><span class="chip"><i class="mg" aria-hidden="true">Ch</i>ChromaDB</span><span class="chip"><i><img src="assets/logos/meta.svg" alt="" width="16" height="16" loading="lazy"></i>FAISS</span></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 06–07 TEACHING & CO-CURRICULAR ============ -->
+    <section class="section" id="teaching">
+      <div class="wrap">
+        <div class="head"><span class="eyebrow reveal" data-n="06·07">Teaching &amp; Co-curricular</span>
+          <h2 class="h2 reveal">Explaining it <em>to a room.</em></h2></div>
+        <div class="teach">
+          <article class="card reveal">
+            <div class="org"><span class="org__logo"><img src="assets/orgs/pact.png" alt="PACT College logo"></span>
+              <div><h3>MS Office Instructor</h3><p>PACT College · Lahore, Pakistan</p></div></div>
+            <div class="meta"><span>Oct – Nov 2026</span></div>
+            <ul class="bul">
+              <li>The <b>youngest teacher</b> at the college; taught MS Office to a small cohort of students.</li>
+              <li>Inaugurated and delivered the college's <b>first masterclass on AI and LLMs</b>.</li>
+            </ul>
+            <div class="awards">
+              <div class="award">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#1E2024" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="9" r="6"/><path d="M8.5 14 7 22l5-3 5 3-1.5-8"/><path d="m12 6 .9 1.9 2.1.3-1.5 1.4.4 2-1.9-1-1.9 1 .4-2L9 8.2l2.1-.3z" fill="#1E2024"/></svg>
+                <div><strong>Teacher of the Month</strong><span>October and November 2026</span></div>
               </div>
-              <div class="uni-title">
-                <h3>FAST-NUCES, Lahore</h3>
-                <p>BS Computer Science · Aug 2023 – Expected 2027</p>
+              <div class="award award--dark">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#FFC629" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0z"/><path d="M7 6H4a3 3 0 0 0 3 4M17 6h3a3 3 0 0 1-3 4"/></svg>
+                <div><strong>First AI Masterclass</strong><span>Award for delivering the college's first masterclass on AI and LLMs</span></div>
               </div>
             </div>
-            <ul class="honors-list">
-              <li><strong>FYP:</strong> Sachai Check, Urdu fake-news and deepfake-audio detection.</li>
-              <li><strong>Leadership:</strong> Team lead &amp; Scrum Master; Deputy Head of PR, FAST Business Club;
-                Executive Media Officer, SOFTEC.</li>
-              <li><strong>Honors:</strong> SQL Query Master champion; ACM Speed Programming competitor.</li>
+          </article>
+          <article class="card reveal">
+            <span class="kv" style="margin-top:0">Co-curricular &amp; extracurricular · FAST-NUCES</span>
+            <ul class="acts">
+              <li><div><strong>FAST Business Club</strong><span>Deputy Head of PR</span></div></li>
+              <li><div><strong>SOFTEC</strong><span>Media Officer</span></div></li>
+              <li><div><strong>ACM Speed Programming Competition</strong><span>Participant</span></div></li>
+              <li><div><strong>SQL Query Master Competition</strong><span>Participant</span></div></li>
+              <li><div><strong>SOFTEC Photo Editing Competition</strong><span>Participant</span></div></li>
+              <li><div><strong>NUCES Media Group · Tasveer Nama <span class="ur" lang="ur">تصویر نامہ</span></strong><span>Participant</span></div></li>
             </ul>
           </article>
+        </div>
+      </div>
+    </section>
 
-          <div class="cert-list">
-            <a class="cert-card-link reveal" href="https://www.udemy.com/certificate/UC-89374373-8b55-4ae7-a648-0c8cc5903e80/" target="_blank" rel="noopener">
-              <span class="cert-issuer-badge">Udemy</span><h3>AI Engineer Core Track: LLMs, RAG &amp; Agents</h3><span class="cert-verify-link">Verify ↗</span>
-            </a>
-            <a class="cert-card-link reveal" href="https://www.coursera.org/account/accomplishments/verify/ACTZJHXRLJAD" target="_blank" rel="noopener">
-              <span class="cert-issuer-badge">IBM</span><h3>Machine Learning with Python</h3><span class="cert-verify-link">Verify ↗</span>
-            </a>
-            <a class="cert-card-link reveal" href="https://www.coursera.org/account/accomplishments/verify/R4RKKC6T0WDE" target="_blank" rel="noopener">
-              <span class="cert-issuer-badge">Microsoft</span><h3>Data Analysis and Visualization with Python</h3><span class="cert-verify-link">Verify ↗</span>
-            </a>
-            <a class="cert-card-link reveal" href="https://www.coursera.org/account/accomplishments/verify/ZB7FUFBJBRX4" target="_blank" rel="noopener">
-              <span class="cert-issuer-badge">Google</span><h3>Introduction to Generative AI</h3><span class="cert-verify-link">Verify ↗</span>
-            </a>
-          </div>
+    <!-- ============ 08 CERTIFICATIONS ============ -->
+    <section class="section section--white" id="certifications">
+      <div class="wrap">
+        <div class="head"><span class="eyebrow reveal" data-n="08">Certifications</span>
+          <h2 class="h2 reveal">Verified, <em>one click away.</em></h2></div>
+        <div class="certs">
+          <a class="cert reveal" href="https://www.udemy.com/certificate/UC-89374373-8b55-4ae7-a648-0c8cc5903e80/" target="_blank" rel="noopener"><span class="org__logo"><img src="assets/logos/udemy.svg" alt="Udemy"></span><h3>AI Engineer Core Track: LLMs, RAG, Agents</h3><span>Udemy <em>Verify ↗</em></span></a>
+          <a class="cert reveal" href="https://www.coursera.org/account/accomplishments/verify/ACTZJHXRLJAD" target="_blank" rel="noopener"><span class="org__logo"><img src="assets/logos/ibm.svg" alt="IBM"></span><h3>Machine Learning with Python</h3><span>IBM <em>Verify ↗</em></span></a>
+          <a class="cert reveal" href="https://www.coursera.org/account/accomplishments/verify/R4RKKC6T0WDE" target="_blank" rel="noopener"><span class="org__logo"><img src="assets/logos/microsoft.svg" alt="Microsoft"></span><h3>Data Analysis and Visualization with Python</h3><span>Microsoft <em>Verify ↗</em></span></a>
+          <a class="cert reveal" href="https://www.coursera.org/account/accomplishments/verify/ZB7FUFBJBRX4" target="_blank" rel="noopener"><span class="org__logo"><img src="assets/logos/google.svg" alt="Google"></span><h3>Introduction to Generative AI</h3><span>Google <em>Verify ↗</em></span></a>
         </div>
       </div>
     </section>
 
     <!-- ============ CONTACT ============ -->
-    <section class="section tone-mist" id="contact" data-nav="Contact">
-      <div class="wrap">
-        <div class="contact-box">
-          <span class="eyebrow reveal">Get in Touch</span>
-          <h2 class="reveal">Let's build something.</h2>
-          <p class="section-lead reveal" style="margin-inline: auto;">Open to research collaborations and AI/ML,
-            data and forward-deployed roles.</p>
-
-          <form class="contact-form reveal" id="contact-form" action="https://formspree.io/f/mvkgzpqr" method="POST">
-            <input type="text" name="_gotcha" class="hp" tabindex="-1" autocomplete="off">
-            <div class="form-row">
-              <div>
-                <label for="form-name">Your Name</label>
-                <input type="text" id="form-name" name="name" placeholder="Name" required>
-              </div>
-              <div>
-                <label for="form-email">Your Email</label>
-                <input type="email" id="form-email" name="email" placeholder="name@domain.com" required>
-              </div>
-            </div>
-            <div>
-              <label for="form-message">Message</label>
-              <textarea id="form-message" name="message" rows="4" placeholder="Tell me about your project or role..."
-                required></textarea>
-            </div>
-            <div
-              style="margin-top: 18px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px;">
-              <button type="submit" class="btn btn-solid">Send message</button>
-              <span class="form-status" id="form-status" role="status"
-                style="font-size: 14px; font-weight: 500; color: var(--blue);"></span>
-            </div>
-          </form>
-
-          <div class="contact-direct reveal">
-            <button type="button" class="copy-email-btn" id="copy-email-btn" title="Click to copy email address">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                stroke-linejoin="round" aria-hidden="true">
-                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
-                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
-              </svg>
-              <span id="copy-email-text">abdullaharoon.work@gmail.com</span>
-            </button>
-            <span class="copy-hint">Click email address to copy to clipboard</span>
-            <a class="phone-link" href="tel:+923060590604">+92 306 0590604</a>
-          </div>
+    <section class="section dark" id="contact">
+      <div class="wrap contact">
+        <div>
+          <span class="eyebrow reveal" data-n="→">Contact</span>
+          <h2 class="h2 reveal" style="margin-top:18px">Let's build computers that <em>understand people.</em></h2>
+          <p class="lead reveal" style="margin-top:18px">Open to <b>AI/ML engineering roles</b>, <b>research collaborations</b> and <b>internships</b>.</p>
         </div>
+        <form class="form reveal" id="contact-form" action="https://formspree.io/f/mvkgzpqr" method="POST">
+          <input type="text" name="_gotcha" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <div class="row">
+            <label>Name<input type="text" name="name" autocomplete="name" required></label>
+            <label>Email<input type="email" name="email" autocomplete="email" required></label>
+          </div>
+          <label>Message<textarea name="message" rows="5" placeholder="A role, a research idea, or a project…" required></textarea></label>
+          <div class="form__foot"><button class="btn btn--sun" type="submit">Send message</button><span class="form__status" id="form-status" role="status"></span></div>
+        </form>
+        <div class="socials reveal">
+            <a class="social" href="mailto:abdullaharoon.work@gmail.com" id="email-link"><i class="sun"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m4 7 8 6 8-6"/></svg></i><div><strong>Email</strong><span>abdullaharoon.work@gmail.com</span></div><em>↗</em></a>
+            <a class="social" href="https://www.linkedin.com/in/abdullah-haroon-98b460217" target="_blank" rel="noopener"><i><img src="assets/logos/linkedin.svg" alt=""></i><div><strong>LinkedIn</strong><span>abdullah-haroon</span></div><em>↗</em></a>
+            <a class="social" href="https://github.com/AbdullahPatti" target="_blank" rel="noopener"><i><img src="assets/logos/github.svg" alt=""></i><div><strong>GitHub</strong><span>AbdullahPatti</span></div><em>↗</em></a>
+            <a class="social" href="https://scholar.google.com/citations?user=q7rxGekAAAAJ&amp;hl=en&amp;authuser=2" target="_blank" rel="noopener"><i><img src="assets/logos/googlescholar.svg" alt=""></i><div><strong>Google Scholar</strong><span>Publications &amp; citations</span></div><em>↗</em></a>
+            <a class="social" href="tel:+923060590604"><i class="sun"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg></i><div><strong>Phone</strong><span>+92 306 0590604</span></div><em>↗</em></a>
+          </div>
       </div>
     </section>
   </main>
 
-  <!-- ============ TOAST NOTIFICATION ============ -->
-  <div class="toast" id="copy-toast" role="status" aria-live="polite">
-    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#34c759" stroke-width="3" stroke-linecap="round"
-      stroke-linejoin="round">
-      <polyline points="20 6 9 17 4 12" />
-    </svg>
-    <span id="toast-message">Email copied to clipboard!</span>
-  </div>
-
-  <!-- ============ FOOTER ============ -->
   <footer class="footer">
     <div class="wrap">
-      <span id="footer-year">&copy; 2026 Muhammad Abdullah Haroon</span>
-      <span>FAST-NUCES · Lahore, Pakistan</span>
+      <span>© <span id="year">2026</span> Muhammad Abdullah Haroon · Lahore, Pakistan</span>
+      <span class="ur" lang="ur">شکریہ</span>
     </div>
   </footer>
 
-  <script src="js/site.js"></script>
+  <script src="js/app.js" defer></script>
 </body>
-
 </html>
